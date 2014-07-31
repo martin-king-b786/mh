@@ -93,6 +93,7 @@ a.button {
                  #orphan #opening #auto-choose #message img {
                      float: right;
                      margin-top: 35px;
+                     width: 20%;
                  }
                  
             #orphan #opening #auto-choose #explaination {
@@ -140,7 +141,7 @@ a.button {
                     float: left;
                     margin: 7px 0;
                     width: auto;
-                    max-width: 175px;
+                    max-width: 200px;
                 }
                 
                 #orphan #search-bar form .form-element:nth-of-type(2n) {
@@ -152,6 +153,9 @@ a.button {
                 #orphan #search-bar form .form-element:last-of-type {
                     border: 0;
                     margin-right: 0;
+                    max-width: 185px;
+                    padding-right: 0;
+                    padding-left: 10px;
                 }
                     #orphan .location-dropdown {
                     width: 150px;
