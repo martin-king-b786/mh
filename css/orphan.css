@@ -362,12 +362,16 @@ a.button {
     }
         #orphan #search-bar .search-img {
             display: inline-block;
+            margin-left: 10px;
+            margin-top: -8px;
         }
         #orphan #search-bar .down-arrow {
             display: inline-block;
         }
         #orphan #search-bar>span {
             float: none;
+            font-size: 40px;
+            font-family: 'Alternate Gothic', sans-serif;
         }
             #orphan #search-bar>span img {
                 display: inline-block;
