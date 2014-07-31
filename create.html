@@ -204,37 +204,48 @@
     <form>
         <div id="create-name" class="col-lg-12">
             <label>Your Name</label>
-            <input class="col-md-5 col-xs-12" type="text" placeholder="First Name" />
+            <input class="error col-md-5 col-xs-12" type="text" placeholder="First Name" />
             <input class="col-md-5 col-xs-12" type="text" placeholder="Last Name" />
+            <p class="validation col-xs-12">Please use both boxes above to enter your name.</p>
         </div>
         <div id="create-email" class="col-lg-12">
             <label>Email Address</label>
-            <input class="col-md-5 col-xs-12" type="email" placeholder="Email Address" />
+            <input class="error col-md-5 col-xs-12" type="email" placeholder="Email Address" />
             <span class="info col-md-5 col-xs-12">(you will be sent an activation link to confirm your email)</span>
+            <p class="validation col-xs-12">Please enter a valid email address.</p>
         </div>
         <div id="create-cause" class="col-lg-12">
-            <label>I will be raising funds for:</label>
-            <input type="checkbox" id="event" name="event" />
-            <label class="checkbox-label" for="event"><span></span>An event that I will be attending</label>
-            <br />
-            <input type="checkbox" id="project" name="project" />
-            <label class="checkbox-label" for="project"><span></span>A specific project or appeal</label>
+            <div class="cause-container">
+                <label>I will be raising funds for:</label>
+                <input type="checkbox" id="event" name="event" />
+                <label class="checkbox-label" for="event"><span></span>An event that I will be attending</label>
+                <br />
+                <input type="checkbox" id="project" name="project" />
+                <label class="checkbox-label" for="project"><span></span>A specific project or appeal</label>
+            </div>
+            <p class="validation col-md-6 col-xs-12">Please choose one option.</p>
         </div>
         <div id="create-selection" class="col-lg-12">
-            <select class="info col-md-5 col-xs-12">
+            <select class="error info col-md-5 col-xs-12">
                 <option value="Events/Projects">Events/Projects</option>
                 <option value="Events/Projects">Events/Projects</option>
                 <option value="Events/Projects">Events/Projects</option>
                 <option value="Events/Projects">Events/Projects</option>
             </select>
+            <p class="validation col-md-6 col-xs-12">Please choose one option.</p>
         </div>
         <div id="create-funds" class="col-lg-12">
             <label>Funds Target</label>
-            <input class="info col-md-3 col-xs-12" type="number"/>
+            <div class="cash-input">
+                <input class="error info col-md-3 col-xs-12" type="number" step="550"/>
+                <span class="symbol">£</span>
+            </div>
+            <p class="validation col-md-6 col-xs-12">Please enter a value.</p>
         </div>
         <div id="create-title" class="col-lg-12">
             <label>Page Title</label>
             <input type="text" />
+            <p class="validation col-xs-12">Please provide a page title.</p>
         </div>
         <div id="create-intro" class="col-lg-12">
             <label>Page Intro</label>
@@ -242,11 +253,13 @@
         </div>
         <div id="create-reason" class="col-lg-12">
             <label>Why are you raising these funds?</label>
-            <textarea></textarea>
+            <textarea class="error"></textarea>
+            <p class="validation col-xs-12">Please provide some reasoning behind your decision.</p>
         </div>
         <div id="create-profile" class="col-lg-12">
             <label>Profile Pic</label>
-            <input type="file" />
+            <input class="error" type="file" />
+            <p class="validation col-xs-12">Please provide an img, in .jpg, .png or .gif format.</p>
         </div>
         <div id="create-submit" class="col-lg-2">
             <button type="button" class="submit-button">Submit</button>

@@ -12,7 +12,22 @@ div#container {
         margin-bottom: 50px;
         overflow: hidden;
     }
-
+    
+    #create form .validation {
+        margin-top: 10px;
+        color: #c53334;
+        padding: 0;
+    }
+    
+    #create form .validation.col-md-6 {
+        margin-top: 20px;
+        color: #c53334;
+        padding: 0;
+    }
+    
+    #create input.error, #create textarea.error, #create select.error {
+        border: 1px #c53334 solid;
+    }
         #create form div {
             width: 100%;
             float: left;
@@ -76,6 +91,23 @@ input[type="checkbox"]:checked + label span {
                 #create form div#create-funds input {
                     color: #419faf;
                 }
+                .cash-input {
+                    position: relative;
+                    overflow: hidden;
+                }
+                
+                .cash-input span {
+                    position: absolute;
+                    top: 15px;
+                    left: 10px;
+                    color: #ffffff;
+                    font-size: 30px;
+                }
+                
+                #create input:focus, #create textarea:focus, #create select:focus, #create option:focus {
+                    border: 1px #00c0f2 solid;
+                }
+                
                 #create form div#create-title input, #create form div#create-intro input, #create form div#create-profile input {
                     width: 100%;
                 }
@@ -116,98 +148,6 @@ input[type="checkbox"]:checked + label span {
                         color: #999;
                 }
 
-                body {
-                        background: #fff;
-                }
-
-                #full-container {
-                        background: #fff;
-                }
-
-                #home-image {
-                        background: #000;
-                }
-
-                #sect-3-bg {
-                        background: #979a9a;
-                }
-
-                header {
-                        border-bottom: 1px #bdbbbd solid;
-                }
-
-                #header-meta #basket-summary a {
-                        color: #f89d54;
-                }
-
-                #header-meta form button,#header-meta a button {
-                        color: #333;
-                }
-
-                #header-meta span.menu-separator {
-                        border-right: 1px #ccc solid;
-                }
-
-                #header-main-menu ul a: hover {
-                        background: #f89d54;
-                        color: #fff;
-                }
-
-                #header-main-menu ul span.menu-separator {
-                        border-right: 1px #ccc solid;
-                }
-
-                section#home-sect-1 h1 {
-                        color: #fff;
-                }
-
-                section#home-sect-1 #itn-path .path-step h3 {
-                        color: #fff;
-                }
-
-                section#home-sect-2 h2 {
-                        color: #f89d54;
-                }
-
-                section#home-sect-2 #projects .project h3 {
-                        color: #f89d54;
-                }
-
-                section#home-sect-3 h2 {
-                        color: #fff;
-                }
-
-                section#home-sect-3 #pages .page button {
-                        border: 1px #fff solid;
-                        background-color: transparent;
-                        color: #fff;
-                }
-
-                footer {
-                        border-top: 1px #bdbbbd solid;
-                }
-
-                #footer-menu ul li {
-                        color: #979a9a;
-                }
-
-                #footer-menu ul span.menu-separator {
-                        border-right: 1px #ccc solid;
-                }
-
-                #how-it-works-sections .hiw-section {
-                        border-bottom: 1px #bdbbbd solid;
-                }
-
-                #how-it-works-sections .hiw-section .content {
-                        color: #333;
-                }
-
-                #how-it-works-sections .hiw-section .content h2 {
-                        color: #666;
-                }
-
-                /* Create a page */
                 #create {
                     max-width: 60%;
                     margin: 30px auto 0;
@@ -226,7 +166,7 @@ input[type="checkbox"]:checked + label span {
                         color: #000000;
                         font-size: 16px;
                         font-family: 'Myriad Pro', sans-serif;
-				font-weight: bold;
+                        font-weight: bold;
                         background: #ccc;
                 }
                 
@@ -237,6 +177,9 @@ input[type="checkbox"]:checked + label span {
                 #create form div#create-funds input {
                         color: #ffffff;
                         background: #f89d54;
+                        padding-left: 50px;
+                        font-size: 25px;
+                        padding-top: 5px;
                 }
 
                 #create form div#create-submit button {
