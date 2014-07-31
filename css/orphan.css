@@ -44,6 +44,7 @@ a.button {
 
     #orphan {
         padding: 20px;
+        overflow: hidden;
     }
     
         #orphan #opening {
@@ -94,6 +95,7 @@ a.button {
                      float: right;
                      margin-top: 35px;
                      width: 20%;
+                     max-width: 30px;
                  }
                  
             #orphan #opening #auto-choose #explaination {
@@ -308,7 +310,9 @@ a.button {
                 }
                 
 @media screen and (max-width: 1000px) {
-
+    #orphan {
+        padding: 0;
+    }
     a.button img {
         float: right;
         margin: 5px 0 0 10px;
@@ -353,17 +357,6 @@ a.button {
                 float: none;
             }
 
-    #orphan #selected-orphan {
-        padding-top: 45px;
-    }
-
-        #selected-orphan #orphan-info #left>img {
-            width: 100%;
-        }
-
-            #selected-orphan #sponsor-info h3 {
-                padding: 0;
-            }
     #orphan #search-bar {
         text-align: center;
     }
@@ -411,7 +404,9 @@ a.button {
                 margin-left: 0;
                 margin-top: 0;
             }
-
+            #orphan-container .orphan {
+                padding: 0 7px
+            }
 }
 
 @media screen and (max-width: 500px) {
