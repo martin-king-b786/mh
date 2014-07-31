@@ -186,12 +186,34 @@ function pubLayout() {
 $(document).ready(pubLayout);
 $(window).resize(pubLayout);
 $(document).ready(function() {
-    $('.year').click(function(){
-        $('*').removeClass('bright');
+    $('.year-node').mouseenter(function(){
         $(this).addClass('bright');
-        $(this).children('li').children('.node').addClass('bright');
-        $(this).children('li').children('.node-publication').addClass('bright');
-        console.log('sgfdgdf');
+        $(this).parent().addClass('bright');
+        $(this).parent().children().children().addClass('bright');
     });
     
+    $('.year').mouseleave(function(){
+        $('*').removeClass('bright');
+    });
+    
+    $('.node-publication').mouseenter(function(){
+        $(this).addClass('bright');
+        $(this).parent().children('.node').addClass('bright');
+        $(this).parent().parent().addClass('bright');
+        $(this).parent().parent().children('.year-node').children().addClass('bright');
+    });
+    
+    $('.node-publication').mouseleave(function(){
+        $('*').removeClass('bright');
+    });
+    
+    $('.node').mouseenter(function(){
+        $(this).parent().children().addClass('bright');
+        $(this).parent().parent().addClass('bright');
+        $(this).parent().parent().children('.year-node').children().addClass('bright');
+    });
+    
+    $('.node').mouseleave(function(){
+        $('*').removeClass('bright');
+    });
 });
