@@ -1,0 +1,514 @@
+div#container {
+    max-width: 1280px;
+    width: auto;
+}
+    
+.orange {
+    color: #f89d54;
+}
+
+a.button {
+    display: inline-block;
+    font-family: 'Alternate Gothic', sans-serif;
+    font-size: 22px;
+    line-height: 37px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 20px;
+    background: #f89d54;
+    border: none;
+    border-bottom: #ccc 3px solid;
+    border-radius: 3px;
+    color: #ffffff;
+    border-color: #c67e43;
+}
+
+    a.button img {
+        float: right;
+        margin: 5px 0 0 20px;
+    }
+    
+#orphan select, #orphan input, #orphan .location-dropdown {
+    display: inline-block;
+    font-family: 'Alternate Gothic', sans-serif;
+    font-size: 18px;
+    line-height: 37px;
+    padding: 0 20px;
+    background: #fff;
+    border: none;
+    border-top: #ccc 3px solid;
+    border-radius: 3px;
+    color: #888;
+    height: 40px;
+}
+
+    #orphan {
+        padding: 20px;
+    }
+    
+        #orphan #opening {
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+            #orphan #opening #content {
+                margin-bottom: 20px;
+                overflow: hidden;
+                background: #f89d54;
+                padding: 10px 20px;
+                font-size: 30px;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            
+                 #orphan #opening #content h1 {
+                     font-size: 85px;
+                     line-height: 65px;
+                     color: #ffffff;
+                     margin-bottom: 20px;
+                     font-weight: normal
+                 }
+                 
+            #orphan #opening #auto-choose {
+                padding: 0;
+                background: #cccccc;
+            }
+
+            #orphan #opening #auto-choose #message {
+                padding: 10px 20px;
+                background: #f89d54;
+                height: 100%;
+                font-size: 30px;
+                color: #ffffff;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            
+                #orphan #opening #auto-choose #message div {
+                     float: left;
+                     width: 80%;
+                 }
+                 
+                 #orphan #opening #auto-choose #message img {
+                     float: right;
+                     margin-top: 35px;
+                 }
+                 
+            #orphan #opening #auto-choose #explaination {
+                padding: 10px 20px;
+            }
+            
+                #orphan #opening #auto-choose #explaination div {
+                    margin-top: 25px;
+                    font-size: 20px;
+                    color: #000000;
+                    font-weight: bold;
+                    max-width: 70%;
+                    float: left;
+                }
+                
+                #orphan #opening #auto-choose #explaination a.button {
+                    float: right;
+                    margin-top: 25px;
+                }
+                
+        #orphan #selected-orphan {
+            padding: 10px;
+            border: 1px #cccccc solid;
+            overflow: hidden;
+            margin-bottom: 20px;
+            position: relative;
+            display: none;
+        }
+        
+            #selected-orphan #orphan-info {
+                border-right: 1px #cccccc solid;
+            }
+                
+                #selected-orphan #orphan-info #left {
+                    text-transform: uppercase;
+                }
+                
+                    #selected-orphan #orphan-info #left>img {
+                        width: 100%;
+                    }
+                
+                    #selected-orphan #orphan-info #left h3 {
+                        font-size: 35px;
+                        margin: 10px 0;
+                        text-transform: uppercase;
+                    }
+                    
+                    #selected-orphan #orphan-info #left>span {
+                        margin-bottom: 5px;
+                        float: left;
+                        padding: 0;
+                    }
+                    
+                    #selected-orphan #orphan-info #left span.divide {
+                        margin-right: 10px;
+                        padding-right: 10px;
+                        border-right: 1px #f89d54 solid;
+                    }
+                    
+                        #selected-orphan #orphan-info #left span img {
+                            margin-right: 10px;
+                        }
+                        
+                #selected-orphan #orphan-info #right {
+                    
+                }
+                
+                    #selected-orphan #orphan-info #right h4 {
+                        text-transform: uppercase;
+                        margin: 15px 0 5px;
+                    }
+                    #selected-orphan #orphan-info #right h4:first-of-type {
+                        margin-top: 5px;
+                    }
+                    
+            #selected-orphan #sponsor-info {
+                padding: 10px 25px;
+                position: static;
+            }
+            
+                #selected-orphan #sponsor-info .info-row {
+                    margin-bottom: 30px;
+                    overflow: hidden;
+                }
+
+                    #selected-orphan #sponsor-info h3 {
+                        font-size: 30px;
+                        text-transform: uppercase;
+                        color: #f89d54;
+                    }
+
+                    #selected-orphan #sponsor-info select {
+                        border: 1px #555555 solid;
+                    }
+                    
+                    #selected-orphan #sponsor-info p {
+                        font-size: 20px;
+                        font-weight: bold;
+                        line-height: 25px;
+                        color: #555555;
+                    }
+                    
+                    #selected-orphan #sponsor-info .donation-amount {
+                        
+                    }
+
+                        #selected-orphan #sponsor-info .donation-amount h3 {
+                            color: #555555;
+                        }
+                    
+                        #selected-orphan #sponsor-info .donation-amount h4 {
+                            color: #f89d54;
+                            font-size: 35px;
+                        }
+                        
+                        #selected-orphan #sponsor-info .sponsor {
+                            margin-top: 15px;
+                        }
+                        
+                a.button.close {
+                    position: absolute;
+                    top: 3px;
+                    right: 3px;
+                    opacity: 1;
+                    background: #5c5d4d;
+                    border-bottom: 3px #3e3f33 solid;
+                }
+                
+        #orphan #search-bar {
+            background: #5c5d4d;
+            padding: 10px 20px;
+        }
+            
+            #orphan #search-bar form {
+                float: right;
+            }
+            
+                #orphan #search-bar form .form-element {
+                    float: left;
+                    margin: 7px 0;
+                    width: auto;
+                }
+                
+                #orphan #search-bar form .form-element:nth-of-type(2n) {
+                    margin: 7px 20px;
+                    padding: 0 20px;
+                    border-left: 1px #cccccc solid;
+                    border-right: 1px #cccccc solid;
+                }
+                #orphan #search-bar form .form-element:last-of-type {
+                    border: 0;
+                    margin-right: 0;
+                }
+                    #orphan .location-dropdown {
+                    width: 150px;
+                    position: relative;
+                }
+                    #orphan .location-dropdown span {
+                        line-height: 35px;
+                    }
+                    #orphan .location-dropdown img {
+                        float: right;
+                        margin: 15px -15px 0 0;
+                        width: auto;
+                    }
+                    #orphan .location-dropdown ul {
+                        display: none;
+                        position: absolute;
+                        background: #ffffff;
+                        width: 100%;
+                        padding: 0;
+                        left: 0;
+                        z-index: 1;
+                        border: 1px #cccccc solid;
+                        overflow-y: auto;
+                        max-height: 350px;
+                    }
+                    
+                        #orphan .location-dropdown ul li {
+                            padding: 10px 20px;
+                            border-bottom: 1px #cccccc solid;
+                        }
+                        
+                        #orphan .location-dropdown ul li:last-of-type {
+                            margin-bottom: 0;
+                            border: 0;
+                        }
+                        #orphan .location-dropdown ul li.highlight {
+                            background: #00c0f2;
+                            color: #ffffff;
+                        }
+                        
+                            #orphan .location-dropdown ul li input {
+                                float: right;
+                                margin-top: 0;
+                            }
+                            
+                #orphan #search-bar form a.button {
+                }
+                
+            #orphan #search-bar>span{
+                float: left;
+                font-size: 30px;
+                color: #ffffff;
+                margin-top: 12px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            
+        #orphan #pagination {
+            position: relative;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border-top: 1px #cccccc solid;
+            border-bottom: 1px #cccccc solid;
+            margin-top: 20px;
+        }
+            #orphan #pagination img {
+                background: #f89d54;
+                border-radius: 50%;
+            }
+                #orphan #pagination img.left {
+                    float: left;
+                    transform: rotate(180deg);
+                }
+
+                #orphan #pagination .display-message {
+                    text-align: center;
+                    position: absolute;
+                    width: 100%;
+                    font-size: 20px;
+                    margin-top: 5px;
+                }
+
+                #orphan #pagination img.right {
+                    float: right;
+                }
+                
+        #orphan #orphan-container {
+
+        }
+            
+            #orphan-container .orphan {
+                margin-bottom: 20px;
+            }
+            
+                #orphan-container .orphan .orphan-cont {
+                    border: 1px #cccccc solid;
+                    border-radius: 5px;
+                    overflow: hidden;
+                }
+                
+                    #orphan-container .orphan .orphan-cont>img {
+                        width: 100%;
+                        filter: grayscale();
+                        -webkit-filter: grayscale();
+                    }
+                    
+                    #orphan-container .orphan .orphan-cont .content {
+                        padding: 15px;
+                    }
+
+                        #orphan-container .orphan .orphan-cont .content h3 {
+                            text-transform: uppercase;
+                            font-size: 25px;
+                            margin-bottom: 15px;
+                        }   
+
+                        #orphan-container .orphan .orphan-cont .content>span {
+                            margin-bottom: 15px;
+                            float: left;
+                        }
+
+                            #orphan-container .orphan .orphan-cont .content span.divide {
+                                margin-right: 10px;
+                                padding-right: 10px;
+                                border-right: 1px #cccccc solid;
+                            }
+
+                        #orphan-container .orphan .orphan-cont .content span.col-xs-12 {
+                            padding: 0;
+                        }
+
+                            #orphan-container .orphan .orphan-cont .content span.col-xs-12>img {
+                                margin-left: 10px;
+                            }
+
+                        #orphan-container .orphan .orphan-cont .content select {
+                            margin-bottom: 15px;
+                            border: 1px #cccccc solid;
+                            border-radius: 0;
+                        }
+                        
+                        #orphan-container .orphan .orphan-cont .content .hidden {
+                            display: none;
+                        }
+
+                #orphan-container .orphan a.sponsor {
+                    margin: 5px 0;
+                    width: 100%;
+                    text-align: center;
+                }
+                
+@media screen and (max-width: 1000px) {
+
+    a.button img {
+        float: right;
+        margin: 5px 0 0 10px;
+    }
+
+    #orphan #opening #content {
+        text-align: center;
+    }
+
+    #orphan #opening #auto-choose {
+        text-align: center;
+        overflow: hidden;
+    }
+
+        #orphan #opening #auto-choose #message {
+            overflow: hidden;
+        }
+
+            #orphan #opening #auto-choose #message div {
+                float: none;
+                display: inline-block;
+                width: auto;
+            }
+
+            #orphan #opening #auto-choose #message img {
+                float: none;
+                display: inline-block;
+                margin-top: 0;
+            }
+
+        #orphan #opening #auto-choose #explaination {
+            overflow: hidden;
+            display: none;
+        }
+
+            #orphan #opening #auto-choose #explaination div {
+                max-width: 100%;
+                float: none;
+            }
+
+            #orphan #opening #auto-choose #explaination a.button {
+                float: none;
+            }
+
+    #orphan #selected-orphan {
+        padding-top: 45px;
+    }
+
+        #selected-orphan #orphan-info #left>img {
+            width: 100%;
+        }
+
+            #selected-orphan #sponsor-info h3 {
+                padding: 0;
+            }
+    #orphan #search-bar {
+        text-align: center;
+    }
+
+        #orphan #search-bar>span {
+            float: none;
+        }
+            #orphan #search-bar>span img {
+                display: inline-block;
+            }
+            
+            #orphan #search-bar>span img.down-arrow {
+                float: right;
+                transform: rotate(90deg);
+            }
+            
+        #orphan #search-bar form {
+            display: none;
+        }
+        
+            #orphan #search-bar form .form-element {
+                float: left;
+                margin: 7px 0;
+                border: 0;
+                width: 50%;
+                text-align: left;
+            }
+            #orphan #search-bar form .form-element:nth-of-type(2n) {
+                margin: 7px 0;
+                border-left: 0;
+                border-right: 0;
+            }
+
+                #orphan #search-bar form .form-element>* {
+                    width: 100%;
+                }
+
+            #orphan #search-bar form a.button {
+                margin-left: 0;
+                margin-top: 0;
+            }
+
+}
+
+@media screen and (max-width: 500px) {
+    .info-row>div {
+        padding: 0;
+    }
+    #orphan #search-bar {
+        margin-bottom: 20px;
+    }
+    #orphan #search-bar form .form-element {
+        width: 100%;
+        padding: 0;
+    }
+    #orphan #search-bar form .form-element:nth-of-type(2n), #selected-orphan #sponsor-info p {
+        padding: 0;
+    }
+}

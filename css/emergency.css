@@ -1,0 +1,256 @@
+div#container {
+    max-width: 1280px;
+    width: auto;
+}
+#emergency {
+        padding: 0 15px;
+        margin-top: 20px;
+        width: 100%;
+}
+
+        .emergency-section {
+                display: inline-block;
+                float: left;
+                margin-bottom: 20px;
+                min-width: 200px;
+                padding: 0 7px;
+        }
+        .emergency-section.featured {
+                display: inline-block;
+                float: left;
+                margin-bottom: 15px;
+                border: 0;
+                min-width: 200px;
+                position: relative;
+                padding: 0;
+        }	
+                
+
+                .emergency-section.featured .image-container  {
+                        position: absolute;
+                        width: 100%;
+                        z-index: -1;
+                        padding: 0 7.5px;
+                }
+                        .emergency-section.featured img  {
+                                width: 100%;
+                                height: auto;
+                        }
+        .emergency-section.featured .content {
+                padding: 40px;
+                width: 280px;
+                border: 0;
+                color: #ffffff;
+                text-transform: uppercase;
+                float: right;
+                position: relative;
+                z-index: 0;
+        }
+        .emergency-section.featured:nth-of-type(2n) .content {
+                top: auto;
+                right: auto;
+                bottom: 0;
+                left: 0;
+        }
+                .emergency-section.featured .content h2 {
+                        color: #ffffff;
+                        text-align: left;
+                        font-size: 50px;
+                }
+                
+                .emergency-section.featured .content p {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                        .emergency-section.featured .appeal, #emergency-response .emergency-button {
+                                background: #c53334;
+                                color: #ffffff;
+                                border: 0;
+                                border-radius: 3px;
+                                padding: 10px 15px;
+                                border-bottom: 3px #9e292a solid;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                font-size: 20px;
+                        }
+        #emergency-response {
+                float: left;
+                width: 100%;
+                text-transform: uppercase;
+                padding: 35px 40px;
+                position: relative;
+                overflow: hidden;
+                color: #ffffff;
+                margin-bottom: 20px;
+        }
+                #emergency-response img {
+                        position: absolute;
+                        z-index: -1;
+                        top: 0;
+                        right: 0;
+                        width: 100%;
+                        padding: 0 7.5px;
+                }
+
+                #emergency-response .content {
+                        max-width: 315px;
+                }
+
+                    #emergency-response h1 {
+                            font-size: 95px;
+                            line-height: 70px;
+                            color: #ffffff;
+                            margin-bottom: 25px;
+                    }
+                    
+                    #emergency-response .content p {
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-bottom: 25px;
+                    }
+                    
+                    #emergency-response .emergency-button {
+                        font-weight: normal;
+                    }
+
+        .emergency-section:nth-of-type(3n) {
+                margin-right: 0;
+        }
+        .emergency-section>img {
+            filter: grayscale();
+            -webkit-filter: grayscale();
+            transition: all 0.3s linear;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+        }
+            .emergency-section>img:hover {
+                filter: none;
+                -webkit-filter: none;
+            }
+        .emergency-section img {
+                width: 100%;
+                float: left;
+        }
+        .emergency-section .content {
+                border: 1px #cccccc solid;
+                float: left;
+                width: 100%;
+                padding: 20px 25px 15px;
+                font-size: 14px;
+                line-height: 17px;
+        }
+
+                .emergency-section .content h2 {
+                        text-align: center;
+                        color: #c53334;
+                        font-size: 30px;
+                        margin-bottom: 10px;
+                }
+
+                .emergency-section .content .meta {
+                        margin-top: 5px;
+                }
+                        .emergency-section .content .meta a {
+                                color: #c53334;
+                                text-decoration: none;
+                        }
+                        
+                        .emergency-section .content .meta a>span {
+                            margin-top: 5px;
+                            float: left;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                        }
+
+
+        .emergency-section .content .meta img {
+                width: auto;
+                float: left;
+                margin: 0 5px 0 0
+        }
+
+        .year {
+            background: #666666;
+            color: #ffffff;
+            padding: 5px 10px;
+            float: right;
+            line-height: 15px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        
+        @media screen and (max-width: 1000px) {
+            #emergency-response h1 {
+                font-size: 50px;
+                line-height: 35px;
+                margin-bottom: 15px;
+            }
+            
+            #emergency-response .content p {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+        }
+        
+        @media screen and (max-width: 767px) {
+            .emergency-section.featured .image-container {
+                position: static;
+                overflow: hidden;
+            }
+            .emergency-section.featured .content-container {
+                overflow: hidden;
+            }
+            
+                .emergency-section.featured .content {
+                    padding: 0;
+                    width: 100%;
+                    border: 0;
+                    color: inherit;
+                    text-transform: uppercase;
+                    float: none;
+                    position: relative;
+                    z-index: 0;
+                }
+                
+                    .emergency-section.featured .content h2 {
+                        color: inherit;
+                        text-align: center;
+                        margin: 10px 0;
+                    }
+                
+                    .emergency-section.featured .appeal, #emergency-response .emergency-button {
+                        margin: auto;
+                        display: block;
+                    }
+                    
+            #emergency-response {
+                color: inherit;
+                padding: 0;
+            }
+            
+                #emergency-response img {
+                    position: static;
+                }
+
+                    #emergency-response .content {
+                        max-width: 100%;
+                        color: inherit;
+                    }
+
+                        #emergency-response h1 {
+                            color: inherit;
+                            margin-top: 10px;
+                            text-align: center;
+                        }
+
+                        #emergency-response .content p {
+
+                        }
+
+                        #emergency-response .emergency-button {
+
+                        }
+        }

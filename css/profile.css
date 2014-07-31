@@ -1,0 +1,772 @@
+div#container {
+    max-width: 1280px;
+    width: auto;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 0 #ccc;
+}
+
+.col-md-2-25 {
+    width: 18.75%;
+}
+
+.col-md-2-75 {
+    width: 22.91666666667%;
+}
+#profile {
+    padding: 20px 1em ;
+    overflow: hidden;
+}
+
+        #profile aside#sidebar-left {
+            float: left;
+            width: 18.5%;
+        }
+            #sidebar-left div, #sidebar-left img {
+                float: left;
+            }
+
+            #sidebar-left img {
+                border-radius: 50%;
+                width: 100%;
+                margin-bottom: 20px;
+                max-width: 200px;
+            }
+
+            #sidebar-left div {
+                padding: 0 0 10px 0;
+                border-bottom: 1px #cccccc solid;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            #sidebar-left div:last-of-type {
+                border-bottom: 0;
+            }
+                #sidebar-left div h3 {
+                    color: #419faf;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                }
+
+                #sidebar-left div p {
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+
+                #sidebar-left div#page-message p {
+                    line-height: 22px;
+                }
+        #profile div#main-content {
+            float: left;
+            width: 55%;
+            padding: 0 1em;
+        }
+
+            #main-content h1 {
+                color: #419faf;
+                font-size: 50px;
+                margin-bottom: 20px;
+                line-height: 50px;
+                margin-top: 65px;
+            }
+
+            #main-content p#page-intro {
+                color: #666666;
+                font-size: 25px;
+                margin-bottom: 70px;
+                margin-top: 0;
+            }
+
+                #main-content div {
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                    border-bottom: 1px #cccccc solid;
+                }
+                #main-content div:last-of-type {
+                    border: 0;
+                }
+
+                    #main-content div h2 {
+                        color: #419faf;
+                        font-size: 35px;
+                        margin-bottom: 20px;
+                    }
+
+                    #main-content div p {
+                        font-size: 15px;
+                        line-height: 24px;
+                    }
+
+                #main-content #donate-section {
+                    border: 0;
+                    margin-bottom: 40px;
+                }
+                    #main-content #donate-section form {
+                        overflow: hidden;
+                        position: relative;
+                    }
+                        span.symbol {
+                            position: absolute;
+                            top: 12px;
+                            left: 20px;
+                            color: #f89d54;
+                            font-size: 30px;
+                        }
+                        #main-content #donate-section form input[type="text"] {
+                            border: 3px #f89d54 solid;
+                            border-radius: 5px;
+                            font-size: 30px;
+                            padding: 5px 0 5px 75px;
+                            font-weight: bold;
+                            background-image: url(./images/poundsign.png);
+                            background-repeat: no-repeat;
+                            background-position: 20px;
+                            color: #f89d54;
+                            margin-right: 20px;
+                            margin-bottom: 10px;
+                            height: 53px;
+                        }
+
+                    #main-content #donate-section button, button.submit-button, button.checkout-button {
+                        border: 0;
+                        border-radius: 5px;
+                        font-size: 28px;
+                        padding: 12px 10px 10px;
+                        text-align: center;
+                        font-weight: bold;
+                        color: #ffffff;
+                        
+                        background: #45a1b1; /* Old browsers */
+                        background: -moz-linear-gradient(160deg,  #45a1b1 0%, #71b7c4 50%, #419faf 51%, #6db5c2 100%); /* FF3.6+ */
+                        background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#45a1b1), color-stop(50%,#71b7c4), color-stop(51%,#419faf), color-stop(100%,#6db5c2)); /* Chrome,Safari4+ */
+                        background: -webkit-linear-gradient(160deg,  #45a1b1 0%,#71b7c4 50%,#419faf 51%,#6db5c2 100%); /* Chrome10+,Safari5.1+ */
+                        background: -o-linear-gradient(160deg,  #45a1b1 0%,#71b7c4 50%,#419faf 51%,#6db5c2 100%); /* Opera 11.10+ */
+                        background: -ms-linear-gradient(160deg,  #45a1b1 0%,#71b7c4 50%,#419faf 51%,#6db5c2 100%); /* IE10+ */
+                        background: linear-gradient(160deg,  #45a1b1 0%,#71b7c4 50%,#419faf 51%,#6db5c2 100%); /* W3C */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45a1b1', endColorstr='#6db5c2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                    }
+
+                #main-content #donations {
+
+                }
+                
+                    #main-content #donations h2 {
+                        margin-bottom: 10px;
+                        line-height: 30px;
+                    }
+
+                    #main-content #donations div.donation {
+                        border: 1px #929396 solid;
+                        padding: 10px;
+                        overflow: hidden;
+                        border-radius: 5px;
+                        margin-bottom: 7px;
+                    }
+                    #main-content #donations div.donation .donation-content {
+                        border: 0;
+                        padding: 0;
+                        margin: 0;
+                        display: inline-block;
+                        float: left;
+                        max-width: 50%;
+                    }
+                        #main-content #donations div.donation .donation-content .donate-message {
+                            font-size: 25px;
+                            color: #999999;
+                        }
+
+                         #main-content #donations div.donation .donation-content .donator {
+                            font-size: 15px;
+                            color: #999999;
+                        }
+                        
+                    #main-content #donations div.donation span.currency {
+                        font-weight: normal;
+                    }
+                    
+                    #main-content #donations div.donation .donation-amount {
+                        font-size: 70px;
+                        color: #419faf;
+                        font-weight: bold;
+                        max-width: 50%;
+                        float: right;
+                        line-height: 80px;
+                    }
+
+        #profile aside#sidebar-right {
+            float: left;
+            width: 26.5%;
+            padding: 0;
+        }
+
+            #sidebar-right>div {
+                padding: 0 0 20px 0;
+                border-bottom: 1px #cccccc solid;
+                width: 100%;
+            }
+            #sidebar-right>div:first-of-type h2 {
+                margin-top: 0;
+            }
+            #sidebar-right>div:last-of-type {
+                border-bottom: 0;
+            }
+                #sidebar-right div h2 {
+                    color: #419faf;
+                    font-size: 35px;
+                    margin: 20px 0;
+                }
+
+            #sidebar-right #progress-meter {
+                padding-bottom: 50px;
+            }
+
+                #sidebar-right #progress-meter #progress-total-bar {
+                    width: 80%;
+                    background: #cccccc;
+                    border-radius: 15px;
+                    float: left;
+                    display: inline-block;
+                    height: 25px;
+                }
+
+                    #sidebar-right #progress-meter #progress-total-bar #progress-current-bar {
+                        width: 40%;
+                        background: #419faf;
+                        border-radius: 15px;
+                        height: 25px;
+                    }
+
+                        #sidebar-right #progress-meter #progress-total-bar #progress-current-bar #progress-current-value {
+                            margin-left: 20px;
+                            color: #ffffff;
+                            line-height: 25px;
+                        }
+
+                #sidebar-right #progress-meter #progress-total-value{
+                    display: inline-block;
+                    margin-left: 2px;
+                    color: #419faf;
+                    font-weight: bold;
+                    line-height: 25px;
+                }
+            #dig-a-well {
+
+            }
+            
+            #dig-a-well p {
+                line-height: 25px;
+            }
+            #dig-a-well-gallery {
+
+            }
+
+                #dig-a-well-gallery #gallery-container {
+                    width: 100%;
+                }
+
+                    #dig-a-well-gallery #gallery-container .img {
+                        width: 45%;
+                        margin-right: 5%;
+                        margin-bottom: 5%;
+                        float: left;
+                    }
+                    
+                    #dig-a-well-gallery #gallery-container .img img {
+                        width: 100%;
+                        
+                    }
+                    #dig-a-well-gallery #gallery-container img:nth-of-type(2n) {
+                        margin-right: 0;
+                    }
+                    
+                    
+                    .blue {
+                            color: #f89d54;
+                    }
+
+                    button.create,#create button,#create .button,button.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only {
+                            background: #c53334;
+                            border-bottom:  #9e292a 3px solid;
+                            color: #fff;
+                    }
+
+                    a.button.readmore {
+                        display: inline-block;
+                        font-family: 'Alternate Gothic', sans-serif;
+                        font-size: 22px;
+                        line-height: 37px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        padding: 0 20px;
+                        background: #5c5d4d;
+                        border: none;
+                        border-bottom: #4a4a3e 3px solid;
+                        border-radius: 3px;
+                        color: #ffffff;
+                        margin: 20px 0;
+                    }
+                    
+                    span.menu-separator {
+                            border-right: 1px #ccc solid;
+                    }
+
+                    span.info {
+                            color: #999;
+                    }
+
+                    body {
+                            background: #fff;
+                    }
+
+                    #full-container {
+                            background: #fff;
+                    }
+
+                    #home-image {
+                            background: #000;
+                    }
+
+                    #sect-3-bg {
+                            background: #979a9a;
+                    }
+
+                    header {
+                            border-bottom: 1px #bdbbbd solid;
+                    }
+
+                    #header-meta #basket-summary a {
+                            color: #f89d54;
+                    }
+
+                    #header-meta form button,#header-meta a button {
+                            color: #333;
+                    }
+
+                    #header-meta span.menu-separator {
+                            border-right: 1px #ccc solid;
+                    }
+
+                    #header-main-menu ul a: hover {
+                            background: #f89d54;
+                            color: #fff;
+                    }
+
+                    #header-main-menu ul span.menu-separator {
+                            border-right: 1px #ccc solid;
+                    }
+
+                    section#home-sect-1 h1 {
+                            color: #fff;
+                    }
+
+                    section#home-sect-1 #itn-path .path-step h3 {
+                            color: #fff;
+                    }
+
+                    section#home-sect-2 h2 {
+                            color: #f89d54;
+                    }
+
+                    section#home-sect-2 #projects .project h3 {
+                            color: #f89d54;
+                    }
+
+                    section#home-sect-3 h2 {
+                            color: #fff;
+                    }
+
+                    section#home-sect-3 #pages .page button {
+                            border: 1px #fff solid;
+                            background-color: transparent;
+                            color: #fff;
+                    }
+
+                    footer {
+                            border-top: 1px #bdbbbd solid;
+                    }
+
+                    #footer-menu ul li {
+                            color: #979a9a;
+                    }
+
+                    #footer-menu ul span.menu-separator {
+                            border-right: 1px #ccc solid;
+                    }
+
+                    #how-it-works-sections .hiw-section {
+                            border-bottom: 1px #bdbbbd solid;
+                    }
+
+                    #how-it-works-sections .hiw-section .content {
+                            color: #333;
+                    }
+
+                    #how-it-works-sections .hiw-section .content h2 {
+                            color: #666;
+                    }
+
+                    /* Create a page */
+                    #create {
+                    }
+
+                    #create h1 {
+                            color: #f89d54;
+                    }
+
+                    #create form div input,#create form div textarea,#create form div select,#create form div button.submit-button {
+                            border: 1px #999 solid;
+                    }
+
+                    #create form div#create-funds input {
+                            color: #f89d54;
+                    }
+
+                    #create form div#create-submit button {
+                            width: 150px;
+                            border: 0;
+                            color: #fff;
+                            background: #f89d54;
+                            border-bottom:  #c67e43 3px solid; 
+                    }
+
+                    #project #content {
+                            color: #929396;
+                    }
+
+                    #project #content h1 {
+                            color: #f89d54;
+                    }
+
+                    #project-sections .project-section {
+                            border-bottom: 1px #bdbbbd solid;
+                    }
+
+                    #project-sections .project-section .content {
+                            color: #333;
+                    }
+
+                    #project-sections .project-section .content h2 {
+                            color: #f89d54;
+                    }
+
+                    #project-quote {
+                            border-bottom: 1px #bdbbbd solid;
+                            color: #666;
+                    }
+
+                    #project-quote h3,#project #project-gallery h3 {
+                            color: #f89d54;
+                    }
+
+                    #project-gallery #slider {
+                            background: #fff;
+                    }
+
+                    #project-gallery #slider .arrow-right {
+                            border: 1px #666 solid;
+                    }
+
+                    #project-gallery #slider .arrow-left {
+                            border: 1px #666 solid;
+                    }
+
+                    #sidebar-left div {
+                            border-bottom: 1px #ccc solid;
+                    }
+
+                    #sidebar-left div h3 {
+                            color: #f89d54;
+                    }
+
+                    #sidebar-left div p {
+                            color: #666;
+                    }
+
+                    #main-content h1 {
+                            color: #f89d54;
+                    }
+
+                    #main-content div#page-intro p {
+                            color: #666;
+                    }
+
+                    #main-content div {
+                            border-bottom: 1px #ccc solid;
+                    }
+
+                    #main-content div h2 {
+                            color: #f89d54;
+                    }
+
+                    #main-content #donate-section input[type="text"] {
+                            border: 3px #f89d54 solid;
+                    }
+
+                    #main-content #donate-section button,input.submit-button,button.submit-button,div.editor-save-changes-panel input {
+                            color: #fff;
+                            background: #f89d54;
+                            border-bottom:  #c67e43 3px solid; 
+                    }
+
+                    #main-content #donations div.donation {
+                            border: 1px #999 solid;
+                    }
+
+                    #main-content #donations div.donation .donation-content .donate-message {
+                            color: #999;
+                            font-weight: bold;
+                    }
+
+                    #main-content #donations div.donation .donation-content .donator {
+                            color: #999;
+                    }
+
+                    #main-content #donations div.donation .donation-amount {
+                            color: #f89d54;
+                    }
+
+                    #sidebar-right>div {
+                            border-bottom: 1px #ccc solid;
+                    }
+
+                    #sidebar-right div h2 {
+                            color: #f89d54;
+                    }
+                    
+                    #sidebar-right #progress-meter #progress-total-bar {
+                            background: #ccc;
+                    }
+
+                    #sidebar-right #progress-meter #progress-total-bar #progress-current-bar {
+                            background: #f89d54;
+                    }
+
+                    #sidebar-right #progress-meter #progress-total-bar #progress-current-bar #progress-current-value {
+                            color: #fff;
+                    }
+
+                    #sidebar-right #progress-meter #progress-total-value {
+                            color: #f89d54;
+                    }
+
+                    /* Lightbox */
+                    .lightbox-container,.lightbox-container-img {
+                        width: 100%;
+                        height: 100%;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(0,0,0,0.55);
+                        display: none;
+                        overflow: auto;
+                        z-index: 1;
+                    }
+
+                    .lightbox-content {
+                            background: #ffffff;
+                            width: 50%;
+                            float: none;
+                            overflow: hidden;
+                            margin: 100px auto;
+                            padding: 3% 4%;
+                            height: auto;
+                            position: relative;
+                    }
+                    
+                    #lightbox-image, #lightbox-image img {
+                        width: 100%;
+                    }    
+                    
+                    .lightbox-container .lightbox-content *, .lightbox-container-img .lightbox-content * {
+                        float: left;
+                    }
+                    
+                        #donate-amount-lb, #donate-title-lb {
+                            float: none;
+                        }
+                    
+                    .lightbox-content .tag {
+                        width: 100%;
+                    }
+                    
+                    .lightbox-content .tag .sub-label {
+                        float: none;
+                        font-size: 12px;
+                        margin-left: 10px;
+                        color: #cccccc;
+                    }
+                    
+                    .lightbox-content .close-lightbox {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        padding: 0;
+                        cursor: pointer;
+                        background: #f89d54;
+                        border-radius: 5px;
+                        margin: 10px;
+                    }
+                    
+                    .lightbox-content input {
+                        width: 35%;
+                        margin-right: 10px;
+                        padding: 10px 20px;
+                        border-radius: 3px;
+                        border: 1px #999999 solid;
+                    }
+
+                    .lightbox-content input[type="checkbox"] {
+                        width: auto;
+                        margin-top: 14px;
+                    }
+                    
+                    .lightbox-content .label.anon {
+                        margin-top: 10px;
+                    }
+                    
+                    .lightbox-content .tag.message {
+                        margin-top: 20px;
+                    }
+                    
+                    .lightbox-content textarea {
+                        width: 100%;
+                        margin-bottom: 20px;
+                        height: 100px;
+                        padding: 10px 20px;
+                    }
+                    
+                    .lightbox-content button.submit-button {
+                        width: auto;
+                        margin-right: 20px;
+                        margin-left: 0;
+                        height: auto;
+                        text-align: center;
+                    }
+                    
+                    .lightbox-content .label {
+                            color: #000;
+                    }
+
+                    .lightbox-content input {
+                            border: 1px #999 solid;
+                    }
+
+                    .lightbox-content .tag .sub-label {
+                            color: #ccc;
+                    }
+
+                    .lightbox-content h2 {
+                            color: #f89d54;
+                    }
+
+                    .lightbox-content button {
+                            background-color: #f89d54;
+                            border-bottom: 3px #c67e43 solid;
+                            color: #fff;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                    }
+
+                    .lightbox-container button.close-button,.lightbox-container .checkout-button {
+                            background: #999999;
+                            border-bottom: 1px #7a7a7a solid;
+                            color: #ffffff;
+                    }
+
+                    div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable {
+                            background: #fff;
+                    }
+
+                    .ui-dialog-titlebar.ui-widget-header {
+                            background: transparent;
+                            color: #f89d54;
+                    }
+
+                    .ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {
+                            background: transparent;
+                    }
+                    
+                    @media screen and (max-width:  767px) {
+                        
+                            body {
+                            
+                            }
+
+                            #header-mobile-menu ul {
+                                    background: #f89d54;
+                            }
+
+                            #header-mobile-menu ul li {
+                                    color: #fff;
+                                    border-bottom: 1px #fff solid;
+                            }
+
+                            #header-mobile-menu ul li:hover {
+                                    background: #fff;
+                                    color: #f89d54;
+                            }
+
+                            section#home-sect-3 #pages .page button {
+                                    background: transparent;
+                            }
+
+                            footer {
+                                    background: #fff;
+                            }
+
+                            #project-sections .project-section .content h2 {
+                                    color: #f89d54;
+                            }
+
+                            #profile aside#sidebar-left,#profile div#main-content,#profile aside#sidebar-right {
+                                    width: 100%;
+                            }
+
+                            #main-content #donations div.donation {
+                                    background: #eee;
+                            }
+                            #profile div#main-content {
+                                padding: 0;
+                            }
+                            
+                            #profile aside#sidebar-left * {
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                                width: auto;
+                                float: none;
+                            }
+                            
+                            #profile {
+                                text-align: center;
+                            }
+                            
+                            .lightbox-content {
+                                padding-top: 50px;
+                                width: 100%;
+                            }
+                            
+                            .lightbox-content input, .lightbox-content button.submit-button, .lightbox-content button.checkout-button {
+                                width: 100%;
+                            }
+                            
+                    }
+                    
+                    @media screen and (max-width:  480px) {
+                        #main-content #donations div.donation .donation-content, #main-content #donations div.donation .donation-amount {
+                            float: none;
+                            display: block;
+                            max-width: 100%;
+                        }
+                        
+                            #main-content #donations div.donation .donation-amount {
+                                font-size: 50px;
+                            }
+                        #dig-a-well-gallery #gallery-container .img {
+                            width: 100%;
+                            margin-right: 0;
+                            margin-bottom: 5%;
+                        }
+                    }
+                    /* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

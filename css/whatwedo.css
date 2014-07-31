@@ -1,0 +1,209 @@
+div#container {
+    max-width: 1280px;
+    width: auto;
+}
+#what-we-do {
+        padding: 0 25px;
+        margin-top: 20px;
+}
+
+        #wwd-content .content, #wwd-content h2 {
+                color: #ffffff;
+                background: #3e9d60;
+        }
+                #wwd-content h2 {
+                        font-size: 110px;
+                        margin: 0 0 10px;
+                        line-height: 80px;
+                        text-align: left;
+                }
+        div.wwd-section {
+                display: inline-block;
+                float: left;
+                margin-bottom: 15px;
+                position: relative;
+                padding: 0 7.5px;
+        }
+        
+                div.wwd-section * {
+                        float: left;
+                }
+
+                .wwd-section img {
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: 3px;
+                }
+                
+                .wwd-section>img {
+                    filter: grayscale();
+                    -webkit-filter: grayscale();
+                    transition: all 0.3s linear;
+                    -webkit-transition: all 0.3s linear;
+                    -moz-transition: all 0.3s linear;
+                    -o-transition: all 0.3s linear;
+                }
+                    .wwd-section>img:hover {
+                        filter: none;
+                        -webkit-filter: none;
+                    }
+                    .wwd-section a.button.readmore img {
+                        width: auto;
+                    }
+        div.icon-container-base {
+                float: left;
+                position: relative;
+                height: 0;
+                width: 100%;
+        }
+                .wwd-section .icon-container {
+                        float: none;
+                        margin: auto;
+                        width: 83px;
+                        height: 83px;
+                        position: relative;
+                        bottom: 43px;
+                        padding: 10px;
+                }
+                        .wwd-section .icon-container:hover {
+                                background: url('./images-whatwedo/icon-hover.png');
+                        }
+                        .wwd-section .icon-container:hover img {
+                            display: none;
+                        }
+                        .wwd-section .icon-container:hover img.hover {
+                            background: #ffffff;
+                            display: block;
+                        }
+                .wwd-section .icon-container.container- {
+                }
+                
+                        .wwd-section .icon-container img.hover {
+                            display: none;
+                        }
+                        
+                        .wwd-section .icon-container img {
+                                height: 63px;
+                                width: 63px;
+                                background: #3e9d60;
+                                border-radius: 50%;
+                        }
+
+                        .wwd-section .icon {
+                                z-index: 1;
+                                position: absolute;
+                                width: auto;
+                                top: 10px;
+                                left: 10px;
+                        }
+                        #wwd-content .content {
+                            height: 100%;
+                        }
+                .wwd-section .content {
+                        color: #5c5d4d;
+                        padding: 25px 25px 10px;
+                        background: #cccccc;
+                        width: 100%;
+                }
+                        .wwd-section .content * {
+                                float: none;
+                        }
+
+                        .wwd-section h2 {
+                                font-size: 30px;
+                                display: block;
+                                margin-top: 12px;
+                                margin-bottom: 10px;
+                                text-align: center;
+                        }
+
+                        .wwd-section .content div {
+                                line-height: 20px;
+                                font-size: 14px;
+                        }
+
+                        .wwd-section a.button.readmore {
+                            display: inline-block;
+                            font-family: 'Alternate Gothic', sans-serif;
+                            font-size: 22px;
+                            line-height: 37px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            padding: 0 20px;
+                            background: #ffffff;
+                            border: none;
+                            border-bottom: #b2b2b2 3px solid;
+                            border-radius: 3px;
+                            color: #3e9d60;
+                            margin: 15px 0 0;
+                        } 
+                        
+                            .wwd-section a.button.readmore img {
+                                background: #3e9d60;
+                            }
+                            
+                                .wwd-section .content .button-read-more:hover {
+                                        border-bottom: 3px #2b6e43 solid;
+                                        background: #3e9d60;
+                                        background-image: url('/css/images/read-more-arrow-green-hover.png');
+                                        background-position: 10px 5px;
+                                        background-repeat: no-repeat;
+                                }
+                                
+                                /* Pie */
+                                
+                                .timer {
+                                        position:relative;
+                                        font-size: 200px;
+                                        width:1em;
+                                        height:1em;
+                                        float: left;
+                                }
+                                .timer > .percent {
+                                        position: absolute;
+                                        top: 1.05em;
+                                        left: 0;
+                                        width: 3.33em;
+                                        font-size: 0.3em;
+                                        text-align:center;
+                                }
+                                .timer > #slice {
+                                        position:absolute;
+                                        width:1em;
+                                        height:1em;
+                                        clip:rect(0px,1em,1em,0.5em);
+                                }
+                                .timer > #slice.gt50 {
+                                        clip:rect(auto, auto, auto, auto);
+                                }
+                                .timer > #slice > .pie {
+                                        border: 0.1em solid #c0c0c0;
+                                        position:absolute;
+                                        width:0.8em; /* 1 - (2 * border width) */
+                                        height:0.8em; /* 1 - (2 * border width) */
+                                        clip:rect(0em,0.5em,1em,0em);
+                                        -moz-border-radius:0.5em;
+                                        -webkit-border-radius:0.5em; 
+                                        border-radius:0.5em; 
+                                }
+                                .timer > #slice > .pie.fill {
+                                        -moz-transform:rotate(180deg) !important;
+                                        -webkit-transform:rotate(180deg) !important;
+                                        -o-transform:rotate(180deg) !important;
+                                        transform:rotate(180deg) !important;
+                                }
+                                .timer.fill > .percent {
+                                        display: none;
+                                }
+                                .timer.fill > #slice > .pie {
+                                        border: transparent;
+                                        background-color: #c0c0c0;
+                                        width:1em;
+                                        height:1em;
+                                }
+                                
+                                @media screen and(max-width:480px) {
+                                    #wwd-content h2 {
+                                        font-size: 50px;
+                                    }
+                                }

@@ -1,0 +1,289 @@
+div#container {
+    max-width: 1280px;
+    width: auto;
+}
+    #campaigns {
+        padding: 0 25px;
+        margin-top: 20px;
+        width: 100%;
+    }
+        div.campaign-section {
+            display: inline-block;
+            float: left;
+            margin-bottom: 15px;
+            min-width: 200px;
+            padding: 0 7.5px;
+        }
+        
+            div.campaign-section .campaign-section-content {
+                background: #067b82;
+                max-width: 100%;
+                min-width: 100%;
+            }
+            
+        .campaign-section:last-of-type {
+            width: 100%;
+            height: 49%;
+            margin-right: 0;
+        }
+        .campaign-section:nth-of-type(2n) {
+            margin-right: 0;
+        }
+            div.campaign-section * {
+                float: left;
+            }
+            .campaign-section .campaign-image {
+                position: relative;
+                width: 100%;
+            }
+
+                .campaign-section .campaign-image-overlay {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    display: none;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0,0,0,0.65);
+
+                }
+                    .campaign-section .campaign-image-overlay .buttons {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin: auto;
+                        height: 40px;
+                        max-width: 325px;
+                    }
+                        .campaign-section a.button.readmore{
+                            display: inline-block;
+                            font-family: 'Alternate Gothic', sans-serif;
+                            font-size: 22px;
+                            line-height: 37px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            padding: 0 20px;
+                            background: #ffffff;
+                            border: none;
+                            border-bottom: #b2b2b2 3px solid;
+                            border-radius: 3px;
+                            color: #067b82;
+                            margin: 0;
+                            float: right;
+                        } 
+                        
+                        .campaign-section a.button.video{
+                            display: inline-block;
+                            font-family: 'Alternate Gothic', sans-serif;
+                            font-size: 22px;
+                            line-height: 37px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            padding: 0 20px;
+                            background: #ffffff;
+                            border: none;
+                            border-bottom: #b2b2b2 3px solid;
+                            border-radius: 3px;
+                            color: #067b82;
+                            margin: 0;
+                            float: left;
+                        } 
+                        .campaign-section a.button.close {
+                            background: #067b82;
+				border-color: #056269;
+                            float: right;
+                            opacity: 1;
+                            text-shadow: none;
+                            color: #ffffff;
+                            font-weight: normal;
+                        }
+                        
+                            .campaign-section a.button.close img {
+                                width: auto;
+                                width: auto;
+                                float: right;
+                                margin: 5px 0 5px 10px;
+                            }
+                        
+                            .campaign-section a.button.video img {
+                                margin-top: 10px;
+                            }
+                            .campaign-section a.button.readmore img {
+                                background: #067b82;
+                                width: auto;
+                                margin-top: 7px;
+                            }
+                            .campaign-section .campaign-image-overlay img {
+                                width: auto;
+                            }
+                        .campaign-section .campaign-image-overlay .buttons .button-play-video {
+                            float: left;
+                            background-image: url('/css/images/play-video.png');
+                            background-position: 20px 10px;
+                            background-repeat: no-repeat;
+                        }
+
+                        .campaign-section .campaign-image-overlay .buttons .button-read-more {
+                            float: right;
+                            background-image: url('/css/images/read-more-arrow-blue.png');
+                            background-position: 10px 5px;
+                            background-repeat: no-repeat;
+                        }
+                .campaign-section img {
+                    width: 100%;
+                    height: auto;
+                }
+
+            .campaign-section .content {
+                padding: 10px;
+                height: 60px;
+                width: 100%;
+            }
+            .campaign-section h2 {
+                line-height: 20px;
+                font-size: 30px;
+                margin: 10px 0 0;
+                color: #ffffff;
+            }
+            .campaign-section img.expand-arrow {
+                width: auto;
+                height: 40px;
+                float: right;
+                border: 1px #ffffff solid;
+                border-radius: 50%;
+            }
+                    .campaign-section .content .button-read-more {
+                        margin-top: 0;
+                        float: right;
+                        border-bottom: 3px #b2b2b2 solid;
+                        background: #ffffff;
+                        background-image: url('/css/images/read-more-arrow-blue.png');
+                        background-position: 10px 5px;
+                        background-repeat: no-repeat;
+                        color: #067b82;
+                    }
+                        .campaign-section .content .button-read-more:hover {
+
+                        }
+            .lightbox-container {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: url('./images/lightbox-bg.png');
+                background-color: rgba(0,0,0,0.55);
+                display: none;
+                overflow: auto;
+                z-index: 1;
+            }
+                .campaign-section .campaign-lightbox {
+                    background: #ffffff;
+                    width: 50%;
+                    float: none;
+                    overflow: hidden;
+                    margin: 100px auto;
+                    padding: 2% 2%;
+                    height: auto;
+                }
+
+                    .campaign-lightbox h2 {
+				float: none;
+                        color: #067b82;
+                        margin: 0 0 20px;
+                    }
+
+                .campaign-lightbox .content {
+                    color: #676767;
+                    padding: 0;
+                    margin-top: 10px;
+                    height: auto;
+                    column-count:2;
+                    -moz-column-count:2;
+                    -webkit-column-count: 2;
+                    line-height: 20px;
+                    font-size: 14px;
+                }
+            
+                .campaign-lightbox button.close {
+                    width: 95px;
+                    height: 35px;
+                    margin: 10px 0 0;
+                    background-color: #077a81;
+                    background-image: url('/css/images/close.png');
+                    background-position: 60px 5px;
+                    background-repeat: no-repeat;
+                    border: 0;
+                    border-bottom: 3px #076169 solid;
+                    border-radius: 5px;
+                    text-align: left;
+                    font-family: 'AlternateGothic', sans-serif;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    color: #ffffff;
+                    padding-left: 10px;
+                    float: right;
+                }
+        
+        @media screen and (max-width: 1000px) {
+            
+        }
+        
+        @media screen and (max-width: 767px) {
+            #campaigns {
+                padding: 0;
+            }
+            div.campaign-section {
+                padding: 0;
+            }
+            .campaign-section .campaign-image {
+                display: none;
+            }
+            .campaign-section a.button.readmore {
+                display: none;
+            }
+            .campaign-section a.button.readmore.readmoreexp {
+                display: inline-block;
+                float : left;
+                margin-left : 20px;
+            }
+            .campaign-section img.expand-arrow.expandarrowrotate {
+                transform : rotate(-90deg);
+                -ms-transform : rotate(-90deg);
+                -webkit-transform : rotate(-90deg);
+            }
+            
+            .campaign-section .campaign-lightbox {
+                width: 90%;
+            }
+        }
+
+@media screen and (max-width: 380px) {
+	.campaign-section .content {
+		height: auto;
+	}
+
+	.campaign-section a.button.readmore.readmoreexp {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+
+}
+        
+        @media screen and (max-width: 250px) {
+            .campaign-section h2 {
+                float: none;
+                display: block;
+                text-align: center;            
+            }
+            .campaign-section .content {
+                height: auto;
+            }
+            .campaign-section img.expand-arrow {
+                float: none;
+                display: block;
+                margin: 10px auto;
+            }
+        }
