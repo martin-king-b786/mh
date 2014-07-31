@@ -191,6 +191,7 @@ div#container {
                         left: 0;
                         overflow-y: auto;
                         max-height: 350px;
+                        z-index: 1;
                     }
                     
                         #donate .location-dropdown ul li {

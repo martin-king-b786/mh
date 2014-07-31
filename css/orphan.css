@@ -112,105 +112,6 @@ a.button {
                     float: right;
                     margin-top: 25px;
                 }
-                
-        #orphan #selected-orphan {
-            padding: 10px;
-            border: 1px #cccccc solid;
-            overflow: hidden;
-            margin-bottom: 20px;
-            position: relative;
-            display: none;
-        }
-        
-            #selected-orphan #orphan-info {
-                border-right: 1px #cccccc solid;
-            }
-                
-                #selected-orphan #orphan-info #left {
-                    text-transform: uppercase;
-                }
-                
-                    #selected-orphan #orphan-info #left>img {
-                        width: 100%;
-                    }
-                
-                    #selected-orphan #orphan-info #left h3 {
-                        font-size: 35px;
-                        margin: 10px 0;
-                        text-transform: uppercase;
-                    }
-                    
-                    #selected-orphan #orphan-info #left>span {
-                        margin-bottom: 5px;
-                        float: left;
-                        padding: 0;
-                    }
-                    
-                    #selected-orphan #orphan-info #left span.divide {
-                        margin-right: 10px;
-                        padding-right: 10px;
-                        border-right: 1px #f89d54 solid;
-                    }
-                    
-                        #selected-orphan #orphan-info #left span img {
-                            margin-right: 10px;
-                        }
-                        
-                #selected-orphan #orphan-info #right {
-                    
-                }
-                
-                    #selected-orphan #orphan-info #right h4 {
-                        text-transform: uppercase;
-                        margin: 15px 0 5px;
-                    }
-                    #selected-orphan #orphan-info #right h4:first-of-type {
-                        margin-top: 5px;
-                    }
-                    
-            #selected-orphan #sponsor-info {
-                padding: 10px 25px;
-                position: static;
-            }
-            
-                #selected-orphan #sponsor-info .info-row {
-                    margin-bottom: 30px;
-                    overflow: hidden;
-                }
-
-                    #selected-orphan #sponsor-info h3 {
-                        font-size: 30px;
-                        text-transform: uppercase;
-                        color: #f89d54;
-                    }
-
-                    #selected-orphan #sponsor-info select {
-                        border: 1px #555555 solid;
-                    }
-                    
-                    #selected-orphan #sponsor-info p {
-                        font-size: 20px;
-                        font-weight: bold;
-                        line-height: 25px;
-                        color: #555555;
-                    }
-                    
-                    #selected-orphan #sponsor-info .donation-amount {
-                        
-                    }
-
-                        #selected-orphan #sponsor-info .donation-amount h3 {
-                            color: #555555;
-                        }
-                    
-                        #selected-orphan #sponsor-info .donation-amount h4 {
-                            color: #f89d54;
-                            font-size: 35px;
-                        }
-                        
-                        #selected-orphan #sponsor-info .sponsor {
-                            margin-top: 15px;
-                        }
                         
                 a.button.close {
                     position: absolute;
@@ -225,7 +126,12 @@ a.button {
             background: #5c5d4d;
             padding: 10px 20px;
         }
-            
+            #orphan #search-bar .search-img {
+                display: none;
+            }
+            #orphan #search-bar .down-arrow {
+                display: none;
+            }
             #orphan #search-bar form {
                 float: right;
             }
@@ -234,6 +140,7 @@ a.button {
                     float: left;
                     margin: 7px 0;
                     width: auto;
+                    max-width: 175px;
                 }
                 
                 #orphan #search-bar form .form-element:nth-of-type(2n) {
@@ -456,7 +363,12 @@ a.button {
     #orphan #search-bar {
         text-align: center;
     }
-
+        #orphan #search-bar .search-img {
+            display: inline-block;
+        }
+        #orphan #search-bar .down-arrow {
+            display: inline-block;
+        }
         #orphan #search-bar>span {
             float: none;
         }
@@ -479,6 +391,7 @@ a.button {
                 border: 0;
                 width: 50%;
                 text-align: left;
+                max-width: initial;
             }
             #orphan #search-bar form .form-element:nth-of-type(2n) {
                 margin: 7px 0;

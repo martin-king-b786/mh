@@ -22,13 +22,13 @@ div#container {
     #create form .validation.col-md-6 {
         margin-top: 20px;
         color: #c53334;
-        padding: 0;
+        padding: 0 0 0 20px;
     }
     
     #create input.error, #create textarea.error, #create select.error {
         border: 1px #c53334 solid;
     }
-        #create form div {
+        #create form>div {
             width: 100%;
             float: left;
             margin-bottom: 20px;
@@ -94,6 +94,7 @@ input[type="checkbox"]:checked + label span {
                 .cash-input {
                     position: relative;
                     overflow: hidden;
+                    padding: 0;
                 }
                 
                 .cash-input span {
@@ -180,6 +181,7 @@ input[type="checkbox"]:checked + label span {
                         padding-left: 50px;
                         font-size: 25px;
                         padding-top: 5px;
+                        width: 100%;
                 }
 
                 #create form div#create-submit button {

@@ -130,7 +130,7 @@ div#container {
             float: left;
             margin: 0;
         }
-        .emergency-section>img {
+        .emergency-section .mobile-container>img {
             filter: grayscale();
             -webkit-filter: grayscale();
             transition: all 0.3s linear;
@@ -138,7 +138,7 @@ div#container {
             -moz-transition: all 0.3s linear;
             -o-transition: all 0.3s linear;
         }
-            .emergency-section:hover>img {
+            .emergency-section .mobile-container:hover>img {
                 filter: none;
                 -webkit-filter: none;
             }
@@ -297,6 +297,10 @@ div#container {
                     .emergency-section .content h2 {
                         display: none;
                     }
+                    
+            .emergency-section.featured .content p {
+                margin-top: 10px;
+            }
         }
         
         @media screen and (max-width: 480px) {
