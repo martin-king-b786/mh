@@ -4,16 +4,16 @@ $(document).ready(function(){
         $('.campaign-section .campaign-image').mouseenter(function(){
             $(this).children('.campaign-image-overlay').slideDown();
         });
+        $('.campaign-section .campaign-image').mouseleave(function(){
+            $(this).children('.campaign-image-overlay').slideUp();
+        });
     }
     else {
         $('.campaign-section .campaign-image').click(function(){
             $(this).children('.campaign-image-overlay').slideToggle();
         });
-        
     }
-    $('.campaign-section .campaign-image').mouseleave(function(){
-            $(this).children('.campaign-image-overlay').slideUp();
-    });
+    
             /* Lightbox */
     $('.campaign-section .content .button.readmore').click(function(){
             $(this).parent().parent().children('.lightbox-container').fadeIn();

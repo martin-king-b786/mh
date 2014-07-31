@@ -241,9 +241,10 @@ div#container {
             .campaign-section .campaign-image {
                 display: none;
             }
-            .campaign-section a.button.readmore {
-                display: none;
+            .campaign-section:first-of-type .campaign-image {
+                display: block;
             }
+            
             .campaign-section a.button.readmore.readmoreexp {
                 display: inline-block;
                 float : left;
