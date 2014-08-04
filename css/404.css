@@ -17,6 +17,7 @@ div#container {
                 position: absolute;
                 z-index: -1;
                 width: 100%;
+                top: -15%;
             }
                  
                 #nf-container {
@@ -28,6 +29,15 @@ div#container {
                         margin-bottom: 20px;
                         color: #ffffff;
                     }
+                    #nf-container h1 {
+                        margin-top: 30%;
+                        font-size: 200px;
+                    }
+                    
+                    #nf-container h1 img {
+                        margin-top: -35px;
+                        width: 120px;
+                    }
                     #nf-container h2 {
                         text-transform: none;
                     }
@@ -35,6 +45,7 @@ div#container {
                         width: 50%;
                         margin: auto;
                         display: block;
+                        margin-top: 90px;
                     }
 
                         #nf-container #search-area input {
@@ -51,6 +62,12 @@ div#container {
                             background: #f89d54;
                             border-color: #c67e43;
                             color: #ffffff;
+                        }
+                        
+                        #nf-container #search-area a.button.gohome {
+                            background: #5c5d4d;
+                            margin-top: 100px;
+                            border-color: #3e3f33;
                         }
                         
                         @media screen and (max-width: 767px) {
