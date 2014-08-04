@@ -108,7 +108,7 @@ div#container {
                             height: 40px;
                             line-height: 40px;
                             margin-bottom: 20px;
-                            font-size: 20px;
+                            font-size: 24px;
                             font-weight: bold;
                         }
                         
@@ -135,8 +135,8 @@ div#container {
                             height: 40px;
                         }
                         input[type="text"].other-amount {
-                            width: auto;
-                            margin-left: 10px;
+                            width: 80%;
+                            margin-left: 0;
                             float: right;
                         }
                         
@@ -196,6 +196,7 @@ div#container {
                     
                         #donate .location-dropdown ul li {
                             padding: 10px 20px;
+                            width: 100%;
                         }
                         #donate .location-dropdown ul li:last-of-type {
                             margin-bottom: 0;
@@ -211,6 +212,15 @@ div#container {
                                 margin: 0;
                             }
                             
+                            #donate .location-dropdown ul li label {
+                                width: 100%;
+                            }
+                            
+                                #donate .location-dropdown ul li label span {
+                                    float: right;
+                                    margin-top: 0;
+                                    margin: 0;
+                                }
                 #search-form .currencies {
                     text-align: right;
                     color: #ffffff;
@@ -283,7 +293,43 @@ div#container {
                 #donate #pagination img.right {
                     float: right;
                 }
+                input[type="checkbox"] + label span {
+                    margin: -1px 17px 10px 0;
+                }
+            div.amount {
+                overflow: hidden;
+                position: relative;
+            }
             
+                div.amount input {
+                    padding-left: 50px;
+                }
+                
+                span.symbol {
+                    position: absolute;
+                    top: 5px;
+                    left: 20px;
+                    color: #f89d54;
+                    font-size: 30px;
+                }
+                
+                .other-option {
+                    width: 100%;
+                    overflow: hidden;
+                }
+                
+                .other-option label {
+                    float: left;
+                    width: 20%;
+                    margin-top: 3px;
+                    padding-left: 5px;
+                }
+                
+                    div.other-option label span {
+                        margin-top: 6px;
+                    }
+                
+                
             @media screen and (max-width: 1000px) {
                 #donate #opening #img {
                     display: none;
