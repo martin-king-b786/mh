@@ -18,7 +18,7 @@ $('body').ready(function() {
 	});
     }
 	$('.navarr').parent().hover(function() {
-		$(this).find('.subnav').slideToggle('fast');
+		$(this).find('.subnav').slideToggle(0);
 	});
 	$('.navarr1').parent().hover(function() {
 		$(this).find('.subsubnav').slideToggle('fast');
