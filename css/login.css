@@ -1,0 +1,129 @@
+div#container {
+    max-width: 1280px;
+    width: auto;
+}
+
+    #login {
+        padding: 20px;
+    }
+    
+        #login #itn-logo {
+            display: block;
+		text-align: center;
+        }
+
+        #login #login-message {
+            width: 80%;
+            display: block;
+            margin: 30px auto 50px;
+		font-family: 'Alternate Gothic', sans-serif;
+		font-size: 22px;
+		text-transform: uppercase;
+		text-align: center;
+		color: #5c5d4d;
+        }
+
+        #login #login-message p {
+		line-height: 20px;
+	}
+        
+        #login section {
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+            #login section h2 {
+                background: #f89d54;
+                color: #ffffff;
+                width: auto;
+                display: inline-block;
+                margin-bottom: 30px;
+                padding: 10px 20px;
+                font-size: 30px;
+                line-height: 30px;
+            }
+            
+        #login section#login-section {
+            padding-right: 30px;
+            border-right: 1px #cccccc solid;
+        }
+        
+            #login section#login-section .row {
+                margin-bottom: 20px;
+                padding: 0
+            }
+            
+                #login section#login-section label {
+                    margin-top: 10px;
+			font-family: 'Alternate Gothic', sans-serif;
+			font-size: 18px;
+			text-transform: uppercase;
+			color: #5c5d4d;
+                }
+                
+                #login section#login-section input {
+                    border: 1px #999 solid;
+                }
+                
+                #login section#login-section a.button {
+                    background: #f89d54;
+                    border-color: #c67e43;
+                    color: #ffffff;
+                    padding-right: 5px;
+                }
+                
+                    #login section#login-section a.button img {
+                        margin-left: 10px;
+                    }
+                
+        #login section#register-section {
+            padding-left: 30px;
+        }
+        
+            #login section#register-section p {
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            
+            #login section#register-section a.button {
+                background: #5c5d4d;
+                border-color: #3e3f33;
+                color: #ffffff;
+                padding-right: 5px;
+            }
+            
+            #login section#register-section a.button img {
+                margin-left: 10px;
+            }
+            
+@media screen and (max-width: 1000px) {
+    #login section#login-section {
+        padding-right: 0;
+        border-right: 0;
+    }
+
+	#login section#login-section h2 {
+		margin-left: -15px;
+	}
+        
+    #login section#register-section {
+        padding-left: 0;
+        padding-top: 30px;
+        border-top: 1px #cccccc solid;
+    }
+
+	#login section#register-section h2 {
+		margin-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+    #login section#login-section label {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+	.col-xs-0 {
+		display: none;
+	}
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+#worldmap {
+	position:relative;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#worldmap img {
+	width:100%;
+	height:auto;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.marker {
+	background-image:url(marker1.png);
+	background-repeat:no-repeat;
+	font-size:14px;
+	color:transparent;
+	height:16px;
+	width:16px;
+}
+ .marker a {
+	 text-decoration:none;
+ }
+ 
+.cu {
+	position:absolute;
+	left:16%;
+	top:40%;
+}
+.de {
+	position:absolute;
+	left:42.5%;
+	top:20%;
+}
+.eg {
+	position:absolute;
+	left:40%;
+	top:36%;
+}
+.ma {
+	position:absolute;
+	left:30%;
+	top:45%;
+}
+.ly {
+	position:absolute;
+	left:46.5%;
+	top:40%;
+}
+
+.ni {
+	position:absolute;
+	left:43%;
+	top:44%;
+}
+
+.su {
+	position:absolute;
+	left:48.5%;
+	top:47%;
+}
+
+.ca {
+	position:absolute;
+	left:46%;
+	top:50%;
+}
+
+.so {
+	position:absolute;
+	left:53%;
+	top:54%;
+}
+
+.co {
+	position:absolute;
+	left:46.5%;
+	top:57%;
+}
+
+.mo {
+	position:absolute;
+	left:50%;
+	top:68%;
+}
+
+.ir {
+	position:absolute;
+	left:55.5%;
+	top:31.5%;
+}
+
+.uz {
+	position:absolute;
+	left:57.5%;
+	top:25%;
+}
+
+.af {
+	position:absolute;
+	left:59%;
+	top:31%;
+}
+
+.pa {
+	position:absolute;
+	left:60.5%;
+	top:34%;
+}
+
+.in {
+	position:absolute;
+	left:64.5%;
+	top:40%;
+}
+
+.si {
+	position:absolute;
+	left:64%;
+	top:50%;
+}
+
+.ba {
+	position:absolute;
+	left:67%;
+	top:39%;
+}
+
+.cn {
+	position:absolute;
+	left:67%;
+	top:30%;
+}
+
+.ma {
+	position:absolute;
+	left:74.5%;
+	top:54.5%;
+}
+
+#popover .flag {
+	width:128px;
+	height: 128px;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.popover .title {
+	text-align: center;
+}
+
+</style>
+    
+  </head>
+  <body>
+  <div class="container">
+  <div id="page-wrap">
+  <div id="worldmap">
+      <img src="world_map.png">
+      
+    <a id="popover" class="btn cu" rel="popover" data-content="<img src='128/Cuba.png'>" title="CUBA"><p class="marker">CU</p></a>
+    <a id="popover" class="btn eg" rel="popover" data-content="<img src='128/Egypt.png'>" title="EGYPT"><p class="marker">EG</p></a>
+    <a id="popover" class="btn ma" rel="popover" data-content="<img src='128/Mali.png'>" title="MALI"><p class="marker">MA</p></a>
+    <a id="popover" class="btn ly" rel="popover" data-content="<img src='128/Libya.png'>" title="LYBIA"><p class="marker">LY</p></a>
+    <a id="popover" class="btn ni" rel="popover" data-content="<img src='128/Niger.png'>" title="NIGER"><p class="marker">NI</p></a>
+    <a id="popover" class="btn su" rel="popover" data-content="<img src='128/Sudan.png'>" title="SUDAN"><p class="marker">SU</p></a>
+    <!--a id="popover" class="btn ca" rel="popover" data-content="<img src='128/Cuba.png'>" title="CENTRAL AFTRICAN REPUBLIC"><p class="marker">CA</p></a-->
+    <a id="popover" class="btn so" rel="popover" data-content="<img src='128/Somalia.png'>" title="SOMALIA"><p class="marker">SO</p></a>
+    <a id="popover" class="btn co" rel="popover" data-content="<img src='128/Congo-Kinshasa.png'>" title="DR CONGO"><p class="marker">CO</p></a>
+    <a id="popover" class="btn mo" rel="popover" data-content="<img src='128/Mozambique.png'>" title="MOZAMBIQUE"><p class="marker">MO</p></a>
+    <a id="popover" class="btn ir" rel="popover" data-content="<img src='128/Iran.png'>" title="IRAN"><p class="marker">IR</p></a>
+    <a id="popover" class="btn uz" rel="popover" data-content="<img src='128/Uzbekistan.png'>" title="UZBEKISTAN"><p class="marker">UZ</p></a>
+    <a id="popover" class="btn af" rel="popover" data-content="<img src='128/AFGHanistan.png'>" title="AFGANISTAN"><p class="marker">AF</p></a>
+    
+    
+    <!--span class="marker eg"><a href="#" title="EGYPT"><p class="marker">EG</p></a></span>
+    <span class="marker ma"><a href="#" title="MALI"><p class="marker">MA</p></a></span>
+    <span class="marker ly"><a href="#" title="LYBIA"><p class="marker">LY</p></a></span>
+    <span class="marker ni"><a href="#" title="NIGER"><p class="marker">NI</p></a></span>
+    <span class="marker su"><a href="#" title="SUDAN"><p class="marker">SU</p></a></span>
+    <span class="marker ca"><a href="#" title="CENTRAL AFTRICAN REPIUBLIC"><p class="marker">CA</p></a></span>
+    <span class="marker so"><a href="#" title="SOMALIA"><p class="marker">SO</p></a></span>
+    <span class="marker co"><a href="#" title="DR CONGO"><p class="marker">CO</p></a></span>
+    <span class="marker mo"><a href="#" title="MOZAMBIQUE"><p class="marker">MO</p></a></span>
+    <span class="marker ir"><a href="#" title="IRAN"><p class="marker">IR</p></a></span>
+    <span class="marker uz"><a href="#" title="UZBEKISTAN"><p class="marker">UZ</p></a></span>
+    <span class="marker af"><a href="#" title="AFGANISTAN"><p class="marker">AF</p></a></span>
+    <span class="marker pa"><a href="#" title="PAKISTAN"><p class="marker">PA</p></a></span>
+    <span class="marker in"><a href="#" title="INDIA"><p class="marker">IN</p></a></span>
+    <span class="marker si"><a href="#" title="SOUTHERN INDIA"><p class="marker">SI</p></a></span>
+    <span class="marker ba"><a href="#" title="BANGLADESH"><p class="marker">BA</p></a></span>
+    <span class="marker cn"><a href="#" title="CHINA"><p class="marker">CN</p></a></span>
+    <span class="marker ma"><a href="#" title="MALAYSIA"><p class="marker">MA</p></a></span-->
+  </div>
+  </div>
+  </div>
+    <p>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      
+      <!-- Include all compiled plugins (below), or include individual files as needed -->    </p>
+    <p>
+      <script src="js/bootstrap.min.js"></script>
+      
+      <script>
+        var image = '';
+        $('.btn').popover({placement: 'bottom', content: image, html: true});
+		</script>
+      
+    </p>
+  </body>
+</html>

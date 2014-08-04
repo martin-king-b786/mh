@@ -1,0 +1,125 @@
+div#container {
+    max-width: 1280px;
+    width: auto;
+}
+
+    #register {
+        padding: 20px;
+        overflow: hidden;
+    }
+    
+        #register #register-message {
+            width: 50%;
+            display: block;
+            margin: 30px auto 50px;
+        }
+        
+        #register section {
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        #register section.col-md-12 {
+            padding: 0;
+        }
+        
+            #register section h2 {
+                background: #f89d54;
+                color: #ffffff;
+                width: auto;
+                display: inline-block;
+                margin-bottom: 30px;
+                padding: 10px 20px;
+                font-size: 30px;
+                line-height: 30px;
+            }
+            
+        #register section#register-section {
+            
+        }
+        
+        #register section#captcha-section {
+            margin-top: 20px;
+        }
+            #register section .row {
+                margin-bottom: 20px;
+                padding: 0
+            }
+            #register section#giftaid-section .row, #register section#preference-section .row {
+                margin-bottom: 0;
+            }
+                #register section label {
+                    margin-top: 10px;
+			font-family: 'Alternate Gothic', sans-serif;
+			font-size: 18px;
+			text-transform: uppercase;
+			color: #5c5d4d;
+                }
+                
+                #register section input, #register section select {
+                    border: 1px #555555 solid;
+                    font-family: 'Alternate Gothic', sans-serif;
+                    font-size: 18px;
+                    line-height: 37px;
+                    height: 37px;
+                    padding: 0 20px;
+                    background: #fff;
+                    border-radius: 3px;
+                    color: #888;
+                }
+                
+                #register section a.button {
+                    background: #f89d54;
+                    border-color: #c67e43;
+                    color: #ffffff;
+                    padding-right: 5px;
+                }
+                #register section#captcha-section a.button {
+                    margin-top: 20px;
+                }
+                    #register section a.button img {
+                        margin-left: 10px;
+                    }
+                
+        
+        
+            #login section#register-section p {
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            
+            #login section#register-section a.button {
+                background: #555555;
+                border-color: #333333;
+                color: #ffffff;
+                padding-right: 5px;
+            }
+            
+            #login section#register-section a.button img {
+                margin-left: 10px;
+            }
+            
+@media screen and (max-width: 1000px) {
+    #register section.col-xs-12 {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #register #register-message {
+        width: 100%;
+    }
+    #register section.col-xs-12 {
+        padding: 0;
+    }
+    #register section .row {
+        padding: 15px;
+    }
+    #register section label {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    #register section#captcha-section {
+        padding: 0;
+    }
+}

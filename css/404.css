@@ -1,0 +1,65 @@
+div#container {
+    max-width: 1280px;
+    width: auto;
+}
+
+    #notfound {
+        padding: 20px;
+    }
+    
+        #nf-image {
+            width: 75%;
+            display: block;
+            margin: auto;
+            position: relative;
+        }
+            #nf-image>img {
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+            }
+                 
+                #nf-container {
+                    padding: 20px;
+                }
+
+                    #nf-container h1, #nf-container h2, #nf-container p {
+                        text-align: center;
+                        margin-bottom: 20px;
+                        color: #ffffff;
+                    }
+                    #nf-container h2 {
+                        text-transform: none;
+                    }
+                    #nf-container #search-area {
+                        width: 50%;
+                        margin: auto;
+                        display: block;
+                    }
+
+                        #nf-container #search-area input {
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+
+                        #nf-container #search-area a.button {
+                            width: 200px;
+                            margin: auto;
+                            display: block;
+                            margin-bottom: 20px;
+                            text-align: center;
+                            background: #f89d54;
+                            border-color: #c67e43;
+                            color: #ffffff;
+                        }
+                        
+                        @media screen and (max-width: 767px) {
+                            #nf-container #search-area {
+                                width: 100%;
+                                margin: auto;
+                                display: block;
+                            }
+                            #nf-container #search-area a.button {
+                                width: 100%;
+                            }
+                        }

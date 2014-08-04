@@ -17,6 +17,10 @@ div#container {
     overflow: hidden;
 }
 
+input[type="checkbox"] + label span {
+	margin-top: -4px;
+}
+
         #profile aside#sidebar-left {
             float: left;
             width: 18.5%;
@@ -769,4 +773,4 @@ div#container {
                             margin-bottom: 5%;
                         }
                     }
-                    /* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
+

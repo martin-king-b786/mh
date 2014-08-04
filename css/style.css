@@ -233,7 +233,7 @@ input[type="checkbox"] {
 }
 input[type="checkbox"] + label span {
 	display: inline-block;
-	width: 21px;
+	width: 22px;
 	height: 21px;
 	margin: 6px 17px 10px 0;
 	vertical-align: middle;
