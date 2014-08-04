@@ -112,14 +112,21 @@ div#container {
         padding: 0;
     }
     #register section .row {
-        padding: 15px;
+        padding: 5px 15px;
+        margin-bottom: 0;
     }
     #register section label {
         padding: 0;
-        margin-bottom: 10px;
+        margin-bottom: 0;
+        margin-top: 0;
+        line-height: 24px;
     }
     
     #register section#captcha-section {
         padding: 0;
+    }
+    
+    input[type="checkbox"] + label span {
+        margin: 0 17px 5px 0;
     }
 }
