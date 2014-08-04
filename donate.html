@@ -332,15 +332,15 @@ Please continue to donate to those who need it most by choosing one of the optio
                 <h3>Emergency Fund</h3>
                 <div data-mh="1" class="donate-form">
                     <div class="checkboxes">
-                        <input type="checkbox" id="em10" name="em10" />
+                        <input type="radio" id="em10" name="em" />
                         <label for="em10"><span></span>&pound;10</label>
-                        <input type="checkbox" id="em100" name="em100"/>
+                        <input type="radio" id="em100" name="em"/>
                         <label for="em100"><span></span>&pound;100</label>
-                        <input type="checkbox" id="em1000" name="em1000" />
+                        <input type="radio" id="em1000" name="em" />
                         <label for="em1000"><span></span>&pound;1000</label>
                     </div>
                     <div class="other-option">
-                        <input class="diff-amount" type="checkbox" id="emother" name="emother"/><label for="emother"><span class="other"></span></label>
+                        <input class="diff-amount" type="radio" id="emother" name="em"/><label for="emother"><span class="other"></span></label>
                         <input class="other-amount" type="text" placeholder="Enter Other Amount"/>
                     </div>
                     <select>
@@ -420,29 +420,37 @@ Please continue to donate to those who need it most by choosing one of the optio
             <div class="cause-content">
                 <h3>Emergency Fund</h3>
                 <div data-mh="1" class="donate-form">
-                    <div class="checkboxes">
-                        <input type="checkbox"/>
-                        <label>£10</label>
-                        <input type="checkbox"/>
-                        <label>£100</label>
-                        <input type="checkbox"/>
-                        <label>£1000</label>
-                    </div>
-                    <input class="diff-amount" type="checkbox"/>
-                    <input class="other-amount" type="text" placeholder="Enter Other Amount"/>
-                    <select>
-                        <option>Where most needed</option>
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                    </select>
-                    <select>
-                        <option>Zakaat</option>
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                    </select>
-                    <a class="button basket" href="#"><img src="./css/images/basket_colour.png" alt="" />Add to basket</a>
+                    <form role="form">
+                        <div class="checkboxes">
+                            <label class="radio-inline">
+                                <input type="radio" name="em" id="em10" value="option1"> £10
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="em" id="em100" value="option1"> £100
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="em" id="em1000" value="option1"> £1000
+                            </label>
+
+                        </div>
+                        <div class="other-option">
+                            <input class="diff-amount" type="radio" id="emother" name="emother"/><label for="emother"><span class="other"></span></label>
+                            <input class="other-amount" type="text" placeholder="Enter Other Amount"/>
+                        </div>
+                        <select>
+                            <option>Where most needed</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                        <select>
+                            <option>Zakaat</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                        <a class="button basket" href="#"><img src="./css/images/basket_colour.png" alt="" />Add to basket</a>
+                    </form>
                 </div>  
             </div>
         </div>

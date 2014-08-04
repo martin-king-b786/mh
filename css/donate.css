@@ -115,6 +115,7 @@ div#container {
                         .donate-form .checkboxes {
                             height:40px;
                             margin-bottom: 20px;
+                            padding-left: 5px;
                         }
                         
                             .donate-form .checkboxes * {
@@ -122,12 +123,16 @@ div#container {
                             }
                             
                             .donate-form .checkboxes label {
-                                margin: 15px 10px 0 5px;
+                                margin: 15px 10px 0 0;
                                 font-size: 18px;
                                 font-weight: bold;
                             }
+                            
+                            .donate-form .checkboxes label:last-of-type {
+                               margin-right: 0;
+                            }
                         
-                            .donate-form .checkboxes input[type="checkbox"] {
+                            .donate-form .checkboxes input[type="radio"] {
                                 height: 40px;
                             }    
                             
@@ -295,6 +300,10 @@ div#container {
                 }
                 input[type="checkbox"] + label span {
                     margin: -1px 17px 10px 0;
+                }
+                
+                input[type="radio"] + label span {
+                    margin: -1px 5px 10px 0;
                 }
             div.amount {
                 overflow: hidden;
