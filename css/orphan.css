@@ -29,11 +29,10 @@ a.button {
     }
     
 #orphan select, #orphan input, #orphan .location-dropdown {
-    display: inline-block;
     font-family: 'Alternate Gothic', sans-serif;
     font-size: 18px;
     line-height: 37px;
-    padding: 0 20px;
+    padding: 0 10px;
     background: #fff;
     border: none;
     border-top: #ccc 3px solid;
@@ -137,6 +136,7 @@ a.button {
             }
             #orphan #search-bar form {
                 float: right;
+                width: auto;
             }
             
                 #orphan #search-bar form .form-element {
@@ -168,7 +168,7 @@ a.button {
                     }
                     #orphan .location-dropdown img {
                         float: right;
-                        margin: 15px -15px 0 0;
+                        margin: 15px 0 0 0;
                         width: auto;
                     }
                     #orphan .location-dropdown ul {
@@ -185,7 +185,7 @@ a.button {
                     }
                     
                         #orphan .location-dropdown ul li {
-                            padding: 10px 20px;
+                            padding: 10px 10px;
                             border-bottom: 1px #cccccc solid;
                         }
                         
@@ -203,6 +203,16 @@ a.button {
                                 margin-top: 0;
                             }
                             
+                            #orphan .location-dropdown ul li label {
+                                width: 100%;
+                            }
+                            
+                                #orphan .location-dropdown ul li label span {
+                                    float: right;
+                                    margin: 0;
+                                    margin-top: 8px;
+                                }
+                                
                 #orphan #search-bar form a.button {
                 }
                 
@@ -411,6 +421,16 @@ a.button {
             #orphan-container .orphan {
                 padding: 0 7px
             }
+            
+            #orphan #search-bar form .form-element:last-of-type {
+                max-width: initial;
+                margin: 7px 0;
+                padding: 0 20px;
+            }
+            
+            #orphan #search-bar form {
+                width: 100%;
+            }
 }
 
 @media screen and (max-width: 500px) {
@@ -427,4 +447,6 @@ a.button {
     #orphan #search-bar form .form-element:nth-of-type(2n), #selected-orphan #sponsor-info p {
         padding: 0;
     }
+    
+    
 }
