@@ -433,6 +433,7 @@ p.pamount input {
 	padding: 0 20px;
 	margin: 0;
 	border-radius: 5px;
+        color: #c53334;
 }
 
 section#m-work {
@@ -460,7 +461,6 @@ section.work h2 {
 
 section.work a {
 	display: inline-block;
-	width: 73px;
 	text-align: center;
 	color: #fff;
 	font-size: 12px;
@@ -470,8 +470,8 @@ section.work a {
 }
 
 section.work img {
-	width: 60px;
-	margin-top: 5px;
+    width: 100%;
+    margin-top: 5px;
 }
 
 
@@ -501,8 +501,9 @@ section#f-action h3 {
 }
 
 section#f-action div.actionpad {
-	width: 333px;
-	padding: 23px 23px 23px 390px;
+	padding: 93px 23px 23px;
+        float: left;
+        width: 50%;
 }
 
 section#f-blog {
@@ -514,7 +515,7 @@ section#f-blog {
 
 section#f-blog div.blogpad {
 	width: 700px;
-	padding: 23px 23px 0 23px;
+	padding: 63px 23px 0 23px;
 }
 
 section#f-blog h2.blogh1 {
@@ -525,7 +526,7 @@ section#f-blog h2.blogh1 {
 }
 
 section#f-blog h3 {
-	margin-top: 10px;
+        margin-top: 0;
 	color: #e55d5f;
 }
 
@@ -559,6 +560,7 @@ section#events {
 section#events h3 {
 	position: absolute;
 	color: #696;
+        z-index: 1;
 }
 
 section#events img {
@@ -599,6 +601,7 @@ section#end li span {
 
 section#end ul {
 	margin-bottom: 20px;
+        padding: 0;
 }
 
 section#end p.social-end a {
@@ -608,13 +611,14 @@ section#end p.social-end a {
 aside#sticky #mobile-logo, aside#sticky nav#nav img {
     display: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
     body {
         overflow-y: auto;
     }
     aside#sticky {
         width: 100%;
-        height: 120px;
+        height: auto;
+        padding: 25px;
     }
     
         aside#sticky #logo {
@@ -623,8 +627,7 @@ aside#sticky #mobile-logo, aside#sticky nav#nav img {
         aside#sticky #mobile-logo {
             display: inline-block;
             float: left;
-            padding-left: 10px;
-            width: 100%;
+            width: 60%;
         }
         
         aside#sticky div#social-sticky {
@@ -634,14 +637,23 @@ aside#sticky #mobile-logo, aside#sticky nav#nav img {
         aside#sticky nav#nav {
             
         }
-        
+            aside#sticky nav#nav img {
+                display: block;
+            }
             aside#sticky nav#nav img {
                 margin-top: 10px;
+                float: right;
+                border: 1px #cccccc solid;
+                padding: 10px;
             }
                 
             aside#sticky nav#nav ul {
                 display: none;
                 background: #ffffff;
+                float: right;
+                position: absolute;
+                right: 0px;
+                top: 100px;
             }
             
     section#featured {
@@ -653,18 +665,41 @@ aside#sticky #mobile-logo, aside#sticky nav#nav img {
         background-size: cover;
         float: left;
         margin-top: 100px;
+        min-height: 250px;
+        padding: 30px 30px 15px;
     }
     
         section#featured div.banner-text {
             margin: 0;
-            padding: 20px;
-            width: 100%;
+            padding: 0;
+            width: 60%;
         }
+        
+            section#featured div.banner-text h2 {
+                font-size: 65px;
+                line-height: 55px;
+                margin-bottom: 45px;
+            }
         
             section#featured div.banner-text p {
                 display: none;
             }
             
+            section#featured div.banner-text a.button {
+                background: transparent;
+                border: 0;
+                color: #ffffff;
+                font-size: 30px;
+            }
+            
+                section#featured div.banner-text a.button img {
+                    border: 1px #ffffff solid;
+                    border-radius: 50%;
+                    width: 55px;
+                    margin-right: 20px;
+                    background: transparent;
+                }
+                
         section#featured div#banner-slider {
             display: none;
         }
@@ -679,17 +714,83 @@ aside#sticky #mobile-logo, aside#sticky nav#nav img {
         float: left;
         height: auto;
     }
+    section.work div.workpad {
+        padding: 30px 16px 0 16px;
+    }
+    section.work a {
+        padding: 0 4%;
+    }
+    section.work h2 {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 55px;
+    }
         section#donate div#donatepad {
-            width: 100%;
+            width: 75%;
+            display: block;
+            margin: auto;
         }
         
-            p.pamount input {
-                width: 80%;
+            section#donate div#donatepad h2 {
+                font-size: 80px;
+                margin-top: 25px;
+                line-height: 55px;
+                margin-bottom: 45px;
+                text-align: center;
+            }
+            section#donate p {
+                line-height: 40px;
+                font-size: 35px;
+                margin-bottom: 30px;
+            }
+            section#donate label {
+                font-size: 30px;
+                font-weight: bold;
             }
             
+            section#donate label span {
+                width: 45px;
+                height: 45px;
+            }
+            
+            section#donate p.cur {
+                margin-top: 40px;
+            }
+            #donate p.pamount {
+                border-radius: 10px;
+                overflow: hidden;
+                height: auto;
+                width: 100%;
+                margin-bottom: 45px;
+            }
+            p.pamount input {
+                width: 100%;
+                height: 85px;
+                padding: 0 40px;
+            }
+            p.pamount span {
+                font-size: 60px;
+                margin-top: 15px;
+                float: left;
+                position: absolute;
+            }
             section#donate input[type=submit] {
                 padding: 0 20px;
-                width: 100%;
+                display: block;
+                margin: auto;
+                font-size: 35px;
+                height: 85px;
+                border-radius: 5px;
+                font-family: 'Myriad Pro', sans-serif;
+                font-weight: bold;
+            }
+            span.currency {
+                width: 50px;
+                height: 50px;
+                font-size: 30px;
+                padding: 10px 15px;
+                text-align: left;
+                
             }
     section#f-work {
         display: none;
@@ -702,20 +803,34 @@ aside#sticky #mobile-logo, aside#sticky nav#nav img {
         section#m-work {
             display: inline-block;
             height: auto;
+            padding-bottom: 20px;
         }
         
         section#f-action {
             height: auto;
         }
-        
+        #f-action-blog h2 {
+            font-size: 55px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        .actionpad h4 {
+            display: none;
+        }
             section#f-action-blog, section#f-blog {
                 width: 100%;
                 height: auto;
                 position: static;
                 float: left;
             }
+                section#f-blog {
+                    position: relative;
+                }
                 section#f-blog p.blogtext {
                     width: 100%;
+                    overflow-y: auto;
+                    max-height: 150px;
+                    margin-bottom: 0;
                 }
                 .jcarousel ul {
                     width: 100%!important;
@@ -742,30 +857,134 @@ aside#sticky #mobile-logo, aside#sticky nav#nav img {
                         .slider-img-cont {
                             position: relative;
                             overflow: hidden;
-                            width: 100%;
+                            width: 50%;
                             float: left;
                         }
                         section#f-action img.actionimage {
-                            width: 100%;
-                            padding-right: 0;
-                        }
-                        section#f-action h3 {
-                            position: absolute;
-                            bottom: 20px;
+                            max-height: 100%;
+                            width: auto;
+                            max-width: none;
+                            position: static;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
                             left: 0;
-                            width: 100%;
+                            margin: auto;
+                            float: none;
                         }
+                        
                         section#f-action div.actionpad, section#f-blog div.blogpad {
-                            width: 100%;
+                            width: 50%;
                             padding-left: 20px;
                             margin: 0;
                             float: left;
                             padding-bottom: 20px;
                         }
-
-                            section#f-action div.actionpad p {
-                                max-height: 100px;
+                        
+                        section#f-action-blog a.button {
+                            margin-top: 20px;
+                            height: 65px;
+                            font-size: 30px;
+                            padding-top: 10px;
+                            border-radius: 10px;
+                        }
+                        
+                            a.button img {
+                                background: #067b82;
+                                width: 40px;   
+                            }
+                         
+                        section#f-blog div.blogpad {
+                            width: 100%;
+                            padding: 0;
+                        }
+                        .title-wrapper {
+                            background: #ffffff;
+                            position: absolute;
+                            width: 37.5%;
+                            z-index: 1;
+                        }
+                        section#f-action .title-wrapper {
+                            bottom: 20px;
+                            left: 0;
+                        }
+                        section#f-blog .title-wrapper {
+                            bottom: 20px;
+                            right: 0;
+                        }
+                        section#f-blog .pipe {
+                            display: none;
+                        }
+                        section#f-blog .inner {
+                            position: relative;
+                            overflow: hidden;
+                            width: 50%;
+                            float: right;
+                            padding: 23px 10px 23px 20px;
+                            background: #767676;
+                        }
+                        section#f-blog h3, section#f-action h3 {
+                            margin-top: 0;
+                            font-size: 28px;
+                            float: left;
+                            padding: 5px 10px;
+                            width: 70%;
+                            font-family: 'Myriad Pro', sans-serif;
+                            font-weight: bold;
+                        }
+                        section#f-action h3 {
+                            width: 100%;
+                            padding: 5px 20px;
+                            font-size: 27px;
+                        }
+                            section#f-blog .inner img {
+                                width: 100%;
+                                margin: auto;
+                                float: none;
+                            }
+                            
+                            section#f-blog .outer {
+                                width: 50%;
+                                float: left;
+                                padding: 23px 20px 23px 23px;
+                            }
+                        section#f-action .jcarousel-control-next {
+                            left: 87px!important;
+                            right: auto!important;
+                            bottom: 0!important;
+                            top: -55px!important;
+                            z-index: 1;
+                        }
+                        section#f-action .jcarousel-control-prev {
+                            left: 30px!important;
+                            right: auto!important;
+                            bottom: 0!important;
+                            top: -55px!important;
+                            z-index: 1;
+                        }
+                        section#f-blog .jcarousel-control-next {
+                            left: 57px!important;
+                            right: auto!important;
+                            bottom: 0!important;
+                            top: -55px!important;
+                            z-index: 1;
+                        }
+                        section#f-blog .jcarousel-control-prev {
+                            left: 0!important;
+                            right: auto!important;
+                            bottom: 0!important;
+                            top: -55px!important;
+                        }
+                        
+                        section#f-action .jcarousel-control-next img, section#f-action .jcarousel-control-prev img, section#f-blog .jcarousel-control-next img, section#f-blog .jcarousel-control-prev img {
+                            width: 45px;
+                        }
+                        
+                            section#f-action-blog div p {
+                                max-height: 210px;
                                 overflow-y: auto;
+                                font-size: 24px;
+                                line-height: 30px;
                             }
                             
                             section#events {
@@ -774,6 +993,8 @@ aside#sticky #mobile-logo, aside#sticky nav#nav img {
                                 position: static;
                                 float: left;
                             }
+                            
+                            
                             
                                 section#events img {
                                     width: 100%;
@@ -788,5 +1009,167 @@ aside#sticky #mobile-logo, aside#sticky nav#nav img {
                         position: static;
                         float: left;
                     }
-
+section.work a {
+    font-size: 25px;
+    font-family: 'Alternate Gothic', sans-serif;
+    margin-bottom: 30px;
 }
+
+    section.work img {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .endpad {
+        
+    }
+    
+    .endpad > ul > div.footer-menu {
+        border-bottom: #7f8168 1px solid;;
+        padding-bottom: 20px;
+        line-height: 34px;
+    }
+    .endpad > ul:last-of-type > div.footer-menu {
+        border: 0;
+    }
+    .footer-menu.social-menu {
+        padding: 0 15px;
+        width: 50%;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .footer-menu.social-menu p:first-of-type {
+        display: none;
+    }
+    
+    .footer-menu.social-menu .social-end a img {
+        width: 40px;
+        margin-right: 10px;
+    }
+    
+    div#mobile-bottom {
+        float: left;
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        color: #a5a69f;
+        padding-bottom: 20px;
+    }
+    #mob-log-con {
+        width: 75%;
+        display: block;
+        margin: 0 auto 20px;
+    }
+        div#mobile-bottom img {
+            width: 100%;
+            max-width: 350px;
+        }
+        .copyright {
+            line-height: 24px;
+            font-size: 18px;
+        }
+        
+        .endpad > ul > div.footer-menu {
+            font-size: 24px;
+        }
+}
+
+section#events a {
+    padding: 0;
+}
+.title-wrapper {
+    background: #ffffff;
+    position: absolute;
+    width: 37.5%;
+    z-index: 1;
+}
+section#f-action .title-wrapper {
+    top: 20px;
+    right: 93px;
+}
+section#f-action .title-wrapper h3 {
+    margin: 0;
+}
+
+section#f-action-blog .jcarousel-control-next {
+    right: -80px!important;
+    top: 0!important;
+}
+
+section#f-action-blog .jcarousel-control-prev {
+    left: auto!important;
+    top: 0!important;
+    right: -43px!important;
+}
+
+section#f-blog .title-wrapper {
+    top: 10px;
+    left: 0;
+}
+
+    section#f-blog .jcarousel-control-next {
+        left: auto!important;
+        top: 0!important;
+        right: -452px!important;
+    }
+    
+    section#f-blog .jcarousel-control-prev {
+        left: auto!important;
+        top: 0!important;
+        right: -412px!important;
+    }
+#f-action-blog .jcarousel li {
+    width: 746px!important;
+}
+
+    .slider-img-cont {
+        float: left;
+        width: 50%;
+    }
+    
+        .slider-img-cont img {
+            width: 100%;
+        }
+    
+    section#f-action div.actionpad p {
+        max-width: 333px;
+        max-height: 250px;
+        overflow-y: auto;
+    }
+.endpad > ul > div.footer-menu {
+    padding-left: 0;
+    padding-right: 0;
+}
+#featured-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-height: 250px;
+    margin-top: 20px;
+    padding-bottom: 75px;
+}
+
+    #mobile-next-slide {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 50px;
+    }
+    
+    #mobile-previous-slide {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 50px;
+    }
+    
+    div#mobile-bottom {
+        display: none;
+    }
