@@ -17,7 +17,7 @@
 	<![endif]-->
 	<link rel="stylesheet" type="text/css" media="all" href="./css/style.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="./css/mediastyle.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="./css/checkout.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="./css/basket.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="./css/jcarousel.responsive.css" />
 
 
@@ -39,7 +39,7 @@
 	<script type="text/javascript" src="./js/jquery.jcarousel.min.js"></script>
 	<script type="text/javascript" src="./js/jcarousel.responsive.js"></script>
 	<script type="text/javascript" src="./js/jquery.matchHeight-min.js"></script>
-
+        <script type="text/javascript" src="./js/basket.js"></script>
 	<!--<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -212,83 +212,94 @@
 	</div>
 
 	<div class="basket">
-		<h2>Regular Donation</h2>
-		<h5>Summary of Donation</h5>
+            <div class="table-container">
+                    <h2>Regular Donation</h2>
+                
+                    <h5>Summary of Donation<img src="./css/images-checkout/arrow_down.png"/></h5>
 
-		<table class="btable">
-			<thead>
-				<tr>
-					<th>Appeal/Project</th>
-					<th>Donation Type</th>
-					<th>Location</th>
-					<th>Notes</th>
-					<th>Amount</th>
-					<th>Remove</th>
-				</tr>
-			</thead>
-			<tr>
-				<td class="project" data-title="Appeal/Project">Food 4 Kids</td>
-				<td data-title="Donation Type"><select name="type">
-					<option value="Zakat">Zakat</option>
-					<option value="Sadaqah" selected="selected">Sadaqah</option>
-					<option value="Interest">Interest</option>
-				</select></td>
-				<td data-title="Location">Where Most Needed</td>
-				<td data-title="Notes">- -</td>
-				<td data-title="Amount">&pound;50</td>
-				<td data-title="Remove"><a href="#"><img src="./css/images-checkout/x.png" alt="x" /></a></td>
-			</tr>
-		</table>
+                    <table class="btable">
+                            <thead>
+                                    <tr>
+                                            <th>Appeal/Project</th>
+                                            <th>Donation Type</th>
+                                            <th>Location</th>
+                                            <th>Notes</th>
+                                            <th>Amount</th>
+                                            <th class="remove">Remove</th>
+                                            <th class="remove-mb"></th>
+                                    </tr>
+                            </thead>
+                            <tr>
+                                    <td class="project" data-title="Appeal/Project">Food 4 Kids</td>
+                                    <td data-title="Donation Type"><select name="type">
+                                            <option value="Zakat">Zakat</option>
+                                            <option value="Sadaqah" selected="selected">Sadaqah</option>
+                                            <option value="Interest">Interest</option>
+                                    </select></td>
+                                    <td data-title="Location">Where Most Needed</td>
+                                    <td data-title="Notes">- -</td>
+                                    <td data-title="Amount">&pound;50</td>
+                                    <td class="remove" data-title="Remove"><a href="#"><img src="./css/images-checkout/x.png" alt="x" /></a></td>
+                                    <td class="remove-mb" data-title="Remove"><a class="button" href="#">Remove<img src="./css/images-checkout/x.png" alt="" /></a></td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="table-container">
+                    <h2>Single Donation</h2>
 
-		<h2>Single Donation</h2>
-		<h5>Summary of Donation</h5>
+                    <h5>Summary of Donation<img src="./css/images-checkout/arrow_down.png"/></h5>
 
-		<table class="btable">
-			<thead>
-				<tr>
-					<th>Appeal/Project</th>
-					<th>Donation Type</th>
-					<th>Location</th>
-					<th>Notes</th>
-					<th>Amount</th>
-					<th>Remove</th>
-				</tr>
-			</thead>
-			<tr>
-				<td class="project" data-title="Appeal/Project">Food 4 Kids</td>
-				<td data-title="Donation Type"><select name="type">
-					<option value="Zakat" selected="selected">Zakat</option>
-					<option value="Sadaqah">Sadaqah</option>
-					<option value="Interest">Interest</option>
-				</select></td>
-				<td data-title="Location">Where Most Needed</td>
-				<td data-title="Notes">- -</td>
-				<td data-title="Amount">&pound;50</td>
-				<td data-title="Remove"><a href="#"><img src="./css/images-checkout/x.png" alt="x" /></a></td>
-			</tr>
-			<tr>
-				<td class="project" data-title="Appeal/Project">Food 4 Kids</td>
-				<td data-title="Donation Type"><select name="type">
-					<option value="Zakat">Zakat</option>
-					<option value="Sadaqah" selected="selected">Sadaqah</option>
-					<option value="Interest">Interest</option>
-				</select></td>
-				<td data-title="Location">Where Most Needed</td>
-				<td data-title="Notes">- -</td>
-				<td data-title="Amount">&pound;50</td>
-				<td data-title="Remove"><a href="#"><img src="./css/images-checkout/x.png" alt="x" /></a></td>
-			</tr>
-			<tr class="total">
-				<td colspan="2"><a class="button grey">Make another donation</a></td>
-				<td colspan="3" class="tright">Total <span class="orange">&pound;50 + &pound;100</span></td>
-				<td><a href="#" class="update">UPDATE</a></td>
-			</tr>
-			<tr class="final">
-				<td colspan="2"><a class="button basket"><img src="./css/images/basket_colour.png" alt="" /> Empty basket</a></td>
-				<td colspan="3" class="tright"><a class="button rightimg">Checkout <img src="./css/images/arrow_hollow.png" alt="" /></a></td>
-				<td></td>
-			</tr>
-		</table>
+                    <table class="btable">
+                            <thead>
+                                    <tr>
+                                            <th>Appeal/Project</th>
+                                            <th>Donation Type</th>
+                                            <th>Location</th>
+                                            <th>Notes</th>
+                                            <th>Amount</th>
+                                            <th class="remove">Remove</th>
+                                            <th class="remove-mb"></th>
+                                    </tr>
+                            </thead>
+                            <tr>
+                                    <td class="project" data-title="Appeal/Project">Food 4 Kids</td>
+                                    <td data-title="Donation Type"><select name="type">
+                                            <option value="Zakat" selected="selected">Zakat</option>
+                                            <option value="Sadaqah">Sadaqah</option>
+                                            <option value="Interest">Interest</option>
+                                    </select></td>
+                                    <td data-title="Location">Where Most Needed</td>
+                                    <td data-title="Notes">- -</td>
+                                    <td data-title="Amount">&pound;50</td>
+                                    <td class="remove" data-title="Remove"><a href="#"><img src="./css/images-checkout/x.png" alt="x" /></a></td>
+                                    <td class="remove-mb" data-title="Remove"><a class="button" href="#">Remove<img src="./css/images-checkout/x.png" alt="" /></a></td>
+                            </tr>
+                            <tr>
+                                    <td class="project" data-title="Appeal/Project">Food 4 Kids</td>
+                                    <td data-title="Donation Type"><select name="type">
+                                            <option value="Zakat">Zakat</option>
+                                            <option value="Sadaqah" selected="selected">Sadaqah</option>
+                                            <option value="Interest">Interest</option>
+                                    </select></td>
+                                    <td data-title="Location">Where Most Needed</td>
+                                    <td data-title="Notes">- -</td>
+                                    <td data-title="Amount">&pound;50</td>
+                                    <td class="remove" data-title="Remove"><a href="#"><img src="./css/images-checkout/x.png" alt="x" /></a></td>
+                                    <td class="remove-mb" data-title="Remove"><a class="button" href="#">Remove<img src="./css/images-checkout/x.png" alt="" /></a></td>
+                            </tr>
+                    </table>
+                    <table class="finaltable">
+                            <tr class="total">
+                                    <td colspan="2"><a class="button grey">Make another donation</a></td>
+                                    <td colspan="3" class="tright"><span class="totaltext">Total</span> <span class="orange">&pound;50 + &pound;100</span></td>
+                                    <td><a href="#" class="update">UPDATE</a></td>
+                            </tr>
+                            <tr class="final">
+                                    <td colspan="2"><a class="button basket"><img src="./css/images/basket_colour.png" alt="" /> Empty basket</a></td>
+                                    <td colspan="3" class="tright"><a class="button rightimg">Checkout <img src="./css/images/arrow_hollow.png" alt="" /></a></td>
+                            </tr>
+                    </table>
+            </div>
 	</div>
 
 	<div class="basket">
