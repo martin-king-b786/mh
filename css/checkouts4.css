@@ -1,0 +1,347 @@
+section.checkout {
+	color: #666;
+	padding: 25px;
+}
+
+section#content {
+    overflow: hidden;
+}
+
+h1 {
+	display: inline-block;
+	background: #f89d54;
+	margin: 25px 25px 50px 25px;
+	padding: 0 40px;
+	font-size: 100px;
+	line-height: 110px;
+	letter-spacing: -5px;
+	color: #fff;
+}
+
+div#cprocess {
+	text-align: center;
+        margin-bottom: 80px;
+}
+
+div#cprocess img {
+	vertical-align: middle;
+}
+
+div#cprocess hr {
+	display: inline-block;
+	width: 15%;
+	border: 0;
+	border-bottom: 2px dashed #999;
+	margin: 0 20px;
+	vertical-align: middle;
+}
+
+div#cprocess hr.orange {
+	border-color: #f89d54;
+}
+
+span.cnum {
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 36px;
+	text-align: center;
+	border: #ccc 2px solid;
+	border-radius: 50%;
+	color: #f89d54;
+	vertical-align: middle;
+}
+#thankyou {
+    padding: 0;
+}
+
+.title-container {
+    padding: 0;
+}
+
+    h3 {
+        float: left;
+        padding: 10px 30px;
+        background: #f89d54;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        font-size: 35px;
+    }
+    .table-container {
+        overflow: hidden;
+        float: left;
+        width: 100%;
+        padding-bottom: 20px;
+        border-bottom: 1px #cccccc solid;
+        margin-bottom: 50px;
+    }
+    
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Alternate Gothic', sans-serif;
+            margin-bottom: 20px;
+        }
+
+            th {
+                color: #f89d54;
+                font-size: 28px;
+                line-height: 60px;
+                padding: 0 10px;
+                text-align: center;
+                text-transform: uppercase;
+                border-top: #e9e9e9 1px solid;
+                border-bottom: #e9e9e9 3px solid;
+            }
+
+            td {
+                font-size: 24px;
+                text-align: center;
+                padding: 30px 0;
+                border-bottom: #ccc 1px solid;
+                vertical-align: top;
+            }
+
+            td.project {
+                padding-left: 20px;
+            }
+
+            th:first-of-type, td:first-of-type {
+                text-align: left;
+            }
+
+            tr.total td {
+                padding: 0;
+            }
+
+            tr.final td {
+                border: none;
+                padding: 30px 0 0 0;
+            }
+
+            tr.final td:last-of-type {
+                background: none;
+            }
+
+        .total {
+            float: right;
+        }
+
+            .total h3 {
+                background: transparent;
+                color: #666666;
+                padding: 0;
+                margin: 0;
+            }
+
+                .total h3 .orange{
+                    color: #f89d54;
+                }
+                
+    .additional-content {
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    
+        .additional-content div {
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        
+            .additional-content div h4 {
+                float: left;
+                padding: 5px;
+                background: #f89d54;
+                color: #ffffff;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                font-size: 24px;
+            }
+            
+            .additional-content div p {
+                float: left;
+                width: 100%;
+                margin-bottom: 12px;
+                font-size: 20px;
+                font-weight: bold;
+                padding-left: 5px;
+            }
+            
+            .additional-content h4 {
+                float: right;
+                color: #f89d54;
+                text-transform: uppercase;
+                font-size: 24px;
+            }
+    
+            .content {
+                margin-bottom: 40px;
+                font-weight: bold;
+            }
+            
+                .content h3 {
+                    background: transparent;
+                    color: #f89d54;
+                    padding: 0;
+                    margin: 0 0 10px;
+                }
+                
+        .content h3 img {
+            margin-left: 50px;
+        }
+        
+    .content div {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .mobile-display {
+        display: none;
+    }
+    
+        .mobile-display .row h3, .mobile-display h4 {
+            background: transparent;
+            color: #666666;
+            font-size: 24px;
+            float: left;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .mobile-display h4 {
+            font-size: 30px;
+        }
+        
+@media screen and (max-width: 767px) {
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 85px;
+        margin-left: 0;
+    }
+    
+    h3 {
+        padding: 5px 30px;
+        margin-bottom: 40px;
+    }
+    
+    .row {
+        margin: 0 0 20px;
+    }
+    
+    #card > .content {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding: 0;
+        max-width: 100%;
+    }
+    
+    .card-message {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .inputs {
+        padding: 0;
+    }
+    
+        .input {
+            margin-bottom: 10px;
+            width: 100%;
+            font-size: 18px;
+        }
+        
+        .input-row > label {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        
+        #card .container {
+            padding-bottom: 0;
+            border-bottom: 0;
+            margin-bottom: 50px;
+        }
+        
+        input[type="checkbox"] + label span {
+            margin-bottom: 250px;
+        }
+        
+        .input-row > input[type="checkbox"] + label {
+            font-size: 18px;
+        }
+        .content h3 span {
+            width: 50%;
+            float: left;
+        }
+        .content h3 img {
+            margin-left: 5%;
+            width: 45%;
+            float: left;
+        }
+        
+        .additional-content {
+            padding-bottom: 40px;
+        }
+        .additional-content h4 {
+            float: left;
+            color: #666666;
+        }
+        
+        .table-container {
+            border-bottom: 0;
+        }
+        
+            td {
+                border-color: #000000;
+            }
+            
+            .mobile-display {
+                display: block;
+                overflow: hidden;
+                margin-bottom: 20px;
+            }
+            
+                .mobile-display .title-container {
+                    margin-top: 40px;
+                }
+            
+                .mobile-display .row.last {
+                    padding-bottom: 30px;
+                    border-bottom: 1px #000000 solid;
+                }
+            
+            .desktop-display {
+                display: none;
+            }
+            
+            .total h3 {
+                color: #f89d54;
+            }
+}
+@media screen and (max-width: 480px) {
+    div#cprocess {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 60px;
+        margin-left: 0;
+    }
+    
+    input[type="checkbox"] + label span {
+        margin-bottom: 300px;
+    }
+    .content h3 {
+        font-size: 30px;
+    }
+    .content h3 img {
+        margin-top: 15px;
+    }
+}
+
