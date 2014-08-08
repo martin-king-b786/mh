@@ -142,7 +142,7 @@ div#container {
                                     }
                                 
                                     .node-publication div.arrow-pointer img {
-
+                                        padding: 0 3px 0 0;
                                     }
                                 .node-publication .content {
                                     height: 100%;
@@ -155,7 +155,7 @@ div#container {
                                 
                             .node-publication.bright {
                                 opacity: 1;
-                                box-shadow: 0px 0px 25px 5px #d0d0d0;
+                                box-shadow: #666 0px 0px 15px 0px;
 					border-color: #fff;
                             }
                                     

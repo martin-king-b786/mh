@@ -217,3 +217,24 @@ $(document).ready(function() {
         $('*').removeClass('bright');
     });
 });
+/*
+    function infScroll() {
+        $userScroll = $(window).scrollTop();
+        $windowHeight = $(window).height();
+
+        if($userScroll > $windowHeight) {
+            $firstHeight = $('ul.year').first().height() + $('ul.year:first li:last .node-publication').height();
+            $firstScroll = $('ul.year').first().offset().top;
+            $firstYear = "<ul class='year'>" + $('ul.year').first().html() + "</ul>";
+            $('ul.year').first().remove();
+
+            $('#publications-container').append($firstYear);
+            console.log($('ul.year:first li .year-no').html());
+            console.log($userScroll);
+            console.log($firstScroll);
+            $("body").animate({ scrollTop : $firstScroll }, "fast");
+        }
+    }
+
+    $(window).scroll(infScroll);
+*/
