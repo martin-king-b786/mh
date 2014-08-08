@@ -1,0 +1,86 @@
+div#wherewework {
+    padding: 20px;
+    position: relative;
+}
+.container {
+    position: relative;
+}
+div#title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #7867a6;
+    color: #ffffff;
+    padding: 20px;
+    max-width: 30%;
+}
+
+    #title h1 {
+        color: #ffffff;
+        font-size: 80px;
+        line-height: 60px;
+    }
+    
+    #mobile {
+        display: none;
+    }
+    @media screen and (max-width: 767px) {
+        
+    
+        div#title {
+            width: 100%;
+            max-width: 100%;
+            position: static;
+            margin-bottom: 20px;
+            float: left;
+        }
+        
+            div#title h1 {
+                text-align: center;
+            }
+        
+        #worldmap {
+            display: none!important;
+        }
+        
+        #mobile {
+            float: left;
+            width: 100%;
+            display: block;
+        }
+        
+            .continent {
+                margin-top: 20px;
+            }
+            
+                .continent h2 {
+                    background: #7867a6;
+                    color: #ffffff;
+                    padding: 20px;
+                }
+                
+                    .continent h2 img {
+                        float: right;
+                        height: 40px;
+                    }
+                    
+                    .continent h2 img.rotate {
+                        transform: rotate(90deg);
+                    }
+                    
+                .continent ul {
+                    display: none;
+                }
+                
+                    .continent .country {
+                        padding: 20px;
+                        font-size: 30px;
+                        font-weight: bold;
+                        font-family: 'Alternate Gothic', sans-serif;
+                        border-bottom: 1px #cccccc solid;
+                    }
+                    .continent .country:last-of-type {
+                        border: 0;
+                    }
+    }

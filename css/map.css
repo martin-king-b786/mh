@@ -1,0 +1,207 @@
+#worldmap {
+	position:relative;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+        margin-top: 75px;
+}
+
+#worldmap img {
+	width:100%;
+	height:auto;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.popover.bottom {
+    margin-top: -25px;
+    background: rgba(255,255,255,0.85);
+    width: 175px;
+}
+
+.marker {
+	background-image:url(marker1.png);
+	background-repeat:no-repeat;
+	font-size:14px;
+	color:transparent;
+	height:31px;
+	width:31px;
+}
+ .marker a {
+	 text-decoration:none;
+ }
+ 
+.cu {
+	position:absolute;
+	left:16%;
+	top:40%;
+}
+.de {
+	position:absolute;
+	left:42.5%;
+	top:20%;
+}
+.eg {
+	position:absolute;
+	left:40%;
+	top:36%;
+}
+.ma {
+	position:absolute;
+	left:30%;
+	top:45%;
+}
+.ly {
+	position:absolute;
+	left:46.5%;
+	top:40%;
+}
+
+.ni {
+	position:absolute;
+	left:43%;
+	top:44%;
+}
+
+.su {
+	position:absolute;
+	left:48.5%;
+	top:47%;
+}
+
+.ca {
+	position:absolute;
+	left:46%;
+	top:50%;
+}
+
+.so {
+	position:absolute;
+	left:53%;
+	top:54%;
+}
+
+.co {
+	position:absolute;
+	left:46.5%;
+	top:57%;
+}
+
+.mo {
+	position:absolute;
+	left:50%;
+	top:68%;
+}
+
+.ir {
+	position:absolute;
+	left:55.5%;
+	top:31.5%;
+}
+
+.uz {
+	position:absolute;
+	left:57.5%;
+	top:25%;
+}
+
+.af {
+	position:absolute;
+	left:59%;
+	top:31%;
+}
+
+.pa {
+	position:absolute;
+	left:60.5%;
+	top:34%;
+}
+
+.in {
+	position:absolute;
+	left:64.5%;
+	top:40%;
+}
+
+.si {
+	position:absolute;
+	left:64%;
+	top:50%;
+}
+
+.ba {
+	position:absolute;
+	left:67%;
+	top:39%;
+}
+
+.cn {
+	position:absolute;
+	left:67%;
+	top:30%;
+}
+
+.ma {
+	position:absolute;
+	left:74.5%;
+	top:54.5%;
+}
+
+.popover {
+	width:140px;
+}
+
+#worldmap img.flag {
+	width:100%;
+	height: auto;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.popover .title {
+	text-align: center;
+}
+
+.popover-title {
+    background: transparent;
+}
+.popover-content {
+    position: relative; 
+}
+
+#worldmap img.close-button {
+    position: absolute;
+    background: #7867a6;
+    width: 30px;
+    height: 30px;
+    top: -15px;
+    right: -15px;
+    border-radius: 50%;
+}
+
+.popover h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.popover p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.popover .btn-warning {
+    background: #7867a6;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 0;
+    font-family: 'Alternate Gothic', sans-serif;
+    padding: 0;
+}
+
+.popover .popover-content img:not(.close-button) {
+    padding: 0 20%;
+}
