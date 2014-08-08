@@ -6,7 +6,11 @@ div#container {
         padding: 0 25px;
         margin-top: 20px;
 }
-
+canvas {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+}
         #wwd-content .content, #wwd-content h2 {
                 color: #ffffff;
                 background: #3e9d60;
@@ -67,9 +71,7 @@ div#container {
                         bottom: 43px;
                         padding: 10px;
                 }
-                        .wwd-section:hover .icon-container {
-                                background: url('./images-whatwedo/icon-hover.png');
-                        }
+                        
                         .wwd-section:hover .icon-container img {
                             display: none;
                         }

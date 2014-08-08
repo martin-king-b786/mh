@@ -39,7 +39,9 @@
 	<script type="text/javascript" src="./js/jcarousel.responsive.js"></script>
 	<script type="text/javascript" src="./js/jquery.matchHeight-min.js"></script>
 
-	<script type="text/javascript" src="./js/progress-wwd.js"></script>
+	
+        <script type="text/javascript" src="./js/Chart.js"></script>
+        <script type="text/javascript" src="./js/whatwedo.js"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="./css/whatwedo.css" />
 
 	<!--<script>
@@ -52,6 +54,13 @@
 		ga('require', 'displayfeatures');
 		ga('send', 'pageview');
 	</script>-->
+        <script>
+            $browserWidth = $(window).width();
+            
+            function iconLeave() {
+                $("canvas").hide();
+            }
+        </script>
 </head>
 
 <body>
@@ -210,13 +219,50 @@
             </div>
         </div>
     </div>
-    
-    <div data-mh="section" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
+    <div>
+        
+        
+        
+    </div>
+    <div data-mh="section" id="edu-sect" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
         <div class="section-container">
             <img src="./css/images-whatwedo/education-image.jpg"/>
 
             <div class="icon-container-base">
                 <div class="icon-container container-">
+                    <canvas id="edu" height="90" width="90" data-pctfill = "75"></canvas>
+                    <script>
+                        $(document).ready(function(){
+
+                            function iconEnter() {
+                                $("#edu").show();
+                                var doughnutOptions  = {
+                                    segmentStrokeWidth : 0,
+
+                                    percentageInnerCutout : 85
+                                };
+                                var doughnutData = [
+                                    {
+                                        value: 75,
+                                        color:"#3e9d60"
+                                    },
+                                    {
+                                        value : 25,
+                                        color : "#ffffff"
+                                    }
+                                ];
+                                new Chart(document.getElementById("edu").getContext("2d")).Doughnut(doughnutData, doughnutOptions);
+                            };
+                            
+                            if($browserWidth > 767) { 
+                                $('#edu-sect').mouseleave(iconLeave);
+                                $('#edu-sect').mouseenter(iconEnter);
+                            }
+                            else {
+                                $('#edu-sect').click(iconEnter);
+                            }
+                        });
+                    </script> 
                     <img class="icon" src="./css/images-whatwedo/education-icon.png" />
                     <img class="icon hover" src="./css/images-whatwedo/education-icon-green.png" />
                 </div>
@@ -232,12 +278,47 @@
         </div>
     </div>
     
-    <div data-mh="section" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
+    <div data-mh="section" id="eme-sect" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
         <div class="section-container">
+            
             <img src="./css/images-whatwedo/emergencies-image.jpg"/>
 
             <div class="icon-container-base">
+                
                 <div class="icon-container container-">
+                    <canvas id="eme" height="90" width="90" data-pctfill = "75"></canvas>
+                    <script>
+                        $(document).ready(function(){
+
+                            function iconEnter() {
+                                $("#eme").show();
+                                var doughnutOptions  = {
+                                    segmentStrokeWidth : 0,
+
+                                    percentageInnerCutout : 85
+                                };
+                                var doughnutData = [
+                                    {
+                                        value: 75,
+                                        color:"#3e9d60"
+                                    },
+                                    {
+                                        value : 25,
+                                        color : "#ffffff"
+                                    }
+                                ];
+                                new Chart(document.getElementById("eme").getContext("2d")).Doughnut(doughnutData, doughnutOptions);
+                            };
+                            if($browserWidth > 767) { 
+                                $('#eme-sect').mouseleave(iconLeave);
+                                $('#eme-sect').mouseenter(iconEnter);
+                            }
+                            else {
+                                $('#eme-sect').click(iconEnter);
+                            }
+                        });
+                    </script>                        
+                        
                     <img class="icon" src="./css/images-whatwedo/emergencies-icon.png" />
                     <img class="icon hover" src="./css/images-whatwedo/emergencies-icon-green.png" />
                 </div>
@@ -253,12 +334,46 @@
         </div>
     </div>
     
-    <div data-mh="section" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
+    <div data-mh="section" id="env-sect" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
         <div class="section-container">
             <img src="./css/images-whatwedo/environment-image.jpg"/>
 
             <div class="icon-container-base">
                 <div class="icon-container container-">
+                    <canvas id="env" height="90" width="90" data-pctfill = "75"></canvas>
+                    <script>
+                        $(document).ready(function(){
+
+                            function iconEnter() {
+                                $("#env").show();
+                                var doughnutOptions  = {
+                                    segmentStrokeWidth : 0,
+
+                                    percentageInnerCutout : 85
+                                };
+                                var doughnutData = [
+                                    {
+                                        value: 75,
+                                        color:"#3e9d60"
+                                    },
+                                    {
+                                        value : 25,
+                                        color : "#ffffff"
+                                    }
+                                ];
+                                new Chart(document.getElementById("env").getContext("2d")).Doughnut(doughnutData, doughnutOptions);
+                            };
+                            
+                            
+                            if($browserWidth > 767) { 
+                                $('#env-sect').mouseleave(iconLeave);
+                                $('#env-sect').mouseenter(iconEnter);
+                            }
+                            else {
+                                $('#env-sect').click(iconEnter);
+                            }
+                        });
+                    </script>
                     <img class="icon" src="./css/images-whatwedo/environment-icon.png" />
                     <img class="icon hover" src="./css/images-whatwedo/environment-icon-green.png" />
                 </div>
@@ -274,12 +389,49 @@
         </div>
     </div>
     
-    <div data-mh="section" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
+    <div data-mh="section" id="hea-sect" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
         <div class="section-container">
             <img src="./css/images-whatwedo/health-image.jpg"/>
 
             <div class="icon-container-base">
                 <div class="icon-container container-">
+                    <canvas id="hea" height="90" width="90" data-pctfill = "75"></canvas>
+                    <script>
+                        $(document).ready(function(){
+                            
+                            function iconEnter() {
+                                $("#hea").show();
+                                var doughnutOptions  = {
+                                    segmentStrokeWidth : 0,
+
+                                    percentageInnerCutout : 85
+                                };
+                                var doughnutData = [
+                                    {
+                                        value: 75,
+                                        color:"#3e9d60"
+                                    },
+                                    {
+                                        value : 25,
+                                        color : "#ffffff"
+                                    }
+                                ];
+                                new Chart(document.getElementById("hea").getContext("2d")).Doughnut(doughnutData, doughnutOptions);
+                            };
+                            function iconLeave() {
+                                $("canvas").hide();
+                            }
+                        if($browserWidth > 767) { 
+                            $('#hea-sect').mouseleave(iconLeave);
+                            $('#hea-sect').mouseenter(iconEnter);
+                        }
+                        else {
+                            $('#hea-sect').click(iconEnter);
+                        }
+                        
+                            
+                        });
+                    </script>
                     <img class="icon" src="./css/images-whatwedo/health-icon.png" />
                     <img class="icon hover" src="./css/images-whatwedo/health-icon-green.png" />
                 </div>
@@ -295,12 +447,44 @@
         </div>
     </div>
     
-    <div data-mh="section" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
+    <div data-mh="section" id="hun-sect" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
         <div class="section-container">
             <img src="./css/images-whatwedo/hunger-image.jpg"/>
 
             <div class="icon-container-base">
                 <div class="icon-container container-">
+                    <canvas id="hun" height="90" width="90" data-pctfill = "75"></canvas>
+                    <script>
+                        $(document).ready(function(){
+
+                            function iconEnter() {
+                                $("#hun").show();
+                                var doughnutOptions  = {
+                                    segmentStrokeWidth : 0,
+
+                                    percentageInnerCutout : 85
+                                };
+                                var doughnutData = [
+                                    {
+                                        value: 75,
+                                        color:"#3e9d60"
+                                    },
+                                    {
+                                        value : 25,
+                                        color : "#ffffff"
+                                    }
+                                ];
+                                new Chart(document.getElementById("hun").getContext("2d")).Doughnut(doughnutData, doughnutOptions);
+                            };
+                            if($browserWidth > 767) { 
+                                $('#hun-sect').mouseleave(iconLeave);
+                                $('#hun-sect').mouseenter(iconEnter);
+                            }
+                            else {
+                                $('#hun-sect').click(iconEnter);
+                            }
+                        });
+                    </script>
                     <img class="icon" src="./css/images-whatwedo/hunger-icon.png" />
                     <img class="icon hover" src="./css/images-whatwedo/hunger-icon-green.png" />
                 </div>
@@ -316,12 +500,44 @@
         </div>
     </div>
     
-    <div data-mh="section" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
+    <div data-mh="section" id="liv-sect" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
         <div class="section-container">
             <img src="./css/images-whatwedo/livelihoods-image.jpg"/>
 
             <div class="icon-container-base">
                 <div class="icon-container container-">
+                    <canvas id="liv" height="90" width="90" data-pctfill = "75"></canvas>
+                    <script>
+                        $(document).ready(function(){
+
+                            function iconEnter() {
+                                $("#liv").show();
+                                var doughnutOptions  = {
+                                    segmentStrokeWidth : 0,
+
+                                    percentageInnerCutout : 85
+                                };
+                                var doughnutData = [
+                                    {
+                                        value: 75,
+                                        color:"#3e9d60"
+                                    },
+                                    {
+                                        value : 25,
+                                        color : "#ffffff"
+                                    }
+                                ];
+                                new Chart(document.getElementById("liv").getContext("2d")).Doughnut(doughnutData, doughnutOptions);
+                            };
+                            if($browserWidth > 767) { 
+                                $('#liv-sect').mouseleave(iconLeave);
+                                $('#liv-sect').mouseenter(iconEnter);
+                            }
+                            else {
+                                $('#liv-sect').click(iconEnter);
+                            }
+                        });
+                    </script>
                     <img class="icon" src="./css/images-whatwedo/livelihoods-icon.png" />
                     <img class="icon hover" src="./css/images-whatwedo/livelihoods-icon-green.png" />
                 </div>
@@ -337,12 +553,44 @@
         </div>
     </div>
     
-    <div data-mh="section" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
+    <div data-mh="section" id="orp-sect" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
         <div class="section-container">
             <img src="./css/images-whatwedo/orphans-image.jpg"/>
 
             <div class="icon-container-base">
                 <div class="icon-container container-">
+                    <canvas id="orp" height="90" width="90" data-pctfill = "75"></canvas>
+                    <script>
+                        $(document).ready(function(){
+
+                            function iconEnter() {
+                                $("#orp").show();
+                                var doughnutOptions  = {
+                                    segmentStrokeWidth : 0,
+
+                                    percentageInnerCutout : 85
+                                };
+                                var doughnutData = [
+                                    {
+                                        value: 75,
+                                        color:"#3e9d60"
+                                    },
+                                    {
+                                        value : 25,
+                                        color : "#ffffff"
+                                    }
+                                ];
+                                new Chart(document.getElementById("orp").getContext("2d")).Doughnut(doughnutData, doughnutOptions);
+                            };
+                            if($browserWidth > 767) { 
+                                $('#orp-sect').mouseleave(iconLeave);
+                                $('#orp-sect').mouseenter(iconEnter);
+                            }
+                            else {
+                                $('#orp-sect').click(iconEnter);
+                            }
+                        });
+                    </script>
                     <img class="icon" src="./css/images-whatwedo/orphans-icon.png" />
                     <img class="icon hover" src="./css/images-whatwedo/orphans-icon-green.png" />
                 </div>
@@ -358,12 +606,44 @@
         </div>
     </div>
     
-    <div data-mh="section" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
+    <div data-mh="section" id="wat-sect" class="wwd-section matchheight col-md-4 col-sm-6 col-xs-12">
         <div class="section-container">
             <img src="./css/images-whatwedo/water-image.jpg"/>
 
             <div class="icon-container-base">
                 <div class="icon-container container-">
+                    <canvas id="wat" height="90" width="90" data-pctfill = "75"></canvas>
+                    <script>
+                        $(document).ready(function(){
+
+                            function iconEnter() {
+                                $("#wat").show();
+                                var doughnutOptions  = {
+                                    segmentStrokeWidth : 0,
+
+                                    percentageInnerCutout : 85
+                                };
+                                var doughnutData = [
+                                    {
+                                        value: 75,
+                                        color:"#3e9d60"
+                                    },
+                                    {
+                                        value : 25,
+                                        color : "#ffffff"
+                                    }
+                                ];
+                                new Chart(document.getElementById("wat").getContext("2d")).Doughnut(doughnutData, doughnutOptions);
+                            };
+                            if($browserWidth > 767) { 
+                                $('#wat-sect').mouseleave(iconLeave);
+                                $('#wat-sect').mouseenter(iconEnter);
+                            }
+                            else {
+                                $('#wat-sect').click(iconEnter);
+                            }
+                        });
+                    </script>
                     <img class="icon" src="./css/images-whatwedo/water-icon.png" />
                     <img class="icon hover" src="./css/images-whatwedo/water-icon-green.png" />
                 </div>
