@@ -37,7 +37,7 @@ div#container {
                         margin-bottom: 3px;
                 }
                 
-                .wwd-section>img {
+                .section-container>img {
                     filter: grayscale();
                     -webkit-filter: grayscale();
                     transition: all 0.3s linear;
@@ -45,7 +45,7 @@ div#container {
                     -moz-transition: all 0.3s linear;
                     -o-transition: all 0.3s linear;
                 }
-                    .wwd-section:hover>img {
+                    .wwd-section:hover .section-container>img {
                         filter: none;
                         -webkit-filter: none;
                     }
