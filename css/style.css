@@ -304,6 +304,7 @@ section#header nav#nav ul {}
 
 section#header nav#nav ul li {
 	display: inline-block;
+        position: relative;
 }
 
 section#header nav#nav ul li a {
@@ -448,12 +449,25 @@ section#header nav#nav ul li ul#donatenav li a:hover, section#header nav#nav ul 
 }
 
 section#header nav#nav ul li div#basketdetail {
-	display: none;
+	display: block;
+        width: 0;
+        height: 0;
 	padding: 0;
-	right: 73px;
+	right: 20px;
+        top: 40px;
 	padding-top: 10px;
 	background: none;
 	border-bottom: none;
+        overflow: hidden;
+        transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+}
+
+section#header nav#nav ul li div#basketdetail.exp {
+    width: 185px;
+    height: 61px;
 }
 
 section#header nav#nav ul li div#basketdetail div {
@@ -490,7 +504,7 @@ section#header nav#nav ul li div#basketdetail p.basketamount {
 }
 
 span.uparr {
-	display: none;
+	display: block;
 	width: 12px;
 	height: 10px;
 	position: absolute;
@@ -501,18 +515,32 @@ span.uparr {
 }
 
 section#header nav#nav ul li div#searchdetail {
-	display: none;
+	display: block;
 	padding: 0;
 	right: 15px;
 	padding-top: 10px;
 	background: none;
 	border-bottom: none;
+        top: 40px;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
 }
+
+section#header nav#nav ul li div#searchdetail.exp {
+    width: 200px;
+    height: 61px;
+}
+
 
 section#header nav#nav ul li div#searchdetail div {
 	position: static;
+        border: 1px solid black;
 	border-top: #ccc 3px solid;
-	border-bottom: none;
 	padding: 0;
 }
 
@@ -575,11 +603,26 @@ section#header nav#nav ul li#limnav {
 }
 
 section#header nav#nav ul li ul#mobilenav {
-	display: none;
-	right: 8px;
+	display: block;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+	right: 15px;
+        top: 48px;
 	padding-top: 10px;
 	background: none;
 	border-bottom: none;
+        padding: 0;
+}
+
+section#header nav#nav ul li ul#mobilenav.exp {
+    width: 150px;
+    height: auto;
+    padding: 10px 7px 3px 7px;
 }
 
 section#header nav#nav ul li ul#mobilenav li {

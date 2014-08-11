@@ -13,10 +13,11 @@ $('body').ready(function() {
 		$(this).find('.subsubnav').slideToggle('fast');
 	});
 	$('.navbtn').parent().click(function() {
-		$(this).find('.subnav').slideToggle('fast');
-		$(this).find('.uparr').slideToggle('fast');
+		$(this).find('.subnav').toggleClass('exp');
+		$(this).find('.uparr').toggleClass('exp');
 	});
     }
+    else {
 	$('.navarr').parent().hover(function() {
 		$(this).find('.subnav').slideToggle(0);
 	});
@@ -24,7 +25,8 @@ $('body').ready(function() {
 		$(this).find('.subsubnav').slideToggle('fast');
 	});
 	$('.navbtn').parent().hover(function() {
-		$(this).find('.subnav').slideToggle('fast');
-		$(this).find('.uparr').slideToggle('fast');
+		$(this).find('.subnav').toggleClass('exp');
+		$(this).find('.uparr').toggleClass('exp');
 	});
+    }
 });

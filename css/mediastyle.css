@@ -51,14 +51,6 @@
 		margin-right: 15px;
 	}
 	
-	section#header nav#nav ul li div#basketdetail {
-		right: 142px;
-	}
-
-	section#header nav#nav ul li div#searchdetail {
-		right: 80px;
-	}
-
 	section#header nav#nav ul li a#mnav {
 		background: url('images/mnav.png') no-repeat center center;
 		border: #00c0f2 1px solid;
