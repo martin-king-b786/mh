@@ -66,6 +66,10 @@
             position: relative;
         }
         
+            .content img {
+                margin-right: 5%;
+            }
+        
             .content img, #programme section>img:not(.arrow) {
                 width: 75%;
             }
