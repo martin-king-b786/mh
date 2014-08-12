@@ -794,8 +794,66 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
 }
 
 
+#subpage-menu {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        display: block;
+        height: 80px;
+    }
+    #subpage-menu>ul {
+        display: block;
+        margin: auto;
+    }
+    
+        #subpage-menu>ul>li {
+            float: left;
+            padding: 10px 8px;
+            border: 1px #ccc solid;
+            border-bottom: 3px #ccc solid;
+            margin-right: -1px;
+            font-size: 16px;
+            font-family: 'Alternate Gothic', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0px;
+            color: #666666;
+        }   
+        #subpage-menu ul>li.active {
+            color: #ffffff;
+            position: relative;
+        }
+        #subpage-menu>ul>li:hover .sub-menu {
+            display: block;
+        }
 
+            #subpage-menu>ul>li>ul.sub-menu {
+                padding: 10px;
+                display: none;
+                position: absolute;
+                top: 39px;
+                left: -1px;
+                width: 150px;
+                border-radius: 3px;
+                border-top-left-radius: 0;
+                z-index: 1;
+            }
 
+                #subpage-menu ul li ul.sub-menu li {
+                    padding: 10px 15px;
+                    color: #ffffff;
+                }
+                #subpage-menu ul li ul.sub-menu li.active {
+                    background: #ffffff;
+                    color: #666666;
+                    border-radius: 3px;
+                }
+
+.bottom-border {
+    width: 40%;
+    display: block;
+    margin: 90px auto;
+    border-bottom: 2px #b6b6b6 solid;
+}
 
 section#header a#donate, section#header a#basketnav, section#header a#searchnav, section#header a#mnav {
 	width: 39px;

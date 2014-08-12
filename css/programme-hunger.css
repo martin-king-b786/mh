@@ -1,0 +1,221 @@
+#programme {
+    padding: 20px;
+    overflow: hidden;
+}
+
+    #subpage-menu ul>li.active {
+        background: #067b82;
+        border-color: #056268;
+    }
+    
+    #subpage-menu>ul>li>ul.sub-menu {
+        background: #067b82;
+    }
+    
+    #subpage-menu ul li ul.sub-menu li.active {
+        color: #067b82;
+    }
+    
+    .img-container {
+        position: relative;
+    }
+    
+        .img-container .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 30px;
+        }
+            .img-container .overlay img {
+                float: left;
+            }
+
+            .img-container .overlay .text {
+                float: left;
+                margin-left: 20px;
+            }
+
+                .img-container .overlay .text h1 {
+                    font-size: 80px;
+                    line-height: 55px;
+                    color: #067b82;
+                    margin-bottom: 0;
+                }
+
+                .img-container .overlay .text h3 {
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    margin-top: 5px;
+                    color: #067b82;
+                }
+                
+    section {
+        text-align: center;
+        margin-top: 40px;
+        padding-bottom: 100px;
+        position: relative;
+    } 
+    
+        h2 {
+            font-size: 65px;
+            color: #067b82;
+            margin-bottom: 50px;
+        }
+        
+        .content {
+            position: relative;
+        }
+        
+            .content img, #programme section>img:not(.arrow) {
+                width: 75%;
+            }
+            
+            .content .content-text {
+                position: absolute;
+                top: 27.5%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 35%;
+                overflow-y: auto;
+                max-height: 51%;
+                font-size: 18px;
+            } 
+            
+                .content .content-text p {
+                    line-height: 27px;
+                    margin-bottom: 25px;
+                }
+                
+            img.arrow {
+                position: absolute;
+                width: 17.5%;
+                z-index: -1;
+            }
+            
+            img#a1 {
+                left: 0;
+                bottom: -20%;
+                max-width: 126px;
+            }
+            img#a2 {
+                right: 0;
+                bottom: -13%;
+                max-width: 203px;
+            }
+            img#a3 {
+                max-width: 175px;
+                left: 0;
+                top: 5%;
+            }
+            
+            .bottom-border {
+                width: 25%;
+                margin-bottom: 160px;
+            }
+            
+            
+            
+            .jcarousel-wrapper {
+                max-width: 60%;
+                margin: 0 auto 50px;
+            }
+            
+                .jcarousel li {
+                    margin-right: 50px;
+                    position: relative;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+                
+                    .jcarousel li h4 {
+                        height: 30%;
+                        background: rgba(6,123,130,.75);
+                        position: absolute;
+                        bottom: 10%;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        color: #ffffff;
+                        font-size: 25px;
+                        text-transform: uppercase;
+                    }
+                    
+                        .jcarousel li h4 span.title-container {
+                            width: 87.5%;
+                            float: left;
+                            padding-left: 12.5%;
+                            padding-top: 5px;
+                        }
+                        
+            .jcarousel-control-prev {
+                transform: rotate(180deg);
+                left: -13%;
+                width: 50px;
+                height: 50px;
+                background: grey;
+                top: 45%;
+                border-radius: 50%;
+            }
+            
+            .jcarousel-control-next {
+                right: -13%;
+                width: 50px;
+                height: 50px;
+                background: grey;
+                border-radius: 50%;
+                top: 45%;
+            }
+                .jcarousel-control-prev img, .jcarousel-control-next img {
+                    width: 100%;
+                }
+                
+                section>p {
+                    width: 80%;
+                    display: block;
+                    margin: 0 auto 50px;
+                    line-height: 28px;
+                    font-size: 18px;
+                    color: #666666;
+                }
+                
+                #effects {
+                    max-width: 85%;
+                    display: block;
+                    margin: 0 auto 50px;
+                    overflow: hidden;
+                }
+                    #effects .effect {
+                        border-right: 1px #cccccc solid;
+                    }
+                    #effects .effect:last-of-type {
+                        border-right: 0;
+                    }
+                    
+                        #effects .effect img {
+                            display: block;
+                            margin: auto;
+                        }
+
+                        #effects .effect h3 {
+                            font-size: 50px;
+                            color: #067b82;
+                            margin: 20px 0 10px;
+                        }
+                        
+                        #effects .effect p {
+                            font-size: 18px;
+                            line-height: 25px;
+                            max-width: 85%;
+                            margin: 0 7.5%;
+                        }
+                        
+                        a.button {
+                            background: #5c5d4d;
+                            color: #ffffff;
+                            border-color: #3e3f33;
+                        }
+                        
+                        a.button:hover {
+                            color: #ffffff;
+                        }
