@@ -794,13 +794,14 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
 }
 
 
-#subpage-menu {
+    #subpage-menu {
         width: 90%;
         margin: auto;
         margin-bottom: 20px;
         display: block;
-        height: 80px;
+        height: 40px;
     }
+    
     #subpage-menu>ul {
         display: block;
         margin: auto;
@@ -838,7 +839,7 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
                 position: absolute;
                 top: 39px;
                 left: -1px;
-                width: 150px;
+                min-width: 150px;
                 border-radius: 3px;
                 border-top-left-radius: 0;
                 z-index: 1;
@@ -916,6 +917,159 @@ section#header a#basketnav span {
 section#content {
 	padding: 18px;
 }
+
+#donate-section {
+        overflow: hidden;
+    }
+    
+        #donate-section  #donate-sections {
+            overflow: hidden;
+            float: left;
+            padding: 0;
+            position: relative;
+        }
+        
+            #donate-section  #donate-sections h3 {
+                background: #5c5d4d;
+                padding: 20px 10px;
+                border-radius: 5px;
+                float: left;
+                width: 100%;
+                font-size: 25px;
+                line-height: 25px;
+                text-transform: uppercase;
+                font-weight: normal;
+                font-family: 'Alternate Gothic', sans-serif;
+                margin: 0 0 5px;
+                color: #ffffff;
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+            }
+            
+            #donate-section #donate-sections h3:last-of-type {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin: 0;
+            }
+            
+    #donate-panels {
+        padding: 0;
+    }
+    
+        #donate-panels>div {
+            padding: 20px 10px 10px;
+            overflow: hidden;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            background: #5c5d4d;
+            display: none;
+            min-height: 140px;
+        }
+
+        #donate-section #donate-sections h3.active, #donate-panels>div.active {
+            background: #00c0f2;
+            color: #ffffff;
+            display: block;
+        }
+        
+        .donatepad-section {
+            width: 27.5%;
+            padding: 0 20px;
+            float: left;
+            border-right: 1px #ffffff solid;
+            overflow: hidden;
+        }
+        
+        .donatepad-section:last-of-type {
+            width: 17.5%;
+            border-right: 0;
+        }
+        .donatepad-section .row {
+            width: 100%;
+            float: left;
+            margin: 0 0 20px;
+            height: 40px;
+        }
+        .donatepad-section .row:last-of-type {
+            margin: 0;
+        } 
+            .donatepad-section p {
+                font-size: 18px;
+                margin: 0;
+            }
+            
+            .donatepad-section input {
+                color: #000000;
+                font-size: 24px;
+                width: 100%;
+                padding: 0 10px;
+                text-align: center;
+            }
+            
+            .donatepad-section label {
+                float: left;
+                margin-top: 10px;
+                width: 35%;
+            }
+            
+            .donatepad-section select {
+                display: inline-block;
+                font-family: 'Alternate Gothic', sans-serif;
+                line-height: 37px;
+                height: 30px;
+                background: #fff;
+                border: none;
+                border-top: #ccc 3px solid;
+                border-radius: 3px;
+                color: #666666;
+                font-size: 18px;
+                width: 55%;
+                float: right;
+                padding: 0 0 0 10px;
+                text-align: center;
+                margin-top: 4px;
+            }
+            
+            div.pamount {
+                overflow: hidden;
+                position: relative;
+            }   
+            
+            span.symbol {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                color: #000000;
+                font-size: 24px;
+            }
+            
+            input.amount {
+                padding-left: 25px;
+            }
+            
+            #donate-section a.button {
+                width: 100%;
+                font-size: 34px;
+                color: #ffffff;
+                background: #5c5d4d;
+                text-align: center;
+                border-color: #4a4a3e;
+            }
+            
+            #donate-section a.button.options {
+                font-size: 18px;
+                color: #00c0f2;
+                background: #ffffff;
+                border-color: transparent;
+                text-align: left;
+            }
+            
+                #donate-section a.button img {
+                    margin: 7px 0 0;
+                    float: right;
+                    background: #00c0f2;
+                }
 
 section#footer {
 	clear: both;
