@@ -822,6 +822,12 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
             color: #ffffff;
             position: relative;
         }
+        
+            #subpage-menu ul>li.active img {
+                float: right;
+                margin: 5px 0 0 5px;
+            }
+            
         #subpage-menu>ul>li:hover .sub-menu {
             display: block;
         }
