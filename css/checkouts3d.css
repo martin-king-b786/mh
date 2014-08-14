@@ -263,6 +263,9 @@ span.cnum {
             width: 45%;
             float: left;
         }
+        div#cprocess hr {
+            width: 9%;
+        }
 }
 @media screen and (max-width: 480px) {
     div#cprocess {

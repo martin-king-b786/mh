@@ -14,4 +14,13 @@ $(document).ready(function(){
     $('span.drop-down').click(function(){
         $('#search-form').slideToggle();
     });
+    
+    $('.checkboxes span').click(function(){
+        $(this).parent('label').parent().parent().children('.other-option').children('input.other-amount').attr('disabled','disabled');
+        console.log('asdasd');
+    });
+    
+    $('.other-option span.other').click(function(){
+        $(this).parent().parent().children('input.other-amount').removeAttr('disabled');
+    });
 });

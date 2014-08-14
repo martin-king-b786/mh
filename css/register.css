@@ -49,10 +49,9 @@ div#container {
             }
                 #register section label {
                     margin-top: 10px;
-			font-family: 'Alternate Gothic', sans-serif;
-			font-size: 18px;
-			text-transform: uppercase;
-			color: #5c5d4d;
+                    font-family: 'Alternate Gothic', sans-serif;
+                    font-size: 18px;
+                    color: #5c5d4d;
                 }
                 
                 #register section input, #register section select {

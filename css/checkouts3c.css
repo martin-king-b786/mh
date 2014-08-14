@@ -223,6 +223,10 @@ span.cnum {
             .cards img {
                 width: 40px;
             }
+            
+            div#cprocess hr {
+                width: 9%;
+            }
 }
 @media screen and (max-width: 480px) {
     

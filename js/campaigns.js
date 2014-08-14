@@ -15,13 +15,13 @@ $(document).ready(function(){
     }
     
             /* Lightbox */
-    $('.campaign-section .content .button.readmore').click(function(){
+    $('.campaign-section .content .button.video').click(function(){
             $(this).parent().parent().children('.lightbox-container').fadeIn();
     });
-    $('.campaign-section .campaign-image .button.readmore').click(function(){
+    $('.campaign-section .campaign-image .button.video').click(function(){
             $(this).parent().parent().parent().parent().children('.lightbox-container').fadeIn();
     });
-    $('.lightbox-container .close').click(function(){
+    $('.lightbox-container .close-lightbox').click(function(){
             $('.lightbox-container').fadeOut();
     });
 

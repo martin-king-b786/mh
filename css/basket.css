@@ -365,4 +365,7 @@ tr.total td.tright span.orange {
         text-align: center;
     }
     
+    h1 {
+        font-size: 60px;
+    }
 }

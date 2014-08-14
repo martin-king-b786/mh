@@ -61,7 +61,7 @@ span.cnum {
     padding: 0;
 }
 
-    h3 {
+    #thankyou h3 {
         float: left;
         padding: 10px 30px;
         background: #f89d54;
@@ -224,7 +224,7 @@ span.cnum {
         margin-left: 0;
     }
     
-    h3 {
+    #thankyou h3 {
         padding: 5px 30px;
         margin-bottom: 40px;
     }
@@ -323,6 +323,10 @@ span.cnum {
             .total h3 {
                 color: #f89d54;
             }
+            
+            div#cprocess hr {
+                width: 9%;
+            }
 }
 @media screen and (max-width: 480px) {
     div#cprocess {
@@ -342,6 +346,10 @@ span.cnum {
     }
     .content h3 img {
         margin-top: 15px;
+    }
+    
+    .total {
+        float: left;
     }
 }
 

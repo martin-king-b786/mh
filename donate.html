@@ -341,7 +341,7 @@ Please continue to donate to those who need it most by choosing one of the optio
                     </div>
                     <div class="other-option">
                         <input class="diff-amount" type="radio" id="emother" name="em"/><label for="emother"><span class="other"></span></label>
-                        <input class="other-amount" type="text" placeholder="Enter Other Amount"/>
+                        <input disabled class="other-amount" type="text" placeholder="Enter Other Amount"/>
                     </div>
                     <select>
                         <option>Where most needed</option>
@@ -422,21 +422,17 @@ Please continue to donate to those who need it most by choosing one of the optio
                 <div data-mh="1" class="donate-form">
                     <form role="form">
                         <div class="checkboxes">
-                            <label class="radio-inline">
-                                <input type="radio" name="em" id="em10" value="option1"> £10
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="em" id="em100" value="option1"> £100
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="em" id="em1000" value="option1"> £1000
-                            </label>
-
-                        </div>
-                        <div class="other-option">
-                            <input class="diff-amount" type="radio" id="emother" name="emother"/><label for="emother"><span class="other"></span></label>
-                            <input class="other-amount" type="text" placeholder="Enter Other Amount"/>
-                        </div>
+                        <input type="radio" id="em102" name="em2" />
+                        <label for="em102"><span></span>&pound;10</label>
+                        <input type="radio" id="em1002" name="em2"/>
+                        <label for="em1002"><span></span>&pound;100</label>
+                        <input type="radio" id="em10002" name="em2" />
+                        <label for="em10002"><span></span>&pound;1000</label>
+                    </div>
+                    <div class="other-option">
+                        <input class="diff-amount" type="radio" id="emother2" name="em2"/><label for="emother2"><span class="other"></span></label>
+                        <input disabled class="other-amount" type="text" placeholder="Enter Other Amount"/>
+                    </div>
                         <select>
                             <option>Where most needed</option>
                             <option>Option 1</option>

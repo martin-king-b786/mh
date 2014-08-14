@@ -9,9 +9,9 @@ div#container {
     
         #login #itn-logo {
             display: block;
-		text-align: center;
+            text-align: center;
         }
-
+        
         #login #login-message {
             width: 80%;
             display: block;
@@ -126,4 +126,10 @@ div#container {
 	.col-xs-0 {
 		display: none;
 	}
+}
+
+@media screen and (max-width: 480px) {
+    #login #itn-logo img {
+        width: 100%;
+    }
 }

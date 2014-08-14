@@ -28,7 +28,7 @@ div#container {
                 .emergency-section.featured .image-container  {
                         overflow: hidden;
                 }
-                        .emergency-section.featured img  {
+                        .emergency-section.featured .img-container img  {
                                 width: 100%;
                                 height: auto;
                         }
@@ -141,7 +141,7 @@ div#container {
                 filter: none;
                 -webkit-filter: none;
             }
-        .emergency-section img {
+        .emergency-section .mobile-container img {
                 width: 100%;
                 float: left;
         }
@@ -194,6 +194,82 @@ div#container {
             font-weight: bold;
             font-size: 15px;
         }
+        
+        .lightbox-container {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: url('./images/lightbox-bg.png');
+                background-color: rgba(0,0,0,0.55);
+                display: none;
+                overflow: auto;
+                z-index: 1;
+            }
+                .emergency-section .emergency-lightbox {
+                    background: #ffffff;
+                    width: 50%;
+                    float: none;
+                    overflow: hidden;
+                    margin: 100px auto;
+                    padding: 2% 2%;
+                    height: auto;
+                    position: relative;
+                }
+                    .emergency-section .close-lightbox {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        padding: 0;
+                        cursor: pointer;
+                        background: #c53334;
+                        border-radius: 5px;
+                        margin: 10px;
+                    }
+                    
+                    .emergency-section .emergency-wide-image {
+                        width: 100%;
+                        position: relative;
+                        padding-bottom: 56.245%;
+                        padding-top: 30px;
+                        height: 0;
+                        overflow: hidden;
+                        display: block;
+                        margin: 50px auto;
+                    }
+                    
+                        .emergency-lightbox .emergency-wide-image iframe {
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            position: absolute;
+                        }
+                        
+                    .emergency-lightbox h2 {
+                        float: none;
+                        color: #c53334;
+                        margin: 0 0 20px;
+                    }
+
+                .emergency-lightbox .content {
+                    color: #676767;
+                    padding: 0;
+                    margin-top: 10px;
+                    height: auto;
+                    column-count:2;
+                    -moz-column-count:2;
+                    -webkit-column-count: 2;
+                    line-height: 20px;
+                    font-size: 14px;
+                }
+                
+                .emergency-section  .emergency-lightbox a.button.readmore {
+                    background: #c53334;
+                    color: #ffffff;
+                    border-color: #9e292a;
+                }
         
         @media screen and (max-width: 1000px) {
             #emergency-response h1 {

@@ -201,7 +201,13 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
             section#header nav#nav ul#navright {
                 position: static;
                 float: right;
-=            }
+            }
+                section#header nav#nav ul li ul#mobilenav, section#header nav#nav ul li div#basketdetail, section#header nav#nav ul li div#searchdetail  {
+                    transition: all 0s linear;
+                    -webkit-transition: all 0s linear;
+                    -moz-transition: all 0s linear;
+                    -o-transition: all 0s linear;
+                }
 	.m-left {
 		float: left;
 	}
@@ -314,9 +320,6 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
 	.banner33 {
 		height: auto;
 	}
-
-
-
 }
 
 
@@ -327,14 +330,15 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
         height: auto;
     }
         section#header a#logo {
-            width: 100%;
+            width: 50%;
             padding: 0 20px;
         }
 	
         section#header nav#nav {
-            width: 100%;
+            width: 50%;
             margin-bottom: 20px;
             float: none;
+            margin-left: 0;
         }
         
             section#header nav#nav ul#navright {
@@ -344,7 +348,7 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
 		width: 100%;
                 margin: auto;
                 display: block;
-                margin-top: 20px;
+                margin-top: 30px;
 	}
 
 	.banner33 h1 {
@@ -397,11 +401,6 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
 		top: 95px;
 	}
 
-	section#header nav#nav ul li a#basketnav, section#header nav#nav ul li a#searchnav, section#header nav#nav ul li a#mnav {
-		width: 50px;
-		height: 47px;
-	}
-
 	section#header nav#nav ul li div#basketdetail {
 		right: 132px;
 	}
@@ -409,4 +408,20 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
 	section#header nav#nav ul li div#searchdetail {
 		right: 75px;
 	}
+        section#header a#basketnav, section#header a#searchnav, section#header a#mnav {
+            width: 30px;
+            height: 30px;
+        }
+        section#header nav#nav ul li a#mnav {
+            width: 30px;
+            height: 30px;
+            background-size: 20px;
+        }
+        section#header nav#nav ul li a {
+            line-height: 16px;
+            padding: 5px;
+        }
+            section#header nav#nav ul li a img {
+                width: 100%;
+            }
 }

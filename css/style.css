@@ -314,7 +314,7 @@ section#header nav#nav ul li a {
 	line-height: 38px;
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 0 10px;
+	padding: 0;
 	color: #fff;
 	border-radius: 3px;
 }
@@ -407,6 +407,7 @@ section#header nav#nav ul li div#navappcon ul {
 
 section#header nav#nav ul li ul li {
 	display: block;
+        width: 175px;
 }
 
 section#header nav#nav ul li ul.more li:nth-of-type(odd) {
@@ -459,10 +460,10 @@ section#header nav#nav ul li div#basketdetail {
 	background: none;
 	border-bottom: none;
         overflow: hidden;
-        transition: all 0.3s linear;
-        -webkit-transition: all 0.3s linear;
-        -moz-transition: all 0.3s linear;
-        -o-transition: all 0.3s linear;
+        transition: all 0.1s linear;
+        -webkit-transition: all 0.1s linear;
+        -moz-transition: all 0.1s linear;
+        -o-transition: all 0.1s linear;
 }
 
 section#header nav#nav ul li div#basketdetail.exp {
@@ -525,10 +526,10 @@ section#header nav#nav ul li div#searchdetail {
         width: 0;
         height: 0;
         overflow: hidden;
-        transition: all 0.3s linear;
-        -webkit-transition: all 0.3s linear;
-        -moz-transition: all 0.3s linear;
-        -o-transition: all 0.3s linear;
+        transition: all 0.1s linear;
+        -webkit-transition: all 0.1s linear;
+        -moz-transition: all 0.1s linear;
+        -o-transition: all 0.1s linear;
 }
 
 section#header nav#nav ul li div#searchdetail.exp {
@@ -607,10 +608,10 @@ section#header nav#nav ul li ul#mobilenav {
         width: 0;
         height: 0;
         overflow: hidden;
-        transition: all 0.3s linear;
-        -webkit-transition: all 0.3s linear;
-        -moz-transition: all 0.3s linear;
-        -o-transition: all 0.3s linear;
+        transition: all 0.1s linear;
+        -webkit-transition: all 0.1s linear;
+        -moz-transition: all 0.1s linear;
+        -o-transition: all 0.1s linear;
 	right: 15px;
         top: 48px;
 	padding-top: 10px;
@@ -868,7 +869,7 @@ section#header a#donate, section#header a#basketnav, section#header a#searchnav,
 	background: #00c0f2;
 	border-bottom: #009ac2 3px solid;
 	border-radius: 3px;
-	padding: 0 !important;
+	padding: 0;
 	text-align: center;
 	vertical-align: middle;
 	margin-right: 15px;
@@ -916,6 +917,31 @@ section#header a#basketnav span {
 
 section#content {
 	padding: 18px;
+}
+
+.lb-prev {
+    background: url('./images/arrow_hollow.png');
+    background-size: 40px;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.lb-next {
+    background: url('./images/arrow_hollow.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 1;
 }
 
 #donate-section {

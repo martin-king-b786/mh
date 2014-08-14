@@ -165,7 +165,7 @@ input[type="checkbox"] + label span {
                         padding: 10px;
                         overflow: hidden;
                         border-radius: 5px;
-                        margin-bottom: 7px;
+                        margin-bottom: 30px;
                     }
                     #main-content #donations div.donation .donation-content {
                         border: 0;
@@ -580,6 +580,7 @@ input[type="checkbox"] + label span {
                     
                     #lightbox-image, #lightbox-image img {
                         width: 100%;
+                        position: relative;
                     }    
                     
                     .lightbox-container .lightbox-content *, .lightbox-container-img .lightbox-content * {
@@ -744,6 +745,10 @@ input[type="checkbox"] + label span {
                             
                             #profile {
                                 text-align: center;
+                            }
+                            
+                            #main-content #donations div.donation .donation-content .donate-message {
+                                font-weight: normal;
                             }
                             
                             .lightbox-content {

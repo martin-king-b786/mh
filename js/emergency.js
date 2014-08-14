@@ -12,5 +12,15 @@ $(document).ready(function(){
         
         
     });
+    
+    $('.emergency-section .content .appeal').click(function(){
+            console.log('sgdgfd');
+            $(this).parent().parent().parent().children('.lightbox-container').fadeIn();
+    });
+    
+    $('.lightbox-container .close-lightbox').click(function(){
+            $('.lightbox-container').fadeOut();
+    });
+
 });
 
