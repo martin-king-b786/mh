@@ -360,6 +360,14 @@
         }
         
         @media screen and (max-width: 767px) {
+            .img-container .overlay .text h1 {
+                font-size: 50px;
+            }
+            
+            .img-container .overlay img {
+                width: 15%;
+            }
+            
             #drops img {
                 display: none;
             }
@@ -369,6 +377,81 @@
             }
             #drops img.mobile.tablet {
                 display: none;
+            }
+            
+            #programme h2 {
+                line-height: 50px;
+            }
+
+            .content .content-text {
+                position: static;
+                margin-top: 20px;
+                width: 75%;
+            }
+            img#a1 {
+                bottom: -12.5%;
+            }
+            
+            img#a2 {
+                bottom: -20%;
+            }
+            
+            #effects .effect {
+                border-right: 0;
+            }
+                        
+        }
+        
+        @media screen and (max-width: 480px) {
+            .img-container .overlay img {
+                width: 50%;
+                display: block;
+                margin: auto;
+                float: none;
+            }
+            .img-container .overlay {
+                position: static;
+                overflow: hidden;
+                padding: 0;
+                margin-top: 20px;
+            }
+            .img-container .overlay .text {
+                width: 100%;
+                margin-left: 0;
+            }
+            .img-container .overlay .text h3 {
+                color: #20bdbe;
+            }
+            
+            #programme h2 {
+                line-height: 50px;
+                font-size: 30px;
+            }
+            img#a1 {
+                bottom: -6.25%;
+            }
+            
+            img#a2 {
+                bottom: -10%;
+            }
+            
+            img#a3 {
+                bottom: -22.5%;
+            }
+            
+            img#a4 {
+                bottom: -10%;
+            }
+            
+            .jcarousel-control-prev {
+                left: -35%;
+                width: 35px;
+                height: 35px;
+            }
+            .jcarousel-control-next {
+                right: -35%;
+                width: 35px;
+                height: 35px;
             }
         }
     

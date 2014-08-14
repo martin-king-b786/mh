@@ -20,6 +20,10 @@
         position: relative;
     }
     
+        .img-container>img {
+            width: 100%;
+        }
+        
         .img-container .overlay {
             position: absolute;
             bottom: 0;
@@ -133,7 +137,6 @@
                 }
                 
                     .jcarousel li h4 {
-                        height: 30%;
                         background: rgba(6,123,130,.75);
                         position: absolute;
                         bottom: 10%;
@@ -222,4 +225,69 @@
                         
                         a.button:hover {
                             color: #ffffff;
+                        }
+                        
+                        @media screen and (max-width: 767px) {
+                            #programme h2 {
+                                line-height: 50px;
+                            }
+
+                            .content .content-text {
+                                position: static;
+                                margin-top: 20px;
+                                width: 75%;
+                            }
+                            #effects .effect {
+                                border-right: 0;
+                            }
+                        }
+                        
+                        @media screen and (max-width: 480px) {
+            
+                            .jcarousel-control-prev {
+                                left: -35%;
+                                width: 35px;
+                                height: 35px;
+                            }
+                            .jcarousel-control-next {
+                                right: -35%;
+                                width: 35px;
+                                height: 35px;
+                            }
+                            .img-container .overlay img {
+                                width: 50%;
+                                display: block;
+                                margin: auto;
+                                float: none;
+                            }
+                            .img-container .overlay {
+                                position: static;
+                                overflow: hidden;
+                                padding: 0;
+                                margin-top: 20px;
+                            }
+                            .img-container .overlay .text {
+                                width: 100%;
+                                margin-left: 0;
+                            }
+                            .img-container .overlay .text h3 {
+                                color: #067b82;
+                            }
+
+                            #programme h2 {
+                                line-height: 50px;
+                                font-size: 30px;
+                            }
+                            
+                            .bottom-border {
+                                margin-bottom: 40px;
+                            }
+
+                            img#a1 {
+                                //bottom: -20%;
+                            }
+                            
+                            img#a3 {
+                                display: none;
+                            }
                         }

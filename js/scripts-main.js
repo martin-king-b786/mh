@@ -35,7 +35,6 @@ function submenuWidth () {
     $ulWidth = 0;
     $('#subpage-menu>ul>li').each(function(){
         $ulWidth = $(this).innerWidth() + $ulWidth+1;
-        console.log($(this).html()+" "+($(this).innerWidth()));
     });
     $ulWidth = $ulWidth + 2;
     $('#subpage-menu>ul').width($ulWidth);

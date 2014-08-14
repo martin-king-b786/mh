@@ -150,6 +150,10 @@ div#container {
                             color: #ffffff;
                         }
                         
+                        input[disabled] {
+                            background: #cccccc;
+                        }
+                        
         #donate #search-filter {
             float: right;
         }
