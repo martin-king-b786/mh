@@ -3,6 +3,9 @@
     overflow: hidden;
 }
 
+div#page-progress li {
+    border-color: #067b82;
+}
     #subpage-menu ul>li.active {
         background: #067b82;
         border-color: #056268;

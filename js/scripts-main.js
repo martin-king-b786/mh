@@ -56,4 +56,59 @@ $(document).ready(function(){
         $(this).addClass('active');
     });
     
+    
+    /* Page Progress */
+    $('#programme > section').each(function(){
+        $('#page-progress').append('<li></li>');
+    });
+    
+    $('#page-progress li').click(function(){
+        $liPos = $(this).index();
+        console.log($liPos);
+        
+        $scrollTop = $('#programme > section').eq($liPos).offset().top-20;
+        console.log($scrollTop);
+        
+        $(window).scrollTop($scrollTop);
+    });
+    $browserHeight = $(window).height();
+    function pageProgScroll() {
+        $firstOffset = $('#programme > section').first().offset().top - 40;
+        if($(window).scrollTop() >= $firstOffset) {
+            $('#page-progress').show();
+        }
+        else {
+            $('#page-progress').hide();
+        }
+        $lastBottom = $('#programme > section').last().offset().top + $('#programme > section').last().innerHeight()+50;
+        if(($(window).scrollTop()+$browserHeight) >= $lastBottom){
+            $('#page-progress').hide();
+        }
+    }
+    function pageProgTrigger() {
+        $($('#programme > section').get().reverse()).each(function(){
+            $offset = $(this).offset().top;
+            $sectionNo = $(this).parent().children('section').index($(this));
+            if($offset-40 <= $(window).scrollTop()) {
+                $('#page-progress li').css({
+                    'border-width' : '1px'
+                });
+                $('#page-progress li').eq($sectionNo).css({
+                    'border-width' : '8px'
+                });
+                
+                return false;
+            }
+            
+            console.log($offset);
+            console.log($(window).scrollTop());
+            console.log($sectionNo);
+        });
+    }
+    $(window).scroll(pageProgScroll);
+    $(window).scroll(pageProgTrigger);
+    
 });
+
+
+

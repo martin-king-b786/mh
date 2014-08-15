@@ -794,7 +794,27 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
 	background: url('images/icon-workwith.png') no-repeat 0% 45%;
 }
 
+div#page-progress {
+    width: 50px;
+    position: fixed;
+    top: 45%;
+    right: 0;
+    z-index: 1;
+}
 
+    div#page-progress ul {
+        
+    }
+    
+        div#page-progress li {
+            border: 2px #000000 solid;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            list-style: none;
+            margin: 10px auto;
+        }
+    
     #subpage-menu {
         width: 90%;
         margin: auto;
