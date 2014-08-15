@@ -137,3 +137,70 @@
 		});
                 
 	});
+        $(document).ready(function(){
+            
+            function nextSection() {
+                if($browserWidth > 767) {
+                    $userScroll = $(window).scrollLeft()+ $browserWidth;
+                    console.log($userScroll);
+                        $('body > section').each(function(){
+                            $offsetStart = $(this).children().first().position().left;
+                            $offsetEnd = $(this).children().last().position().left + $(this).children().last().width();
+                            $scrollleft = $(window).scrollLeft();
+                            
+                            if($offsetEnd > $userScroll) {
+                                console.log($(this).attr('id'));
+                                console.log('$scrollleft '+$scrollleft);
+                                console.log('$browserWidth '+$browserWidth);
+                                console.log('$offsetStart '+$offsetStart);
+                                console.log('$offsetEnd '+$offsetEnd);
+                                $('html, body').animate({scrollLeft: ($offsetStart-$('aside#sticky').width() ) }, 400);
+                                $('body > section').animate({
+                                    opacity : 0.25
+                                }, 400);
+                                $(this).animate({
+                                    opacity : 1
+                                }, 400);
+                                return false;
+                            }
+                            
+                        });
+                    
+                }
+            }
+            
+            function prevSection() {
+                if($browserWidth > 767) {
+                    $userScroll = $(window).scrollLeft();
+                    console.log($userScroll);
+                        $($('body > section').get().reverse()).each(function(){
+                            $offsetStart = $(this).children().first().position().left;
+                            $offsetEnd = $(this).children().last().position().left + $(this).children().last().width();
+                            $scrollleft = $(window).scrollLeft();
+                            
+                            if($offsetStart < $userScroll) {
+                                console.log($(this).attr('id'));
+                                console.log('$userScroll '+$userScroll);
+                                console.log('$scrollleft '+$scrollleft);
+                                console.log('$browserWidth '+$browserWidth);
+                                console.log('$offsetStart '+$offsetStart);
+                                console.log('$offsetEnd '+$offsetEnd);
+                                $('html, body').animate({scrollLeft: ($offsetStart-$('aside#sticky').width() ) }, 400);
+                                $('body > section').animate({
+                                    opacity : 0.5
+                                }, 400);
+                                $(this).animate({
+                                    opacity : 1
+                                }, 400);
+                                return false;
+                            }
+                            
+                        });
+                    
+                }
+            }
+
+            $('.section-next').click(nextSection);
+            $('.section-prev').click(prevSection);
+        });
+        
