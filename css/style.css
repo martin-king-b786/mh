@@ -794,6 +794,80 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
 	background: url('images/icon-workwith.png') no-repeat 0% 45%;
 }
 
+.related {
+        overflow: hidden;
+        margin-bottom: 90px;
+    }
+    
+    .related-post {
+        margin-bottom: 20px;
+    }
+    
+        .related-post .post-container {
+            border: 2px #5c5d4d solid;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            min-height: 150px;
+            color: #666666;
+        }
+
+            .related-post .post-container span {
+                font-style: italic;
+                margin-bottom: 20px;
+                float: left;
+                width: 100%;
+            }
+
+            .related-post .post-container h2 {
+                float: left;
+                font-size: 44px;
+                max-width: 75%;
+                text-align: left;
+                margin: 0;
+            }
+
+            .related-post .post-container a {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                border: 1px #5c5d4d solid;
+                border-radius: 50%;
+                width: 28px;
+                background: #5c5d4d;
+                margin: 10px 10px 5px;
+            }
+
+                .related-post .post-container a img {
+
+                }
+
+                .related-post .post-container a img.hover {
+                    display: none;
+                }
+
+     .related-post .post-container:hover {
+        background: #5c5d4d;
+        color: #ffffff;
+    }
+
+        .related-post .post-container:hover h2 {
+            color: #ffffff;
+        }
+
+        .related-post .post-container:hover a {
+            border-color: #ffffff;
+        }
+
+            .related-post .post-container:hover a img {
+                display: none;
+            }
+
+            .related-post .post-container:hover a img.hover {
+                display: block;
+            }
+
 div#page-progress {
     width: 50px;
     position: fixed;

@@ -1,0 +1,121 @@
+#faq {
+    padding: 20px;
+    overflow: hidden;
+}
+
+    #subpage-menu ul>li.active {
+        background: #f89d54;
+        border-color: #c67e43;
+    }
+    #subpage-menu>ul>li>ul.sub-menu {
+        background: #f89d54;
+    }
+    
+    #faq h1 {
+        font-size: 75px;
+        text-align: center;
+        color: #f89d54;
+        margin-bottom: 5px;
+    }
+    
+    #faq > img {
+        width: 100%;
+    }
+    
+    #faq .faqs {
+        width: 70%;
+        margin: 100px auto 0;
+        display: block;
+    }
+    
+        #faq .faqs h2 {
+            font-size: 45px;
+            margin-bottom: 35px;
+            line-height: 40px;
+            color: #f89d54;
+            text-align: center;
+        }
+        
+        #faq .faqs .row {
+            width: 100%;
+            border: 3px #f89d54 solid;
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom: 50px;
+        }
+        
+            #faq .faqs .row input {
+                width: 75%;
+                float: left;
+                border: 0;
+            }
+            
+            #faq .faqs .row a.button {
+                color: #ffffff;
+                float: right;
+                border-color: #c67e43;
+                background: #f89d54;
+            }
+            
+        #faq .faqs ul {
+            margin-bottom: 50px;
+        }
+        
+            #faq .faqs ul li {
+                list-style-image: url('./images-faq/q-list-style.jpg');
+                padding: 22.5px 0;
+                font-size: 26px;
+                font-weight: bold;
+                border-bottom: 1px #cccccc solid;
+                cursor: pointer;
+            }
+            #faq .faqs ul li:last-of-type {
+                border-bottom: 0;
+            }
+            
+                #faq .faqs ul li .answer {
+                    display: none;
+                    font-weight: normal;
+                    margin-top: 20px;
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+                
+    .bottom-border {
+        width: 20%;
+        margin: 100px auto;
+    }
+    
+    #faq .related {
+        
+    }
+    
+        #faq .related>h2 {
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 767px) {
+            #faq .faqs .row {
+                border: 0;
+            }
+            
+                #faq .faqs .row input {
+                    width: 100%;
+                    border: 1px #f89d54 solid;
+                    margin-bottom: 20px;
+                    float: none;
+                }
+                
+                #faq .faqs .row a.button {
+                    float: none;
+                    width: 50%;
+                    display: block;
+                    margin: auto;
+                }
+        }
+        
+        @media screen and (max-width: 480px) {
+            #faq .faqs .row a.button {
+                width: 100%;
+            }
+        }
