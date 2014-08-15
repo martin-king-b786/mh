@@ -1,0 +1,111 @@
+#partners {
+    padding: 20px;
+    overflow: hidden;
+}
+
+    #subpage-menu ul>li.active {
+        background: #99646c;
+        border-color: #7a5056;
+    }
+
+    #subpage-menu>ul>li>ul.sub-menu {
+        background: #99646c;
+    }
+    
+    #partners h1 {
+        font-size: 75px;
+        text-align: center;
+        margin-bottom: 5px;
+        color: #99646c;
+    }
+    
+    #partners > img {
+        width: 100%;
+    }
+    
+    #partners .container {
+        width: 70%;
+        display: block;
+        margin: 50px auto 0;
+    }
+    
+        #partners .container > h3 {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Myriad Pro', sans-serif;
+            text-align: center;
+            color: #99646c;
+            margin-bottom: 30px;
+        }
+        
+        #partners .container > p {
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+        }
+        
+        #partners .container .partners {
+            margin-top: 75px;
+        }
+        
+            #partners .container .partners .partner {
+                
+            }
+            
+                #partners .container .partners .partner img {
+                    display: block;
+                    margin: 0 auto 35px;
+                }
+                
+                #partners .container .partners .partner h2 {
+                    text-align: center;
+                }
+                
+                #partners .container .partners .partner p {
+                    text-align: center;
+                    line-height: 25px;
+                    margin-bottom: 0;
+                }
+                
+                #partners .container .partners .partner ul {
+                    text-align: center;
+                }
+                
+                    #partners .container .partners .partner li {
+                        list-style: none;
+                        width: auto;
+                        display: inline-block;
+                        text-align: center;
+                        margin: auto;
+                        line-height: 25px;
+                    }
+
+                        #partners .container .partners .partner li img {
+                            float: left;
+                            margin: 8px 5px;
+                        }
+                    
+            #partners .container .partners .bottom-border {
+                width: 40%;
+                margin: 120px auto;
+            }
+            
+    #partners .related {
+        
+    }
+    
+        #partners .related h2 {
+            text-align: center;
+        }
+        
+@media screen and (max-width: 767px) {
+    #partners .container {
+        width: 100%;
+        display: block;
+        margin: 50px auto 0;
+    }
+    
+        #partners .container .partners .partner h2 {
+            font-size: 30px;
+        }
+}
