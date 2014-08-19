@@ -64,10 +64,8 @@ $(document).ready(function(){
     
     $('#page-progress li').click(function(){
         $liPos = $(this).index();
-        console.log($liPos);
         
         $scrollTop = $('#programme > section').eq($liPos).offset().top-20;
-        console.log($scrollTop);
         
         $(window).scrollTop($scrollTop);
     });
@@ -100,9 +98,6 @@ $(document).ready(function(){
                 return false;
             }
             
-            console.log($offset);
-            console.log($(window).scrollTop());
-            console.log($sectionNo);
         });
     }
     $(window).scroll(pageProgScroll);

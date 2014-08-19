@@ -1,0 +1,365 @@
+#programme {
+    padding: 20px;
+    overflow: hidden;
+}
+
+div#page-progress li {
+    border-color: #874181;
+}
+
+    #subpage-menu ul>li.active {
+        background: #874181;
+        border-color: #6a3366;
+    }
+    
+    #subpage-menu>ul>li>ul.sub-menu {
+        background: #874181;
+    }
+    
+    #subpage-menu ul li ul.sub-menu li.active {
+        color: #874181;
+    }
+    
+    .img-container {
+        position: relative;
+    }
+        .img-container>img {
+            width: 100%;
+        }
+        .img-container .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 30px 30px 20px;
+        }
+            .img-container .overlay img {
+                float: left;
+            }
+
+            .img-container .overlay .text {
+                float: left;
+                margin-left: 20px;
+            }
+
+                .img-container .overlay .text h1 {
+                    font-size: 80px;
+                    line-height: 55px;
+                    color: #85407f;
+                    margin-bottom: 0;
+                }
+
+                .img-container .overlay .text h3 {
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    margin-top: 5px;
+                    color: #85407f;
+                }
+                
+    #programme section {
+        text-align: center;
+        margin-top: 40px;
+        padding-bottom: 50px;
+        position: relative;
+    } 
+    
+        #programme h2 {
+            font-size: 65px;
+            color: #85407f;
+            margin-bottom: 50px;
+            line-height: 50px;
+        }
+                    
+                    .video-container {
+                        position: relative;
+                        padding-bottom: 35.245%;
+                        padding-top: 30px; 
+                        height: 0; 
+                        overflow: hidden;
+                        width: 70%;
+                        display: block;
+                        margin: 50px auto;
+                    }
+                    
+                    iframe {
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                    }
+
+            .infographic {
+                width: 75%;
+                display: block;
+                margin: auto;
+                overflow: hidden;
+            }
+            .infographic#ig2 {
+                width: 100%;
+                margin-bottom: 80px;
+            }
+            
+                .infographic .ig-section {
+                    border-right: 1px #cccccc solid;
+                    padding: 20px;
+                }
+                .infographic#ig2 .ig-section {
+                    border-right: 0;
+                }
+                
+                    .infographic#ig2 .ig-section img {
+                        width: 100%;
+                    }
+                    
+                    .infographic .ig-section .info-img-container {
+                        position: relative;
+                    }
+                    
+                        .infographic .ig-section .info-img-container img {
+                            width: 100%;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                        }
+                        
+                    .infographic .ig-section h3 {
+                        font-size: 65px;
+                        color: #85407f;
+                        margin: 40px 0 30px;
+                        line-height: 50px;
+                        text-transform: uppercase;
+                        letter-spacing: -2px;
+                    }
+                    .infographic#ig2 .ig-section h3 {
+                        font-size: 75px;
+                    }
+                    
+                    .infographic .ig-section p {
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+                    .infographic#ig2 .ig-section p {
+                        font-size: 45px;
+                        color: #85407f;
+                        text-transform: uppercase;
+                        font-family: 'Alternate Gothic', sans-serif;
+                    }
+                    
+        #approaches {
+            width: 70%;
+            display: block;
+            margin: auto;
+            overflow: hidden;
+        }
+            
+            #approaches .approach {
+                float: left;
+                width: 100%;
+                margin-bottom: 100px;
+            }
+            #approaches .approach:nth-of-type(2n) img {
+                float: right;
+            }
+            
+                #approaches .approach img {
+                    padding: 20px;
+                }
+                #approaches .approach .content {
+                    text-align: left;
+                    padding-top: 50px;
+                }
+            
+                    #approaches .approach .content h3 {
+                        font-size: 45px;
+                        color: #85407f;
+                        line-height: 40px;
+                        text-transform: uppercase;
+                        margin-bottom: 30px;
+                    }
+                    
+                    #approaches .approach .content div {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+            
+            img.arrow {
+                position: absolute;
+                width: 17.5%;
+                z-index: -1;
+            }
+            
+                img#a1 {
+                    left: 2.5%;
+                    bottom: -40%;
+                    max-width: 110px;
+                }
+                
+                img#a2 {
+                    right: 2.5%;
+                    bottom: -15%;
+                    max-width: 140px;
+                }
+            
+            .bottom-border {
+                width: 25%;
+                margin-bottom: 150px;
+            }
+                        
+            .jcarousel-wrapper {
+                max-width: 60%;
+                margin: 0 auto 50px;
+            }
+            
+                .jcarousel li {
+                    margin-right: 50px;
+                    position: relative;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+                
+                    .jcarousel li h4 {
+                        background: rgba(135,65,129,.75);
+                        position: absolute;
+                        bottom: 10%;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        color: #ffffff;
+                        font-size: 25px;
+                        text-transform: uppercase;
+                    }
+                    
+                        .jcarousel li h4 span.title-container {
+                            width: 87.5%;
+                            float: left;
+                            padding-left: 12.5%;
+                            padding-top: 5px;
+                        }
+                        
+            .jcarousel-control-prev {
+                transform: rotate(180deg);
+                left: -13%;
+                width: 50px;
+                height: 50px;
+                background: grey;
+                top: 45%;
+                border-radius: 50%;
+            }
+            
+            .jcarousel-control-next {
+                right: -13%;
+                width: 50px;
+                height: 50px;
+                background: grey;
+                border-radius: 50%;
+                top: 45%;
+            }
+                .jcarousel-control-prev img, .jcarousel-control-next img {
+                    width: 100%;
+                }
+                
+                        a.button {
+                            background: #5c5d4d;
+                            color: #ffffff;
+                            border-color: #3e3f33;
+                        }
+                        
+                        a.button:hover {
+                            color: #ffffff;
+                        }
+                      
+    .content {
+        position: relative;
+    }    
+    
+        .content .content-text {
+            position: absolute;
+            top: 38%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 25%;
+            overflow-y: auto;
+            max-height: 51%;
+            font-size: 18px;
+        }
+        
+        @media screen and (max-width: 1000px) {
+            
+        }
+        
+        @media screen and (max-width: 767px) {
+            .img-container .overlay .text h1 {
+                font-size: 50px;
+            }
+            
+            .img-container .overlay img {
+                width: 15%;
+            }
+            
+            #programme h2 {
+                line-height: 50px;
+            }
+
+            .content .content-text {
+                position: static;
+                margin-top: 20px;
+                width: 75%;
+            }
+            img#a1 {
+                bottom: -12.5%;
+            }
+            
+            img#a2 {
+                bottom: -20%;
+            }
+                        
+        }
+        
+        @media screen and (max-width: 480px) {
+            .img-container .overlay img {
+                width: 50%;
+                display: block;
+                margin: auto;
+                float: none;
+            }
+            .img-container .overlay {
+                position: static;
+                overflow: hidden;
+                padding: 0;
+                margin-top: 20px;
+            }
+            .img-container .overlay .text {
+                width: 100%;
+                margin-left: 0;
+            }
+            .img-container .overlay .text h3 {
+                color: #20bdbe;
+            }
+            
+            #programme h2 {
+                line-height: 50px;
+                font-size: 30px;
+            }
+            img#a1 {
+                bottom: -6.25%;
+            }
+            
+            img#a2 {
+                bottom: -10%;
+            }
+            
+            .jcarousel-control-prev {
+                left: -35%;
+                width: 35px;
+                height: 35px;
+            }
+            .jcarousel-control-next {
+                right: -35%;
+                width: 35px;
+                height: 35px;
+            }
+        }
+    
+    
+        
