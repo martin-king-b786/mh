@@ -1,0 +1,79 @@
+#publication {
+    padding: 20px;
+    overflow: hidden;
+}
+    #subpage-menu ul>li.active {
+        background: #f89d54;
+        border-color: #c67e43;
+    }
+    
+    #subpage-menu>ul>li>ul.sub-menu {
+        background: #f89d54;
+    }
+    
+    #subpage-menu ul li ul.sub-menu li.active {
+        color: #f89d54;
+    }
+    
+    #pub-header {
+        margin: 5px 0 95px;
+        overflow: hidden;
+    }
+    
+        #pub-header h1 {
+            font-size: 75px;
+            line-height: 65px;
+            color: #ffffff;
+            background: #5c5d4d;
+            padding: 20px 15px;
+        }
+        
+        #pub-header div {
+            font-size: 16px;
+            line-height: 24px;
+            padding: 20px;
+        }
+        
+    #pdf-container {
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+    
+        #pdf-container #pdf {
+            margin-bottom: 50px;
+        }
+                #pdf-container #pdf iframe {
+                    width: 100%;
+                    height: 900px;
+                }
+        
+        #pdf-container a.button {
+            color: #ffffff;
+            background: #5c5d4d;
+            display: block;
+            margin: auto;
+            width: 175px;
+        }
+        
+        @media screen and (max-width: 1000px) {
+            #pdf-container {
+                width: 80%;
+                display: block;
+                margin: auto;
+            }
+            #pdf-container #pdf iframe {
+                height: 700px;
+            }
+        }
+        
+        @media screen and (max-width: 767px) {
+            #pdf-container {
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+            #pdf-container #pdf iframe {
+                height: 500px;
+            }
+        }

@@ -1264,7 +1264,7 @@ section#footerbottom form input {
 }
 
 section#footerbottom form input[type=email] {
-	width: 250px;
+	max-width: 250px;
 }
 
 section#footerbottom span.ft-accr {
