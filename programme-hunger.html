@@ -35,10 +35,15 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/scripts-main.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.jcarousel.min.js"></script>
-	<script type="text/javascript" src="./js/jcarousel.responsive.js"></script>
 	<script type="text/javascript" src="./js/jquery.matchHeight-min.js"></script>
+        
         <script type="text/javascript" src="./js/programme-hunger.js"></script>
+        <script type="text/javascript" src="./js/programme-master.js"></script>
+        
+        <script type="text/javascript" src="./js/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript" src="./js/jcarousel.responsive.js"></script>
+        
+	<link rel="stylesheet" type="text/css" media="all" href="./css/programme-master.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="./css/programme-hunger.css" />
 
 	<!--<script>
@@ -226,7 +231,6 @@
     
     <div id="content-header">
         <div class="img-container">
-            <img src="./css/images-programme/hunger-header.jpg"/>
             <div class="overlay">
                 <img src="./css/images-programme/hunger-icon.png"/>
                 <div class="text">
@@ -234,11 +238,16 @@
                     <h3>The extreme form of poverty</h3>
                 </div>
             </div>
+            <img src="./css/images-programme/hunger-header.jpg"/>
+            
         </div>
     </div>
     
     <section>
-        <h2>The Problem</h2>
+        <div class="mobile-header">
+            <h2>The Problem</h2>
+            <img class="expand-arrow hidden-sm hidden-md hidden-lg expandarrowrotate" src="./css/images/arrow_colour.png" alt="" />
+        </div>
         <div class="content">
             <img src="./css/images-programme/hunger-img1.jpg"/>
             <div class="content-text">
@@ -246,69 +255,132 @@
                 <p>The solution out of this state of constant suffering is as simple as it is vital: providing nutritious food for the hungry.  For all these reasons, food distribution has always been a focal part of Muslim Hands' work. We want to help you help those who are desperate for the simple joy of a plateful of hot food and a happy family that is free from thedesperation of hunger.</p>
             </div>
             <img id="a1" class="arrow" src="./css/images-programme/hunger-arrow1.jpg"/>
+            <div class="mobile-info" id="mi1">
+                <div class="info-section">
+                    <img src="./css/images-programme/hunger-info1-img1.png"/>
+                    <h3 class="annot">Hunger</h3>
+                    <img class="info-arrow" id="ig1-a1" src="./css/images-programme/hunger-info1-arrow1.png"/>
+                </div>
+                <div class="info-section">
+                    <img src="./css/images-programme/hunger-info1-img2.png"/>
+                    <h3 class="annot">People are hungry</h3>
+                    <img class="info-arrow" id="ig1-a2" src="./css/images-programme/hunger-info1-arrow2.png"/>
+                </div>
+                <div class="info-section">
+                    <img src="./css/images-programme/hunger-info1-img3.png"/>
+                    <h3 class="annot">25000 people die each day from hunger</h3>
+                    <img class="info-arrow" id="ig1-a3" src="./css/images-programme/hunger-info1-arrow3.png"/>
+                </div>
+                <div class="info-section">
+                    <img src="./css/images-programme/hunger-info1-img4.png"/>
+                    <h3 class="annot">Those whom survive are affected mentally and physically, never really recovering</h3>
+                </div>
+            </div>
         </div>
     </section>
     <div class="bottom-border"></div>
     <section>
-        <h2>Our approach to solving it</h2>
-        <p>
-            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis auctor, 
-            nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
-        </p>
-        <img src="./css/images-programme/hunger-img2.jpg"/>
-        <img id="a2" class="arrow" src="./css/images-programme/hunger-arrow2.jpg"/>
+        <div class="mobile-header">
+            <h2>Our approach to solving it</h2>
+            <img class="expand-arrow hidden-sm hidden-md hidden-lg expandarrowrotate" src="./css/images/arrow_colour.png" alt="" />
+        </div>
+        <div class="content">
+            <div class="info-section">
+                <img src="./css/images-programme/hunger-info2-img1.png"/>
+            </div>
+            <p>
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis auctor, 
+                nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+            </p>
+            <img src="./css/images-programme/hunger-img2.jpg"/>
+            <div class="mobile-info" id="mi2">
+                <div class="info-section">
+                    <img src="./css/images-programme/hunger-info2-img2.png"/>
+                    <h3 class="annot">Food Distribution</h3>
+                    <img class="info-arrow" id="ig2-a1" src="./css/images-programme/hunger-info2-arrow1.png"/>
+                </div>
+                <div class="info-section">
+                    <img src="./css/images-programme/hunger-info2-img3.png"/>
+                    <h3 class="annot">School Feeding</h3>
+                    <img class="info-arrow" id="ig2-a2" src="./css/images-programme/hunger-info2-arrow2.png"/>
+                </div>
+                <div class="info-section">
+                    <img src="./css/images-programme/hunger-info2-img4.png"/>
+                    <h3 class="annot">Global Iftar</h3>
+                    <img class="info-arrow" id="ig2-a3" src="./css/images-programme/hunger-info2-arrow3.png"/>
+                </div>
+                <div class="info-section">
+                    <img src="./css/images-programme/hunger-info2-img5.png"/>
+                    <h3 class="annot">Worldwide Qurbani</h3>
+                </div>
+            </div>
+            <img id="a2" class="arrow" src="./css/images-programme/hunger-arrow2.jpg"/>
+        </div>
     </section>
     <div class="bottom-border"></div>
     <section>
         <img id="a3" class="arrow" src="./css/images-programme/hunger-arrow3.jpg"/>
-        <h2>Success Stories</h2>
-        <div class="jcarousel-wrapper">
-            <div class="jcarousel">
-                <ul>
-                    <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/hunger-cs1.png" alt=""><h4><span class="title-container">Malnutrition among children</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/hunger-cs2.png" alt=""><h4><span class="title-container">Children getting their meal</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/hunger-cs3.png" alt=""><h4><span class="title-container">Regular food supply</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/hunger-cs1.png" alt=""><h4><span class="title-container">Malnutrition among children</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/hunger-cs2.png" alt=""><h4><span class="title-container">Children getting their meal</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/hunger-cs3.png" alt=""><h4><span class="title-container">Regular food supply</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/hunger-cs1.png" alt=""><h4><span class="title-container">Malnutrition among children</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/hunger-cs2.png" alt=""><h4><span class="title-container">Children getting their meal</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/hunger-cs3.png" alt=""><h4><span class="title-container">Regular food supply</span></h4></a></li>
-                </ul>
+        <div class="mobile-header">
+            <h2>Success Stories</h2>
+            <img class="expand-arrow hidden-sm hidden-md hidden-lg expandarrowrotate" src="./css/images/arrow_colour.png" alt="" />
+        </div>
+        <div class="content">
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/hunger-cs1.png" alt=""><h4><span class="title-container">Malnutrition among children</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/hunger-cs2.png" alt=""><h4><span class="title-container">Children getting their meal</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/hunger-cs3.png" alt=""><h4><span class="title-container">Regular food supply</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/hunger-cs1.png" alt=""><h4><span class="title-container">Malnutrition among children</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/hunger-cs2.png" alt=""><h4><span class="title-container">Children getting their meal</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/hunger-cs3.png" alt=""><h4><span class="title-container">Regular food supply</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/hunger-cs1.png" alt=""><h4><span class="title-container">Malnutrition among children</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/hunger-cs2.png" alt=""><h4><span class="title-container">Children getting their meal</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/hunger-cs3.png" alt=""><h4><span class="title-container">Regular food supply</span></h4></a></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev"><img src="./css/images/arrow_colour.png" alt="&lsaquo;" /></a>
+                <a href="#" class="jcarousel-control-next"><img src="./css/images/arrow_colour.png" alt="&rsaquo;" /></a>
+            </div>
+            <p>
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis auctor, 
+                nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+            </p>
+
+            <div id="effects">
+                <div class="effect col-md-3 matchheight">
+                    <img src="./css/images-programme/hunger-effect1.png"/>
+                    <div class="text">
+                        <h3>12,000</h3>
+                        <p>benefited from the 2013 programme</p>
+                    </div>
+                </div>
+                <div class="effect col-md-3 matchheight">
+                    <img src="./css/images-programme/hunger-effect2.png"/>
+                    <div class="text">
+                        <h3>16,000</h3>
+                        <p>people lifted out from poverty</p>
+                    </div>
+                </div>
+                <div class="effect col-md-3 matchheight">
+                    <img src="./css/images-programme/hunger-effect3.png"/>
+                    <div class="text">
+                        <h3>£223,700</h3>
+                        <p>collected from the 2013 campaign</p>
+                    </div>
+                </div>
+                <div class="effect col-md-3 matchheight">
+                    <img src="./css/images-programme/hunger-effect4.png"/>
+                    <div class="text">
+                        <h3>2KG</h3>
+                        <p>rice pack to each family</p>
+                    </div>
+                </div>
             </div>
 
-            <a href="#" class="jcarousel-control-prev"><img src="./css/images/arrow_colour.png" alt="&lsaquo;" /></a>
-            <a href="#" class="jcarousel-control-next"><img src="./css/images/arrow_colour.png" alt="&rsaquo;" /></a>
+            <a href="#" class="button">Find out how you can help</a>
         </div>
-        <p>
-            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis auctor, 
-            nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
-        </p>
-        
-        <div id="effects">
-            <div class="effect col-md-3 matchheight">
-                <img src="./css/images-programme/hunger-effect1.png"/>
-                <h3>12,000</h3>
-                <p>benefited from the 2013 programme</p>
-            </div>
-            <div class="effect col-md-3 matchheight">
-                <img src="./css/images-programme/hunger-effect2.png"/>
-                <h3>16,000</h3>
-                <p>people lifted out from poverty</p>
-            </div>
-            <div class="effect col-md-3 matchheight">
-                <img src="./css/images-programme/hunger-effect3.png"/>
-                <h3>£223,700</h3>
-                <p>collected from the 2013 campaign</p>
-            </div>
-            <div class="effect col-md-3 matchheight">
-                <img src="./css/images-programme/hunger-effect4.png"/>
-                <h3>2KG</h3>
-                <p>rice pack to each family</p>
-            </div>
-        </div>
-        
-        <a href="#" class="button">Find out how you can help</a>
     </section>
     
         

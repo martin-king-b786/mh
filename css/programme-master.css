@@ -1,0 +1,45 @@
+            #programme section .mobile-header {
+                width: 100%;
+                overflow: hidden;
+                margin-bottom: 25px;
+                padding: 20px;
+            }
+    
+            #programme section .mobile-header h2 {
+                font-size: 45px;
+                line-height: 40px;
+                color: #ffffff;
+                text-align: left;
+                margin: 0;
+                padding: 0;
+                float: left;
+                width: auto;
+            }
+
+            #programme section .mobile-header img.expand-arrow {
+                display: none;
+            }
+
+@media screen and (max-width: 767px) {
+    
+    #programme section .mobile-header img.expand-arrow {
+        width: auto;
+        height: 40px;
+        float: right;
+        border: 1px #ffffff solid;
+        border-radius: 50%;
+        display: block;
+    }
+    #programme section img.expand-arrow.expandarrowrotate {
+        transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+    
+    
+}

@@ -118,7 +118,7 @@ div#page-progress li {
             img#a3 {
                 max-width: 175px;
                 left: 0;
-                top: 5%;
+                top: -20%;
             }
             
             .bottom-border {
@@ -140,6 +140,10 @@ div#page-progress li {
                     overflow: hidden;
                 }
                 
+                    .jcarousel li img {
+                        width: 100%;
+                    }
+                    
                     .jcarousel li h4 {
                         background: rgba(6,123,130,.75);
                         position: absolute;
@@ -206,6 +210,7 @@ div#page-progress li {
                         #effects .effect img {
                             display: block;
                             margin: auto;
+                            width: auto;
                         }
 
                         #effects .effect h3 {
@@ -225,16 +230,163 @@ div#page-progress li {
                             background: #5c5d4d;
                             color: #ffffff;
                             border-color: #3e3f33;
+                            margin-bottom: 50px;
                         }
                         
                         a.button:hover {
                             color: #ffffff;
                         }
                         
-                        @media screen and (max-width: 767px) {
-                            #programme h2 {
-                                line-height: 50px;
+                        .mobile-info {
+                            display: none;
+                        }
+                        
+                        .info-section {
+                            display: none;
+                        }
+                        
+                        #programme section img.expand-arrow {
+                            display: none;
+                        }
+@media screen and (max-width: 767px) {
+    
+    #programme {
+        padding: 0;
+    }
+    
+    .content>img,#programme section>img:not(.expand-arrow){
+        display: none;
+    }
+    
+    .mobile-info {
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+    
+        .mobile-info .info-section {
+            border-bottom: 1px #cccccc solid;
+            padding: 30px 0;
+            position: relative;
+        }
+        .info-section {
+            padding: 30px 0;
+            display: block;
+        }
+            .info-section img {
+                width: auto;
+                max-width: 100%;
+            }
+            .mobile-info .info-section h3 {
+                margin-top: 20px;
+                font-size: 50px;
+                color: #067b82;
+                line-height: 50px;
+                text-transform: uppercase;
+            }
+            
+            .mobile-info .info-section img.info-arrow {
+                position: absolute;
+                width: 30%;
+                right: -40%;
+                bottom: -50%;
+            }
+            .mobile-info .info-section:nth-of-type(2n) img.info-arrow {
+                right: 0;
+                left: -35%;
+            }
+            
+            
+            .img-container {
+                margin-bottom: 100px;
+            }
+            .img-container > img {
+                padding: 0 20px;
+            }
+            
+                .img-container .overlay {
+                    position: static;
+                    width: 100%;
+                    overflow: hidden;
+                    padding: 0;
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                }
+
+                    .img-container .overlay img {
+                        width: 15%;
+                        position: absolute;
+                        bottom: -15%;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                    }
+                    
+                        .img-container .overlay .text {
+                            width: 100%;
+                            margin: 0;
+                        }
+
+                            .img-container .overlay .text h1 {
+                                background: #067b82;
+                                color: #ffffff;
+                                text-align: center;
+                                font-size: 75px;
+                                width: 100%;
+                                padding: 20px;
                             }
+                            
+                            .img-container .overlay .text h3 {
+                                display: none;
+                            }
+                            
+            .video-container {
+                width: 100%;
+                padding-bottom: 56.25%
+            }
+            
+        .bottom-border {
+            display: none;
+        }
+        #programme section {
+            padding-bottom: 0;
+        }
+        
+        #programme section:first-of-type .content {
+            display: block;
+        }
+        
+        #programme .mobile-header {
+            background: #067b82;
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 25px;
+            padding: 20px;
+        }
+            #programme h2 {
+                font-size: 45px;
+                line-height: 40px;
+                color: #ffffff;
+                text-align: left;
+                margin: 0;
+                padding: 0;
+                float: left;
+                width: auto;
+            }
+            
+            #programme section img.expand-arrow {
+                width: auto;
+                height: 40px;
+                float: right;
+                border: 1px #ffffff solid;
+                border-radius: 50%;
+                display: block;
+            }
+            #programme section img.expand-arrow.expandarrowrotate {
+                transform : rotate(90deg);
+                -ms-transform : rotate(90deg);
+                -webkit-transform : rotate(90deg);
+            }
 
                             .content .content-text {
                                 position: static;
@@ -243,11 +395,35 @@ div#page-progress li {
                             }
                             #effects .effect {
                                 border-right: 0;
+                                float: left;
+                                width: 100%;
+                                border-bottom: 1px #cccccc solid;
+                                padding: 20px 0;
                             }
+                            
+                                #effects .effect img {
+                                    float: left;
+                                    width: 30%;
+                                }
+
+                                #effects .effect .text {
+                                    float: right;
+                                    margin-top: 15px;
+                                    width: 50%;
+                                }
                         }
                         
-                        @media screen and (max-width: 480px) {
-            
+@media screen and (max-width: 480px) {
+
+    .mobile-info .info-section h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    .mobile-info .info-section img.info-arrow {
+        bottom: -25%;
+    }
+                            
                             .jcarousel-control-prev {
                                 left: -35%;
                                 width: 35px;
@@ -258,12 +434,7 @@ div#page-progress li {
                                 width: 35px;
                                 height: 35px;
                             }
-                            .img-container .overlay img {
-                                width: 50%;
-                                display: block;
-                                margin: auto;
-                                float: none;
-                            }
+                            
                             .img-container .overlay {
                                 position: static;
                                 overflow: hidden;
@@ -294,4 +465,23 @@ div#page-progress li {
                             img#a3 {
                                 display: none;
                             }
+                            
+                            #effects .effect {
+                                border-right: 0;
+                                float: left;
+                                width: 100%;
+                                border-bottom: 1px #cccccc solid;
+                                padding: 20px 0;
+                            }
+                            
+                                #effects .effect img {
+                                    float: left;
+                                    width: 100%;
+                                }
+
+                                #effects .effect .text {
+                                    float: right;
+                                    margin-top: 15px;
+                                    width: 100%;
+                                }
                         }

@@ -35,10 +35,15 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/scripts-main.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.jcarousel.min.js"></script>
-	<script type="text/javascript" src="./js/jcarousel.responsive.js"></script>
 	<script type="text/javascript" src="./js/jquery.matchHeight-min.js"></script>
+        
+        <script type="text/javascript" src="./js/programme-master.js"></script>
         <script type="text/javascript" src="./js/programme-orphan.js"></script>
+        
+        <script type="text/javascript" src="./js/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript" src="./js/jcarousel.responsive.js"></script>
+        
+	<link rel="stylesheet" type="text/css" media="all" href="./css/programme-master.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="./css/programme-orphan.css" />
 
 	<!--<script>
@@ -226,7 +231,6 @@
     
     <div id="content-header">
         <div class="img-container">
-            <img src="./css/images-programme/orphan-header.jpg"/>
             <div class="overlay">
                 <img src="./css/images-programme/orphan-icon.png"/>
                 <div class="text">
@@ -234,6 +238,7 @@
                     <h3>An essential doorway out of poverty</h3>
                 </div>
             </div>
+            <img src="./css/images-programme/orphan-header.jpg"/>
         </div>
         <div class="video-container">
             <iframe src="//www.youtube.com/embed/SoW7nUssuco"></iframe>
@@ -243,22 +248,32 @@
     <div class="bottom-border"></div>
     
     <section>
-        <h2>The Problem</h2>
-        <div class="infographic" id="ig1">
-            <div class="ig-section col-md-4">
-                <img src="./css/images-programme/orphan-info1-img1.png"/>
-                <h3>11.2 Million</h3>
-                <p>There are an estimated 11.2 million orphans resulting from the Aids pandemic.</p>
-            </div>
-            <div class="ig-section col-md-4">
-                <img src="./css/images-programme/orphan-info1-img2.png"/>
-                <h3>210 Million</h3>
-                <p>There are between 143 million and 210 million orphans in the world.</p>
-            </div>
-            <div class="ig-section col-md-4">
-                <img src="./css/images-programme/orphan-info1-img3.png"/>
-                <h3>143 Million</h3>
-                <p>Children around the world are officially classified as 'orphans'.</p>
+        <div class="mobile-header">
+            <h2>The Problem</h2>
+            <img id="lastexparrow" class="expand-arrow hidden-sm hidden-md hidden-lg expandarrowrotate" src="./css/images/arrow_colour.png" alt="" />
+        </div>
+        <div class="content">
+            <div class="infographic" id="ig1">
+                <div class="ig-section col-md-4">
+                    <div class="info-img-container">
+                        <img src="./css/images-programme/orphan-info1-img1.png"/>
+                    </div>
+                    <h3>11.2 Million</h3>
+                    <p>There are an estimated 11.2 million orphans resulting from the Aids pandemic.</p>
+                </div>
+                <div class="ig-section col-md-4">
+                    <div class="info-img-container">
+                        <img src="./css/images-programme/orphan-info1-img2.png"/>
+                    </div>                <h3>210 Million</h3>
+                    <p>There are between 143 million and 210 million orphans in the world.</p>
+                </div>
+                <div class="ig-section col-md-4">
+                    <div class="info-img-container">
+                        <img src="./css/images-programme/orphan-info1-img3.png"/>
+                    </div>
+                    <h3>143 Million</h3>
+                    <p>Children around the world are officially classified as 'orphans'.</p>
+                </div>
             </div>
         </div>
         <img id="a1" class="arrow" src="./css/images-programme/orphan-arrow1.png"/>
@@ -267,43 +282,58 @@
     <div class="bottom-border"></div>
     
     <section>
-        
-        <h2>Our approach to solving it</h2>
-        
-        <div id="approaches">
-            <div class="approach">
-                <img class="col-md-6" src="./css/images-programme/orphan-img1.png"/>
-                <div class="content col-md-6">
-                    <h3>Education</h3>
-                    <div>
-                        Every orphan child is provided with an education, including books and uniform, free of charge. Children who attend custom-built MH schools benefit from high quality teaching and classroom facilities as a result of a tailor-made curriculum. Wherever possible, the children are given a nutritious school meal, which helps them to maintain concentration and get the best out of their school day.
+        <div class="mobile-header">
+            <h2>Our approach to solving it</h2>
+            <img id="lastexparrow" class="expand-arrow hidden-sm hidden-md hidden-lg expandarrowrotate" src="./css/images/arrow_colour.png" alt="" />
+        </div>
+        <div class="content">
+            <div id="approaches">
+                <div class="approach">
+                    <div class="approach-img-container col-md-6">
+                        <img class="col-md-6" src="./css/images-programme/orphan-img1.png"/>
+                    </div>
+                    <div class="content col-md-6">
+                        <h3>Education</h3>
+                        <div class="text">
+                            Every orphan child is provided with an education, including books and uniform, free of charge. Children who attend custom-built MH schools benefit from high quality teaching and classroom facilities as a result of a tailor-made curriculum. Wherever possible, the children are given a nutritious school meal, which helps them to maintain concentration and get the best out of their school day.
+                        </div>
+                        <div class="fulltext"></div>
                     </div>
                 </div>
-            </div>
-            <div class="approach">
-                <img class="col-md-6" src="./css/images-programme/orphan-img2.png"/>
-                <div class="content col-md-6">
-                    <h3>Welfare</h3>
-                    <div>
-                        Orphan children typically live with their mother (if she is still alive) or a close relative as that provides the most secure and nurturing environment. MH orphan workers are in regular contact with the guardian to ensure all of their needs and concerns are addressed. Many of the children also benefit from a free bus service, available at some MH schools, that provides safe passage to and from school.
+                <div class="approach">
+                    <div class="approach-img-container col-md-6">
+                        <img class="col-md-6" src="./css/images-programme/orphan-img2.png"/>
+                    </div>
+                    <div class="content col-md-6">
+                        <h3>Welfare</h3>
+                        <div class="text">
+                            Orphan children typically live with their mother (if she is still alive) or a close relative as that provides the most secure and nurturing environment. MH orphan workers are in regular contact with the guardian to ensure all of their needs and concerns are addressed. Many of the children also benefit from a free bus service, available at some MH schools, that provides safe passage to and from school.
+                        </div>
+                        <div class="fulltext"></div>
                     </div>
                 </div>
-            </div>
-            <div class="approach">
-                <img class="col-md-6" src="./css/images-programme/orphan-img3.png"/>
-                <div class="content col-md-6">
-                    <h3>Health</h3>
-                    <div>
-                        To ensure optimal health and wellbeing, the orphan children receive routine vaccinations that protect them from serious illness. The children are also assigned a welfare nurse who monitors progress by measuring their height, weight and dental care. This helps ensure children are able to focus in class, stay on top of their studies and reduces absences from school due to sickness.
+                <div class="approach">
+                    <div class="approach-img-container col-md-6">
+                        <img class="col-md-6" src="./css/images-programme/orphan-img3.png"/>
+                    </div>
+                    <div class="content col-md-6">
+                        <h3>Health</h3>
+                        <div class="text">
+                            To ensure optimal health and wellbeing, the orphan children receive routine vaccinations that protect them from serious illness. The children are also assigned a welfare nurse who monitors progress by measuring their height, weight and dental care. This helps ensure children are able to focus in class, stay on top of their studies and reduces absences from school due to sickness.
+                        </div>
+                        <div class="fulltext"></div>
                     </div>
                 </div>
-            </div>
-            <div class="approach">
-                <img class="col-md-6" src="./css/images-programme/orphan-img4.png"/>
-                <div class="content col-md-6">
-                    <h3>Feedback</h3>
-                    <div>
-                        Once you sponsor an orphan child, we will send you an information pack containing the details of the child you are supporting. We also provide an annual update of how your sponsored orphan is getting along, which includes a school report on the child's subjects and exam results, some information about their interests and aspirations, and notification of any other changes. 
+                <div class="approach">
+                    <div class="approach-img-container col-md-6">
+                        <img class="col-md-6" src="./css/images-programme/orphan-img4.png"/>
+                    </div>
+                    <div class="content col-md-6">
+                        <h3>Feedback</h3>
+                        <div class="text">
+                            Once you sponsor an orphan child, we will send you an information pack containing the details of the child you are supporting. We also provide an annual update of how your sponsored orphan is getting along, which includes a school report on the child's subjects and exam results, some information about their interests and aspirations, and notification of any other changes. 
+                        </div>
+                        <div class="fulltext"></div>
                     </div>
                 </div>
             </div>
@@ -314,62 +344,67 @@
     <div class="bottom-border"></div>
     
     <section>
-        <h2>Success Stories</h2>
-        <div class="jcarousel-wrapper">
-            <div class="jcarousel">
-                <ul>
-                    <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/orphan-cs1.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/orphan-cs2.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/orphan-cs3.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/orphan-cs1.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/orphan-cs2.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/orphan-cs3.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/orphan-cs1.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/orphan-cs2.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/orphan-cs3.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
-                </ul>
+        <div class="mobile-header">
+            <h2>Success Stories</h2>
+            <img id="lastexparrow" class="expand-arrow hidden-sm hidden-md hidden-lg expandarrowrotate" src="./css/images/arrow_colour.png" alt="" />
+        </div>
+        <div class="content">
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/orphan-cs1.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/orphan-cs2.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/orphan-cs3.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/orphan-cs1.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/orphan-cs2.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/orphan-cs3.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/orphan-cs1.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/orphan-cs2.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/orphan-cs3.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev"><img src="./css/images/arrow_colour.png" alt="&lsaquo;" /></a>
+                <a href="#" class="jcarousel-control-next"><img src="./css/images/arrow_colour.png" alt="&rsaquo;" /></a>
+            </div>
+            <p>
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis auctor, 
+                nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+            </p>
+
+            <div class="infographic" id="ig2">
+                <div class="ig-section col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-img-container">
+                        <img src="./css/images-programme/orphan-info2-img1.png"/>
+                    </div>
+                    <h3>19</h3>
+                    <p>Years</p>
+                </div>
+                <div class="ig-section col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-img-container">
+                        <img src="./css/images-programme/orphan-info2-img2.png"/>
+                    </div>
+                    <h3>10,000</h3>
+                    <p>orphans</p>
+                </div>
+                <div class="ig-section col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-img-container">
+                        <img src="./css/images-programme/orphan-info2-img3.png"/>
+                    </div>
+                    <h3>360</h3>
+                    <p>schools</p>
+                </div>
+                <div class="ig-section col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-img-container">
+                        <img src="./css/images-programme/orphan-info2-img4.png"/>
+                    </div>
+                    <h3>40,000</h3>
+                    <p>students</p>
+                </div>
             </div>
 
-            <a href="#" class="jcarousel-control-prev"><img src="./css/images/arrow_colour.png" alt="&lsaquo;" /></a>
-            <a href="#" class="jcarousel-control-next"><img src="./css/images/arrow_colour.png" alt="&rsaquo;" /></a>
+            <a href="#" class="button">Find out how you can help</a>
         </div>
-        <p>
-            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis auctor, 
-            nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
-        </p>
-    
-        <div class="infographic" id="ig2">
-            <div class="ig-section col-md-3">
-                <div class="info-img-container">
-                    <img src="./css/images-programme/orphan-info2-img1.png"/>
-                </div>
-                <h3>19</h3>
-                <p>Years</p>
-            </div>
-            <div class="ig-section col-md-3">
-                <div class="info-img-container">
-                    <img src="./css/images-programme/orphan-info2-img2.png"/>
-                </div>
-                <h3>10,000</h3>
-                <p>orphans</p>
-            </div>
-            <div class="ig-section col-md-3">
-                <div class="info-img-container">
-                    <img src="./css/images-programme/orphan-info2-img3.png"/>
-                </div>
-                <h3>360</h3>
-                <p>schools</p>
-            </div>
-            <div class="ig-section col-md-3">
-                <div class="info-img-container">
-                    <img src="./css/images-programme/orphan-info2-img4.png"/>
-                </div>
-                <h3>40,000</h3>
-                <p>students</p>
-            </div>
-        </div>
-        
-        <a href="#" class="button">Find out how you can help</a>
     </section>
     
         

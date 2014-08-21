@@ -181,6 +181,10 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
 }
 
 @media screen and (max-width: 767px) {
+     #subpage-menu {
+         display: none;
+     }
+     
         section#header a#logo {
             padding-left: 25px;
             margin-left: 0;

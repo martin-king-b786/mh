@@ -1,35 +1,16 @@
-function jcarouselResize() {
-    $browserWidth = $(window).width();
-    $carouselWidth = $('.jcarousel').width();
-    
-    $('.jcarousel li').each(function(){
-        if ($browserWidth < 767) {
-            if($carouselWidth > 220) {
-                $margins = ($carouselWidth - 220)/2;
-                $(this).css({
-                    width : '220px',
-                    margin : '0 '+ $margins+'px'
-                });
-            }
-            else {
-                $(this).css({
-                    width : $carouselWidth-10,
-                    margin : '0 5px'
-                });
-            }
-        }
-        else if($browserWidth < 1000) {
-            $(this).css({
-                width : ($carouselWidth - 50) / 2
-            });
+function infographicResizing() {
+    $maxHeight = 0;
+    $('#effects .effect-img-container').each(function(){
+        if($(this).children('img').height() > $maxHeight) {
+            $(this).height($(this).children('img').height());
+            $maxHeight = $(this).children('img').height();
         }
         else {
-             $(this).css({
-                width : ($carouselWidth - 100) / 3
-            });
-            console.log($carouselWidth);
+            $(this).height($maxHeight);
         }
+        console.log('fdgdfg');
     });
 }
-$(document).ready(jcarouselResize);
-$(window).resize(jcarouselResize);
+
+$(window).load(infographicResizing);
+$(window).resize(infographicResizing);

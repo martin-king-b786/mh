@@ -72,7 +72,7 @@ $(document).ready(function(){
     $browserHeight = $(window).height();
     function pageProgScroll() {
         $firstOffset = $('#programme > section').first().offset().top - 40;
-        if($(window).scrollTop() >= $firstOffset) {
+        if($(window).scrollTop() >= $firstOffset && $browserWidth > 480) {
             $('#page-progress').show();
         }
         else {
@@ -87,6 +87,7 @@ $(document).ready(function(){
         $($('#programme > section').get().reverse()).each(function(){
             $offset = $(this).offset().top;
             $sectionNo = $(this).parent().children('section').index($(this));
+            $sectionOffset = $(this).scrollTop();
             if($offset-40 <= $(window).scrollTop()) {
                 $('#page-progress li').css({
                     'border-width' : '1px'
@@ -100,9 +101,10 @@ $(document).ready(function(){
             
         });
     }
+    
     $(window).scroll(pageProgScroll);
     $(window).scroll(pageProgTrigger);
-    
+    $('#page-progress').hide();
 });
 
 

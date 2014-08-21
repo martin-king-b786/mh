@@ -31,14 +31,18 @@
 	<link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16" />
 	<link rel="icon" href="./favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/scripts-main.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.jcarousel.min.js"></script>
-	<script type="text/javascript" src="./js/jcarousel.responsive.js"></script>
 	<script type="text/javascript" src="./js/jquery.matchHeight-min.js"></script>
+        
+        <script type="text/javascript" src="./js/programme-master.js"></script>
         <script type="text/javascript" src="./js/programme-water.js"></script>
+        
+        <script type="text/javascript" src="./js/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript" src="./js/jcarousel.responsive.js"></script>
+        
+	<link rel="stylesheet" type="text/css" media="all" href="./css/programme-master.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="./css/programme-water.css" />
 
 	<!--<script>
@@ -226,7 +230,6 @@
     
     <div id="content-header">
         <div class="img-container">
-            <img src="./css/images-programme/water-header.jpg"/>
             <div class="overlay">
                 <img src="./css/images-programme/water-icon.png"/>
                 <div class="text">
@@ -234,6 +237,7 @@
                     <h3>The fight for drops of life</h3>
                 </div>
             </div>
+            <img src="./css/images-programme/water-header.jpg"/>
         </div>
         <div class="content-text">
             <p>It's easy to forget how much we need safe water. This is the essential of life which many are denied access to. For over a billion people, life's most pressing challenge is gaining easy access to safe, clean drinking water. Poor health due to unclean water and conflict surrounding scarce water sources prevents many from escaping the poverty trap.</p>
@@ -256,27 +260,34 @@
     </div>
     <div class="bottom-border"></div>
     <section>
-        <h2>The link between unsafe water and poverty</h2>
-        <div id="links">
-            <div class="link col-md-3 matchheight">
-                <img src="./css/images-programme/water-link1.jpg"/>
-                <h3>Water</h3>
-                <p>drinking contaminated water makes children and adults sick</p>
-            </div>
-            <div class="link col-md-3 matchheight">
-                <img src="./css/images-programme/water-link2.jpg"/>
-                <h3>Illness</h3>
-                <p>half of the world hospital beds are occupied by patients suffering from water related diseases</p>
-            </div>
-            <div class="link col-md-3 matchheight">
-                <img src="./css/images-programme/water-link3.jpg"/>
-                <h3>Poverty</h3>
-                <p>having sick adults means a loss of labour and wages, making poor situations difficult to survive</p>
-            </div>
-            <div class="link col-md-3 matchheight">
-                <img src="./css/images-programme/water-link4.jpg"/>
-                <h3>School</h3>
-                <p>sick children result in them staying home, meaning they are unable to complete school</p>
+        <div class="mobile-header">
+            <h2>The link between unsafe water and poverty</h2>
+            <img class="expand-arrow hidden-sm hidden-md hidden-lg expandarrowrotate" src="./css/images/arrow_colour.png" alt="" />
+        </div>
+        <div class="content">
+            <div id="links">
+                <div class="link col-md-3 matchheight">
+                    <img src="./css/images-programme/water-link1.jpg"/>
+                    <h3>Water</h3>
+                    <p>drinking contaminated water makes children and adults sick</p>
+                    <img class="info-arrow" id="ig1-a1" src="./css/images-programme/water-info1-arrow1.png"/>
+                </div>
+                <div class="link col-md-3 matchheight">
+                    <img src="./css/images-programme/water-link2.jpg"/>
+                    <h3>Illness</h3>
+                    <p>half of the world hospital beds are occupied by patients suffering from water related diseases</p>
+                </div>
+                <div class="link col-md-3 matchheight">
+                    <img src="./css/images-programme/water-link3.jpg"/>
+                    <h3>Poverty</h3>
+                    <p>having sick adults means a loss of labour and wages, making poor situations difficult to survive</p>
+                    <img class="info-arrow" id="ig1-a2" src="./css/images-programme/water-info1-arrow2.png"/>
+                </div>
+                <div class="link col-md-3 matchheight">
+                    <img src="./css/images-programme/water-link4.jpg"/>
+                    <h3>School</h3>
+                    <p>sick children result in them staying home, meaning they are unable to complete school</p>
+                </div>
             </div>
         </div>
         <img id="a1" class="arrow" src="./css/images-programme/water-arrow1.jpg"/>
@@ -284,15 +295,19 @@
     
     <div class="bottom-border"></div>
     <section>
-        
-        <h2>Water use around the world</h2>
-        <p>
-            It is often startling to think of the difference in how much water people around the world use. From thedrought-stricken to the plentiful, here is a chart showing the average water use per person per day according to the United Nations Development Program.
-        </p>
-        <div id="drops">
-            <img src="./css/images-programme/water-infographic.png"/>
-            <img class="mobile tablet" src="./css/images-programme/water-infographic-tab.png"/>
-            <img class="mobile" src="./css/images-programme/water-infographic-mob.png"/>
+        <div class="mobile-header">
+            <h2>Water use around the world</h2>
+            <img class="expand-arrow hidden-sm hidden-md hidden-lg expandarrowrotate" src="./css/images/arrow_colour.png" alt="" />
+        </div>
+        <div class="content">
+            <p>
+                It is often startling to think of the difference in how much water people around the world use. From thedrought-stricken to the plentiful, here is a chart showing the average water use per person per day according to the United Nations Development Program.
+            </p>
+            <div id="drops">
+                <img src="./css/images-programme/water-infographic.png"/>
+                <img class="mobile tablet" src="./css/images-programme/water-infographic-tab.png"/>
+                <img class="mobile" src="./css/images-programme/water-infographic-mob.png"/>
+            </div>
         </div>
         <img id="a2" class="arrow" src="./css/images-programme/water-arrow2.jpg"/>
     </section>
@@ -300,11 +315,45 @@
     <div class="bottom-border"></div>
     
     <section>
-        <h2>The many approaches to water</h2>
+        <div class="mobile-header">
+            <h2>The many approaches to water</h2>
+            <img class="expand-arrow hidden-sm hidden-md hidden-lg expandarrowrotate" src="./css/images/arrow_colour.png" alt="" />
+        </div>
         <div class="content">
             <img src="./css/images-programme/water-img1.jpg"/>
             <div class="content-text">
                 <p>There are a myriad of different ways Muslim Hands addresses the safe water needs of different communities. Some serve individual families, others can serve thousands of people in a single town. Here is an overview of how Muslim Hands works to address water needs around the world.</p>
+            </div>
+            <div class="mobile-info" id="mi2">
+                <div class="info-section">
+                    <img src="./css/images-programme/water-info2-img1.png"/>
+                    <h3 class="annot">Tube Wells</h3>
+                    <img class="info-arrow" id="ig2-a1" src="./css/images-programme/water-info2-arrow1.png"/>
+                </div>
+                <div class="info-section">
+                    <img src="./css/images-programme/water-info2-img2.png"/>
+                    <h3 class="annot">Dig-A-Well</h3>
+                    <img class="info-arrow" id="ig2-a2" src="./css/images-programme/water-info2-arrow2.png"/>
+                </div>
+                <div class="info-section">
+                    <img src="./css/images-programme/water-info2-img3.png"/>
+                    <h3 class="annot">Community Water Well</h3>
+                    <img class="info-arrow" id="ig2-a3" src="./css/images-programme/water-info2-arrow3.png"/>
+                </div>
+                <div class="info-section">
+                    <img src="./css/images-programme/water-info2-img4.png"/>
+                    <h3 class="annot">Household Filters</h3>
+                    <img class="info-arrow" id="ig2-a4" src="./css/images-programme/water-info2-arrow4.png"/>
+                </div>
+                <div class="info-section">
+                    <img src="./css/images-programme/water-info2-img5.png"/>
+                    <h3 class="annot">Large Filtration Plants</h3>
+                    <img class="info-arrow" id="ig2-a5" src="./css/images-programme/water-info2-arrow5.png"/>
+                </div>
+                <div class="info-section">
+                    <img src="./css/images-programme/water-info2-img6.png"/>
+                    <h3 class="annot">Water Irrigation Systems</h3>
+                </div>
             </div>
             <img id="a3" class="arrow" src="./css/images-programme/water-arrow3.jpg"/>
         </div>
@@ -313,29 +362,34 @@
     <div class="bottom-border"></div>
     
     <section>
-        <h2>Success Stories</h2>
-        <div class="jcarousel-wrapper">
-            <div class="jcarousel">
-                <ul>
-                    <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/water-cs1.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/water-cs2.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/water-cs3.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/water-cs1.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/water-cs2.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/water-cs3.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/water-cs1.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/water-cs2.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
-                    <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/water-cs3.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
-                </ul>
-            </div>
-
-            <a href="#" class="jcarousel-control-prev"><img src="./css/images/arrow_colour.png" alt="&lsaquo;" /></a>
-            <a href="#" class="jcarousel-control-next"><img src="./css/images/arrow_colour.png" alt="&rsaquo;" /></a>
+        <div class="mobile-header">
+            <h2>Success Stories</h2>
+            <img id="lastexparrow" class="expand-arrow hidden-sm hidden-md hidden-lg expandarrowrotate" src="./css/images/arrow_colour.png" alt="" />
         </div>
-        <p>
-            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis auctor, 
-            nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
-        </p>
+        <div class="content">
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/water-cs1.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/water-cs2.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/water-cs3.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/water-cs1.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/water-cs2.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/water-cs3.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-programme/water-cs1.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-programme/water-cs2.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-programme/water-cs3.png" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev"><img src="./css/images/arrow_colour.png" alt="&lsaquo;" /></a>
+                <a href="#" class="jcarousel-control-next"><img src="./css/images/arrow_colour.png" alt="&rsaquo;" /></a>
+            </div>
+            <p>
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis auctor, 
+                nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+            </p>
+        </div>
         <img id="a4" class="arrow" src="./css/images-programme/water-arrow4.jpg"/>
     </section>
     
@@ -343,25 +397,41 @@
     
     <section>
         <div id="effects">
-            <div class="effect col-md-3 matchheight">
-                <img src="./css/images-programme/water-effect1.png"/>
-                <h3>10,000</h3>
-                <p>water projects delivered</p>
+            <div class="effect col-md-3 ">
+                <div class="effect-img-container">
+                    <img src="./css/images-programme/water-effect1.png"/>
+                </div>
+                <div class="text">
+                    <h3>10,000</h3>
+                    <p>water projects delivered</p>
+                </div>
             </div>
-            <div class="effect col-md-3 matchheight">
-                <img src="./css/images-programme/water-effect2.png"/>
-                <h3>1 Million</h3>
-                <p>people helped</p>
+            <div class="effect col-md-3 ">
+                <div class="effect-img-container">
+                    <img src="./css/images-programme/water-effect2.png"/>
+                </div>
+                <div class="text">
+                    <h3>1 Million</h3>
+                    <p>people helped</p>
+                </div>
             </div>
-            <div class="effect col-md-3 matchheight">
-                <img src="./css/images-programme/water-effect3.png"/>
-                <h3>50,000</h3>
-                <p>livelihoods improved</p>
+            <div class="effect col-md-3 ">
+                <div class="effect-img-container">
+                    <img src="./css/images-programme/water-effect3.png"/>
+                </div>
+                <div class="text">
+                    <h3>50,000</h3>
+                    <p>livelihoods improved</p>
+                </div>
             </div>
-            <div class="effect col-md-3 matchheight">
-                <img src="./css/images-programme/water-effect4.png"/>
-                <h3>25,000</h3>
-                <p>children back to school</p>
+            <div class="effect col-md-3 ">
+                <div class="effect-img-container">
+                    <img src="./css/images-programme/water-effect4.png"/>
+                </div>
+                <div class="text">
+                    <h3>25,000</h3>
+                    <p>children back to school</p>
+                </div>
             </div>
         </div>
         

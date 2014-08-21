@@ -114,11 +114,17 @@ div#page-progress li {
                     .infographic .ig-section .info-img-container {
                         position: relative;
                     }
-                    
-                        .infographic .ig-section .info-img-container img {
-                            width: 100%;
+                    .infographic#ig2 .ig-section .info-img-container {
+                        max-width: 70%;
+                        display: block;
+                        margin: auto;
+                    }
+                        
+                        .infographic#ig2 .ig-section .info-img-container img {
+                            max-width: 100%;
                             position: absolute;
                             bottom: 0;
+                            width: auto;
                             left: 0;
                         }
                         
@@ -157,13 +163,18 @@ div#page-progress li {
                 width: 100%;
                 margin-bottom: 100px;
             }
-            #approaches .approach:nth-of-type(2n) img {
+            #approaches .approach:nth-of-type(2n) .approach-img-container {
                 float: right;
-            }
-            
-                #approaches .approach img {
+            }                
+                
+                #approaches .approach .approach-img-container {
                     padding: 20px;
                 }
+                
+                    #approaches .approach .approach-img-container img {
+                        width: 100%;
+                    }
+                    
                 #approaches .approach .content {
                     text-align: left;
                     padding-top: 50px;
@@ -181,7 +192,23 @@ div#page-progress li {
                         font-size: 16px;
                         line-height: 26px;
                     }
-            
+                    #approaches .approach .content .fulltext {
+                        display: none;
+                    }
+                    
+                    #approaches .approach .content a.button {
+                        background: #ffffff;
+                        color: #5c5d4d ;
+                        border: 1px #5c5d4d solid;
+                        width: 160px;
+                        display: block;
+                        margin: 20px auto;
+                    }
+                    
+                        #approaches .approach .content a.button img {
+                            background: #5c5d4d;
+                        }
+                    
             img.arrow {
                 position: absolute;
                 width: 17.5%;
@@ -285,38 +312,142 @@ div#page-progress li {
         }
         
         @media screen and (max-width: 1000px) {
+            .infographic .ig-section {
+                border: 0;
+            }
             
+            img#a1 {
+                left: 2.5%;
+                bottom: -15%;
+                max-width: 100px;
+            }
+            
+            img#a2 {
+                right: 2.5%;
+                bottom: -7.5%;
+                max-width: 100px;
+            }
         }
         
         @media screen and (max-width: 767px) {
-            .img-container .overlay .text h1 {
-                font-size: 50px;
+            
+            #programme {
+                padding: 0;
             }
             
-            .img-container .overlay img {
-                width: 15%;
+            .img-container {
+                margin-bottom: 100px;
+            }
+            .img-container > img {
+                padding: 0 20px;
+            }
+            
+                .img-container .overlay {
+                    position: static;
+                    width: 100%;
+                    overflow: hidden;
+                    padding: 0;
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                }
+
+                    .img-container .overlay img {
+                        width: 15%;
+                        position: absolute;
+                        bottom: -15%;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                    }
+                    
+                        .img-container .overlay .text {
+                            width: 100%;
+                            margin: 0;
+                        }
+                            
+                            .img-container .overlay .text h1 {
+                                background: #85407f;
+                                color: #ffffff;
+                                text-align: center;
+                                font-size: 75px;
+                                width: 100%;
+                                padding: 20px;
+                            }
+                            
+                            .img-container .overlay .text h3 {
+                                display: none;
+                            }
+                            
+            .video-container {
+                width: 100%;
+                padding-bottom: 56.25%
+            }
+            
+        .bottom-border {
+            display: none;
+        }
+        
+            #programme .mobile-header {
+                background: #85407f;
             }
             
             #programme h2 {
-                line-height: 50px;
+                font-size: 45px;
+                line-height: 40px;
+                color: #ffffff;
+                background: #85407f;
+                text-align: left;
+                padding: 20px;
+                margin-bottom: 25px;
             }
 
+            
+                .infographic .ig-section {
+                    padding-bottom: 10px;
+                    
+                }
+                .infographic#ig2 .ig-section {
+                    padding-bottom: 20px;
+                    border-bottom: 1px #ccc solid;
+                }
+                
+                    .infographic#ig2 .ig-section .info-img-container {
+                        width: 50%;
+                        float: left;
+                    }
+                
+                    #approaches .approach .content h3 {
+                        font-size: 70px;
+                        line-height: 50px;
+                        margin-bottom: 15px;
+                        text-align: center;
+                    }
+                
+                
             .content .content-text {
                 position: static;
                 margin-top: 20px;
                 width: 75%;
             }
             img#a1 {
+                display: none;
                 bottom: -12.5%;
             }
             
             img#a2 {
-                bottom: -20%;
+                display: none;
+                bottom: -5%;
             }
                         
         }
         
         @media screen and (max-width: 480px) {
+            .infographic .ig-section h3 {
+                font-size: 50px;
+            }
+            .infographic .ig-section .info-img-container img {
+                width: 100%;
+            }
             .img-container .overlay img {
                 width: 50%;
                 display: block;
@@ -346,7 +477,7 @@ div#page-progress li {
             }
             
             img#a2 {
-                bottom: -10%;
+                bottom: -2.5%;
             }
             
             .jcarousel-control-prev {
@@ -358,6 +489,10 @@ div#page-progress li {
                 right: -35%;
                 width: 35px;
                 height: 35px;
+            }
+            .infographic#ig2 .ig-section .info-img-container {
+                width: 100%;
+                float: none;
             }
         }
     
