@@ -65,8 +65,9 @@ $(document).ready(function(){
     function easter1End() {
         clearInterval($timer);
     }
-$('#ig2 .ig-section:first-of-type div.info-img-container').mouseenter(easter1);
-$('#ig2 .ig-section:first-of-type div.info-img-container').mouseleave(easter1End);
+    
+    $('#ig2 .ig-section:first-of-type div.info-img-container').mouseenter(easter1);
+    $('#ig2 .ig-section:first-of-type div.info-img-container').mouseleave(easter1End);
     
     $easterImgSelector = $('#ig2 .ig-section').eq(2).children('.info-img-container').children('img');
     $('#ig2 .ig-section').eq(2).children('.info-img-container').prepend('<div id="night-sky"></div>');
@@ -111,4 +112,52 @@ $('#ig2 .ig-section:first-of-type div.info-img-container').mouseleave(easter1End
     }
     $easterImgSelector.parent().mouseenter(easter2);
     $easterImgSelector.parent().mouseleave(easter2End);
+    
+    function easter3() {
+        $('.easter').fadeIn(function(){
+            $contHeight = $('#approaches .approach').eq(2).children('.approach-img-container').innerHeight();
+            $contWidth = $('#approaches .approach').eq(2).children('.approach-img-container').innerWidth();
+            $('#approaches .approach').eq(2).children('.approach-img-container').css({
+                height : $contHeight,
+                width : $contWidth
+            });
+            $('#approaches .approach').eq(2).children('.approach-img-container').children('img:not(.easter)').hide();
+        });
+        setTimeout(function(){
+            $('.easter:not(#easter-head)').css({
+                transform : 'rotate(360deg)',
+                '-webkit-transform' : 'rotate(360deg)',
+                '-moz-transform' : 'rotate(360deg)',
+                '-ms-transform' : 'rotate(360deg)'
+            });
+            setTimeout(function(){
+                $('#easter-head').css({
+                    transform : 'rotate(360deg)',
+                    '-webkit-transform' : 'rotate(360deg)',
+                    '-moz-transform' : 'rotate(360deg)',
+                    '-ms-transform' : 'rotate(360deg)'
+                });
+                
+                setTimeout(function(){
+                    $('.easter:not(#easter-head)').css({
+                        transform : 'rotate(720deg)',
+                        '-webkit-transform' : 'rotate(720deg)',
+                        '-moz-transform' : 'rotate(720deg)',
+                        '-ms-transform' : 'rotate(720deg)'
+                    });
+                    $('#easter-head').css({
+                        transform : 'rotate(0deg)',
+                        '-webkit-transform' : 'rotate(0deg)',
+                        '-moz-transform' : 'rotate(0deg)',
+                        '-ms-transform' : 'rotate(0deg)'
+                    });
+                },5000);
+                
+            },5000);
+        }, 5000);
+    }
+    
+    $('#approaches .approach').eq(2).children('.approach-img-container').mouseenter(function(){
+        setTimeout(easter3, 5000);
+    });
 });

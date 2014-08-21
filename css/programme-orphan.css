@@ -169,6 +169,7 @@ div#page-progress li {
                 
                 #approaches .approach .approach-img-container {
                     padding: 20px;
+                    position: relative;
                 }
                 
                     #approaches .approach .approach-img-container img {
@@ -311,6 +312,18 @@ div#page-progress li {
             font-size: 18px;
         }
         
+        #approaches .approach .approach-img-container img.easter {
+            padding: 20px 35px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            transition: all 1s linear;
+            -webkit-transition: all 1s linear;
+            -ms-transition: all 1s linear;
+            -moz-transition: all 1s linear;
+            -o-transition: all 1s linear;
+        }
         @media screen and (max-width: 1000px) {
             .infographic .ig-section {
                 border: 0;
