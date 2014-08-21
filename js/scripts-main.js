@@ -59,7 +59,7 @@ $(document).ready(function(){
     
     /* Page Progress */
     $('#programme > section').each(function(){
-        $('#page-progress').append('<li></li>');
+        $('#page-progress').append('<li><div></div></li>');
     });
     
     $('#page-progress li').click(function(){
@@ -87,17 +87,22 @@ $(document).ready(function(){
         $($('#programme > section').get().reverse()).each(function(){
             $offset = $(this).offset().top;
             $sectionNo = $(this).parent().children('section').index($(this));
-            $sectionOffset = $(this).scrollTop();
-            if($offset-40 <= $(window).scrollTop()) {
-                $('#page-progress li').css({
-                    'border-width' : '1px'
-                });
-                $('#page-progress li').eq($sectionNo).css({
-                    'border-width' : '8px'
-                });
-                
-                return false;
-            }
+            
+            $liColour = $('#page-progress li').css('border-color');
+            $windowScroll = $(window).scrollTop();
+            $sectionHeight = $(this).height();
+            $sectionPerc = 100/$sectionHeight;
+            $sectionOpacity = (100 - Math.abs($sectionPerc * ($windowScroll - $offset)))/100;
+            
+            console.log($(this).parent().children('section').index(this) + ' opc: ' + $sectionOpacity);
+            
+            $('#page-progress li div').eq($sectionNo).css({
+                background : $liColour,
+                width: '100%',
+                height: '100%',
+                'border-radius' : '50%',
+                opacity : $sectionOpacity
+            });
             
         });
     }
