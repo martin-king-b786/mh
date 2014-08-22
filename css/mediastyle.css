@@ -179,8 +179,78 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
 
 
 }
+@media screen and (max-width: 1000px) {
+    #donate-section  #donate-sections h3 {
+        width: auto;
+        margin-right: 5px;
+        margin-bottom: 0;
+        border-radius: 5px;
+        padding: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    #donate-section  #donate-sections h3:last-of-type {
+        position: static;
+    }
+    
+    .donatepad-section {
+        width: 100%;
+        border: 0;
+    }
+    .donatepad-section:last-of-type {
+        width: 100%;
+    }
+        .donatepad-section select {
+            width: 100%;
+        }
+        .donatepad-section label {
+            width: 100%;
+        }
+        .donatepad-section .row {
+            width: 50%;
+            padding: 0 20px;
+            height: auto;
+        }
+        .donatepad-section .row:last-of-type {
+           margin-bottom: 20px; 
+        }
+
+        .donatepad-section .row.currency, .donatepad-section .row.amount {
+            width: 100%;
+        }
+            
+            .row.currency > *, .row.amount > * {
+                padding: 0 0 0 20px;
+                width: 50%;
+                float: left;
+            }
+            .row.currency label, .row.amount label {
+                padding: 0;
+                display: block;
+            }
+            
+            span.symbol {
+                left: 25px;
+            }
+}
 
 @media screen and (max-width: 767px) {
+    
+    .bottom-border {
+        display: none;
+    }
+    
+    .related {
+        margin-bottom: 0;
+    }
+    
+    .content {
+        margin-bottom: 20px;
+    }
+    
+    .subpage-menu {
+        
+    }
      #subpage-menu {
          display: none;
      }
@@ -324,12 +394,57 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
 	.banner33 {
 		height: auto;
 	}
+        
+        section .mobile-header h2 {
+            font-size: 45px;
+            line-height: 40px;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            float: left;
+            width: 80%;
+            color: #ffffff;
+        }
+
+        section .mobile-header img.expand-arrow {
+            width: auto;
+            height: 40px;
+            float: right;
+            border: 1px #ffffff solid;
+            border-radius: 50%;
+            display: block;
+        }
+        section img.expand-arrow.expandarrowrotate {
+            transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+        }
 }
 
 
 
 
 @media screen and (max-width: 480px) {
+    
+    .donatepad-section .row {
+        width: 100%;
+    }
+            .row.currency > *, .row.amount > * {
+                width: 100%;
+                padding: 0;
+            }
+            
+            span.symbol {
+                left: 10px;
+            }
+            
+    section#header nav#nav ul li ul#mobilenav.exp {
+        width: 200px;
+    }
+    section#header nav#nav ul li ul#mobilenav li ul {
+        position: static;
+        padding: 0;
+    }
     section#header {
         height: auto;
     }
@@ -389,6 +504,10 @@ section#header nav#nav ul li ul li a:hover span.icon.workwith {
 		width: 100%;
 		text-align: center;
 	}
+        
+        .related-post {
+            width: 100%;
+        }
 }
 
 @media screen and (max-width: 380px) {

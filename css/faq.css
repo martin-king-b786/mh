@@ -28,12 +28,8 @@
         display: block;
     }
     
-        #faq .faqs h2 {
-            font-size: 45px;
-            margin-bottom: 35px;
-            line-height: 40px;
+        section .mobile-header h2 {
             color: #f89d54;
-            text-align: center;
         }
         
         #faq .faqs .row {
@@ -41,11 +37,12 @@
             border: 3px #f89d54 solid;
             padding: 5px;
             border-radius: 5px;
+            margin: 0;
             margin-bottom: 50px;
         }
         
             #faq .faqs .row input {
-                width: 75%;
+                width: 70%;
                 float: left;
                 border: 0;
             }
@@ -95,27 +92,53 @@
         }
         
         @media screen and (max-width: 767px) {
-            #faq .faqs .row {
-                border: 0;
+            
+            .mobile-header {
+                background: #f89d54;
             }
             
-                #faq .faqs .row input {
-                    width: 100%;
-                    border: 1px #f89d54 solid;
-                    margin-bottom: 20px;
-                    float: none;
+            section .mobile-header h2 {
+                color: #ffffff;
+            }
+            
+            #faq .faqs {
+                width: 100%;
+            }
+            
+                #faq .faqs ul {
+                    padding: 20px;
                 }
                 
-                #faq .faqs .row a.button {
-                    float: none;
-                    width: 50%;
-                    display: block;
-                    margin: auto;
-                }
+                    #faq .faqs .row {
+                        border: 0;
+                        position: relative;
+                    }
+
+                        #faq .faqs .row input {
+                            width: 100%;
+                            border: 3px #f89d54 solid;
+                            margin-bottom: 20px;
+                            float: none;
+                            height: 50px;
+                            padding-right: 40%;
+                        }
+
+                        #faq .faqs .row a.button {
+                            float: none;
+                            width: auto;
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                        }
         }
         
         @media screen and (max-width: 480px) {
+            #faq .faqs .row input {
+                padding-right: 20px;
+            }
+            
             #faq .faqs .row a.button {
                 width: 100%;
+                position: static;
             }
         }

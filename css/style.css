@@ -351,6 +351,9 @@ section#header nav#nav ul li ul, section#header nav#nav ul li div {
 	border-top-left-radius: 0px;
 }
 
+section#header nav#nav ul li ul.exp {
+    display: block;
+}
 section#header nav#nav ul li ul.col2, section#header nav#nav ul li div#navappeal {
 	column-count: 2;
 	-moz-column-count: 2;
@@ -407,7 +410,7 @@ section#header nav#nav ul li div#navappcon ul {
 
 section#header nav#nav ul li ul li {
 	display: block;
-        width: 175px;
+        width: 100%;
 }
 
 section#header nav#nav ul li ul.more li:nth-of-type(odd) {
@@ -421,6 +424,7 @@ section#header nav#nav ul li ul.more li:nth-of-type(odd):hover {
 section#header nav#nav ul li ul li a {
 	color: #5c5d4d;
 	width: 100%;
+        padding: 10px;
 }
 
 section#header nav#nav ul li ul li a:hover {
@@ -623,7 +627,30 @@ section#header nav#nav ul li ul#mobilenav {
 section#header nav#nav ul li ul#mobilenav.exp {
     width: 150px;
     height: auto;
-    padding: 10px 7px 3px 7px;
+    padding: 10px 7px 7px 7px;
+    overflow: visible;
+}
+
+section#header nav#nav ul li ul#mobilenav.exp li.exp > a {
+    background: #00c0f2;
+    color: #fff;
+    line-height: 15px;
+    padding: 15px 10px;
+}
+
+section#header nav#nav ul li ul#mobilenav.exp li > ul > li > a, section#header nav#nav ul li ul#mobilenav.exp li > ul > li.exp > a {
+    padding: 10px;
+    margin: 2.5px 0;
+    border-color: #41d8ff;
+}
+
+section#header nav#nav ul li ul#mobilenav.exp li > ul > li > ul > li > a, section#header nav#nav ul li ul#mobilenav.exp li > ul > li > ul > li.exp > a {
+    padding: 5px 10px;
+    margin: 7.5px 0;
+}
+
+section#header nav#nav ul li ul#mobilenav.exp li ul li.exp > a {
+    background: #5c5d4d;
 }
 
 section#header nav#nav ul li ul#mobilenav li {
@@ -631,13 +658,23 @@ section#header nav#nav ul li ul#mobilenav li {
 	z-index: 1000;
 }
 
+section#header nav#nav ul li ul#mobilenav li a {
+	line-height: 15px;
+        padding: 15px 10px;
+        border-bottom: 1px #cccccc solid;
+}
+
 section#header nav#nav ul li ul#mobilenav li ul {
 	right: 100%;
 	top: 0;
 	padding: 3px;
-	width: 170%;
+        margin-right: 1px;
+	width: 100%;
 }
-
+section#header nav#nav ul li ul#mobilenav li ul li ul {
+	top: -3px;
+        margin-right: 4px;
+}
 section#header nav#nav ul li ul#mobilenav div {
 	position: static;
 	border-top: #ccc 3px solid;
@@ -658,8 +695,9 @@ section#header nav#nav ul li ul#mobilenav div:before {
 	left: 6px;
 	right: 6px;
 	bottom: 2px;
-	border: #000 1px solid;
+	border: 0;
 	border-radius: 3px;
+        border-bottom: 3px #cccccc solid;
 }
 
 section#header nav#nav ul li ul#mobilenav li ul {
@@ -1038,158 +1076,199 @@ section#content {
     z-index: 1;
 }
 
+section .mobile-header {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+section .mobile-header h2 {
+    font-size: 45px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+
+section .mobile-header img.expand-arrow {
+    display: none;
+}
+
+.fulltext {
+    display: none;
+}
+
+.content-rm .content a.button {
+    background: #ffffff;
+    color: #5c5d4d ;
+    border: 1px #5c5d4d solid;
+    width: 160px;
+    display: block;
+    margin: 20px auto;
+}
+
+    .content-rm .content a.button img {
+        background: #5c5d4d;
+    }
+
 #donate-section {
+    overflow: hidden;
+    text-align: left;
+}
+
+    #donate-section  #donate-sections {
         overflow: hidden;
-    }
-    
-        #donate-section  #donate-sections {
-            overflow: hidden;
-            float: left;
-            padding: 0;
-            position: relative;
-        }
-        
-            #donate-section  #donate-sections h3 {
-                background: #5c5d4d;
-                padding: 20px 10px;
-                border-radius: 5px;
-                float: left;
-                width: 100%;
-                font-size: 25px;
-                line-height: 25px;
-                text-transform: uppercase;
-                font-weight: normal;
-                font-family: 'Alternate Gothic', sans-serif;
-                margin: 0 0 5px;
-                color: #ffffff;
-                border-bottom-right-radius: 0;
-                border-top-right-radius: 0;
-            }
-            
-            #donate-section #donate-sections h3:last-of-type {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                margin: 0;
-            }
-            
-    #donate-panels {
+        float: left;
         padding: 0;
+        position: relative;
     }
-    
-        #donate-panels>div {
-            padding: 20px 10px 10px;
-            overflow: hidden;
-            border-bottom-right-radius: 5px;
-            border-top-right-radius: 5px;
+
+        #donate-section  #donate-sections h3 {
             background: #5c5d4d;
-            display: none;
-            min-height: 140px;
+            padding: 20px 10px;
+            border-radius: 5px;
+            float: left;
+            width: 100%;
+            font-size: 25px;
+            line-height: 25px;
+            text-transform: uppercase;
+            font-weight: normal;
+            font-family: 'Alternate Gothic', sans-serif;
+            margin: 0 0 5px;
+            color: #ffffff;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
         }
 
-        #donate-section #donate-sections h3.active, #donate-panels>div.active {
-            background: #00c0f2;
-            color: #ffffff;
-            display: block;
-        }
-        
-        .donatepad-section {
-            width: 27.5%;
-            padding: 0 20px;
-            float: left;
-            border-right: 1px #ffffff solid;
-            overflow: hidden;
-        }
-        
-        .donatepad-section:last-of-type {
-            width: 17.5%;
-            border-right: 0;
-        }
-        .donatepad-section .row {
-            width: 100%;
-            float: left;
-            margin: 0 0 20px;
-            height: 40px;
-        }
-        .donatepad-section .row:last-of-type {
+        #donate-section #donate-sections h3:last-of-type {
+            position: absolute;
+            bottom: 0;
+            left: 0;
             margin: 0;
-        } 
-            .donatepad-section p {
-                font-size: 18px;
-                margin: 0;
-            }
-            
-            .donatepad-section input {
-                color: #000000;
-                font-size: 24px;
-                width: 100%;
-                padding: 0 10px;
-                text-align: center;
-            }
-            
-            .donatepad-section label {
-                float: left;
-                margin-top: 10px;
-                width: 35%;
-            }
-            
-            .donatepad-section select {
-                display: inline-block;
-                font-family: 'Alternate Gothic', sans-serif;
-                line-height: 37px;
-                height: 30px;
-                background: #fff;
-                border: none;
-                border-top: #ccc 3px solid;
-                border-radius: 3px;
-                color: #666666;
-                font-size: 18px;
-                width: 55%;
+        }
+
+#donate-panels {
+    padding: 0;
+}
+
+    #donate-panels>div {
+        padding: 20px 10px 10px;
+        overflow: hidden;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        background: #5c5d4d;
+        display: none;
+        min-height: 140px;
+    }
+
+    #donate-section #donate-sections h3.active, #donate-panels>div.active {
+        background: #00c0f2;
+        color: #ffffff;
+        display: block;
+    }
+
+    .donatepad-section {
+        width: 27.5%;
+        padding: 0 20px;
+        float: left;
+        border-right: 1px #ffffff solid;
+        overflow: hidden;
+    }
+
+    .donatepad-section:last-of-type {
+        width: 17.5%;
+        border-right: 0;
+    }
+    .donatepad-section .row {
+        width: 100%;
+        float: left;
+        margin: 0 0 20px;
+        height: 40px;
+    }
+    .donatepad-section .row:last-of-type {
+        margin: 0;
+    } 
+        .donatepad-section p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .donatepad-section input {
+            color: #000000;
+            font-size: 24px;
+            width: 100%;
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        .donatepad-section label {
+            float: left;
+            margin-top: 10px;
+            width: 35%;
+        }
+
+        .donatepad-section select {
+            display: inline-block;
+            font-family: 'Alternate Gothic', sans-serif;
+            line-height: 37px;
+            height: 30px;
+            background: #fff;
+            border: none;
+            border-top: #ccc 3px solid;
+            border-radius: 3px;
+            color: #666666;
+            font-size: 18px;
+            width: 55%;
+            float: right;
+            padding: 0 0 0 10px;
+            text-align: center;
+            margin-top: 4px;
+        }
+
+        div.pamount {
+            overflow: hidden;
+            position: relative;
+        }   
+
+        span.symbol {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #000000;
+            font-size: 24px;
+        }
+        .row.amount label {
+            display: none;
+        }
+        input.amount {
+            padding-left: 25px;
+        }
+
+        #donate-section a.button {
+            width: 100%;
+            font-size: 34px;
+            color: #ffffff;
+            background: #5c5d4d;
+            text-align: center;
+            border-color: #4a4a3e;
+        }
+
+        #donate-section a.button.options {
+            font-size: 18px;
+            color: #00c0f2;
+            background: #ffffff;
+            border-color: transparent;
+            text-align: left;
+        }
+
+            #donate-section a.button img {
+                margin: 7px 0 0;
                 float: right;
-                padding: 0 0 0 10px;
-                text-align: center;
-                margin-top: 4px;
+                background: #00c0f2;
             }
-            
-            div.pamount {
-                overflow: hidden;
-                position: relative;
-            }   
-            
-            span.symbol {
-                position: absolute;
-                top: 10px;
-                left: 10px;
-                color: #000000;
-                font-size: 24px;
-            }
-            
-            input.amount {
-                padding-left: 25px;
-            }
-            
-            #donate-section a.button {
-                width: 100%;
-                font-size: 34px;
-                color: #ffffff;
-                background: #5c5d4d;
-                text-align: center;
-                border-color: #4a4a3e;
-            }
-            
-            #donate-section a.button.options {
-                font-size: 18px;
-                color: #00c0f2;
-                background: #ffffff;
-                border-color: transparent;
-                text-align: left;
-            }
-            
-                #donate-section a.button img {
-                    margin: 7px 0 0;
-                    float: right;
-                    background: #00c0f2;
-                }
 
 section#footer {
 	clear: both;

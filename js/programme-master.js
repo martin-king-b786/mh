@@ -39,14 +39,6 @@ function jcarouselResize() {
 $(document).ready(jcarouselResize);
 $(window).resize(jcarouselResize);
 
-$(document).ready(function(){
-    $('.expand-arrow:not(#lastexparrow)').click(function(){
-        $(this).parent().parent().children('.content').slideToggle();
-        
-        $(this).toggleClass('expandarrowrotate');
-    }); 
-});
-
 function infographicResizing() {
     $maxHeight = 0;
     $('.infographic .info-img-container').each(function(){

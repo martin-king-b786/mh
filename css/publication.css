@@ -73,7 +73,12 @@
                 display: block;
                 margin: auto;
             }
+            
             #pdf-container #pdf iframe {
                 height: 500px;
+            }
+            
+            #pub-header h1 {
+                text-align: center;
             }
         }

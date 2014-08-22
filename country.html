@@ -248,14 +248,14 @@
     </div>
     <section>
         <div id="donate-section">
-            <div id="donate-sections" class="col-md-2 matchheight">
+            <div id="donate-sections" class="col-md-2 col-xs-12">
                 <h3 class="active" data-donate-section="donate">Donate</h3>
                 <h3 data-donate-section="subscribe">Subscribe</h3>
             </div>
-            <div id="donate-panels" class="col-xs-10">
-                <div id="donatepad" class="active matchheight" data-donate-section="donate">
+            <div id="donate-panels" class="col-md-10 col-xs-12">
+                <div id="donatepad" class="active" data-donate-section="donate">
                     <form>
-                        <div class="donatepad-section" data-mh="pad-section">
+                        <div class="donatepad-section">
                             <div class="row">
                                 <p>I wish to donate to the</p>
                             </div>
@@ -263,16 +263,19 @@
                                 <input type="text" value="Syria Crisis Appeal"/>
                             </div>
                         </div>
-                        <div class="donatepad-section" data-mh="pad-section">
-                            <div class="row">
+                        <div class="donatepad-section">
+                            <div class="row currency">
                                 <label>Currency</label>
-                                <select>
-                                    <option value="$">$ US Dollar</option>
-                                    <option value="£">£ British Pound Sterling</option>
-                                    <option value="&euro;">&euro; European Euro</option>
-                                </select>
+                                <div class="select-container">
+                                    <select>
+                                        <option value="$">$ US Dollar</option>
+                                        <option value="£">£ British Pound Sterling</option>
+                                        <option value="&euro;">&euro; European Euro</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="row">
+                            <div class="row amount">
+                                <label>Enter Amount</label>
                                 <div class="pamount">
                                     <span class="symbol">&pound;</span>
                                     <input type="number" class="amount" />
@@ -280,7 +283,7 @@
                             </div>
                         </div>
 
-                        <div class="donatepad-section" data-mh="pad-section">
+                        <div class="donatepad-section">
                             <div class="row">
                                 <label>Donate as</label>
                                 <select>
@@ -297,7 +300,7 @@
                             </div>
                         </div>
 
-                        <div class="donatepad-section" data-mh="pad-section">
+                        <div class="donatepad-section">
                             <div class="row">
                                 <a class="button">Give</a>
                             </div>
@@ -307,7 +310,7 @@
                         </div>
                     </form>
                 </div>
-                <div id="subscribepad" class="matchheight" data-donate-section="subscribe">
+                <div id="subscribepad" class="" data-donate-section="subscribe">
 
                     <p>Insert Mailchimp code here</p>
 
@@ -321,130 +324,167 @@
     </section>
     
     <section>
-        <h2>Muslim Hands projects in Gambia</h2>
-        <img src="./css/images-country/country-img1.jpg"/>
+        <div class="mobile-header">
+            <h2>Muslim Hands projects in Gambia</h2>
+            <img class="expand-arrow hidden-sm hidden-md hidden-lg expandarrowrotate" src="./css/images/arrow_hollow.png" alt="" />
+        </div>
+        <div class="content">
+            <img src="./css/images-country/country-img1.jpg"/>
+            <img class="mobile" src="./css/images-country/country-info1.png"/>
+        </div>
     </section>
     
     <section>
-        <h2>Case Studies</h2>
-        <div class="jcarousel-wrapper">
-            <div class="jcarousel">
-                <ul>
-                    <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-country/country-cs1.jpg" alt=""><h4><span class="title-container">Ayesha's smoked fish business</span></h4></a></div><p>Ayesha is empowered to earn an income through the help and advice MH gave in setting up her smoked fish business.</p></li>
-                    <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-country/country-cs2.jpg" alt=""><h4><span class="title-container">A day with orphan carer Ousman</span></h4></a></div><p>Ousman, our Orphan Carer in Gambia, was once an orphan himself sponsored under the MH Orphan Sponsorship Scheme.</p></li>
-                    <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-country/country-cs3.jpg" alt=""><h4><span class="title-container">Our first orphan Abdoul Aziz</span></h4></a></div><p>Now a school teacher, read the story about Abdoul Aziz - the first child to be admitted into MH's Orphan Sponsorship Programme in Gambia</p></li>
-                    <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-country/country-cs1.jpg" alt=""><h4><span class="title-container">Ayesha's smoked fish business</span></h4></a></div><p>Ayesha is empowered to earn an income through the help and advice MH gave in setting up her smoked fish business.</p></li>
-                    <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-country/country-cs2.jpg" alt=""><h4><span class="title-container">A day with orphan carer Ousman</span></h4></a></div><p>Ousman, our Orphan Carer in Gambia, was once an orphan himself sponsored under the MH Orphan Sponsorship Scheme.</p></li>
-                    <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-country/country-cs3.jpg" alt=""><h4><span class="title-container">Our first orphan Abdoul Aziz</span></h4></a></div><p>Now a school teacher, read the story about Abdoul Aziz - the first child to be admitted into MH's Orphan Sponsorship Programme in Gambia</p></li>
-                    <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-country/country-cs1.jpg" alt=""><h4><span class="title-container">Ayesha's smoked fish business</span></h4></a></div><p>Ayesha is empowered to earn an income through the help and advice MH gave in setting up her smoked fish business.</p></li>
-                    <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-country/country-cs2.jpg" alt=""><h4><span class="title-container">A day with orphan carer Ousman</span></h4></a></div><p>Ousman, our Orphan Carer in Gambia, was once an orphan himself sponsored under the MH Orphan Sponsorship Scheme.</p></li>
-                    <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-country/country-cs3.jpg" alt=""><h4><span class="title-container">Our first orphan Abdoul Aziz</span></h4></a></div><p>Now a school teacher, read the story about Abdoul Aziz - the first child to be admitted into MH's Orphan Sponsorship Programme in Gambia</p></li>
-                </ul>
-            </div>
+        <div class="mobile-header">
+            <h2>Case Studies</h2>
+            <img class="expand-arrow hidden-sm hidden-md hidden-lg expandarrowrotate" src="./css/images/arrow_hollow.png" alt="" />
+        </div>
+        <div class="content">
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-country/country-cs1.jpg" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-country/country-cs2.jpg" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-country/country-cs3.jpg" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-country/country-cs2.jpg" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-country/country-cs1.jpg" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-country/country-cs2.jpg" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-country/country-cs3.jpg" alt=""><h4 data-mh="slide-title"><span class="title-container">Dehydration among children</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-country/country-cs2.jpg" alt=""><h4 data-mh="slide-title"><span class="title-container">Children getting their water</span></h4></a></li>
+                        <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-country/country-cs1.jpg" alt=""><h4 data-mh="slide-title"><span class="title-container">Regular water supply</span></h4></a></li>
+                    </ul>
+                </div>
 
-            <a href="#" class="jcarousel-control-prev"><img src="./css/images/arrow_colour.png" alt="&lsaquo;" /></a>
-            <a href="#" class="jcarousel-control-next"><img src="./css/images/arrow_colour.png" alt="&rsaquo;" /></a>
+                <a href="#" class="jcarousel-control-prev"><img src="./css/images/arrow_colour.png" alt="&lsaquo;" /></a>
+                <a href="#" class="jcarousel-control-next"><img src="./css/images/arrow_colour.png" alt="&rsaquo;" /></a>
+            </div>
+            <!--
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-country/country-cs1.jpg" alt=""><h4><span class="title-container">Ayesha's smoked fish business</span></h4></a></div><p>Ayesha is empowered to earn an income through the help and advice MH gave in setting up her smoked fish business.</p></li>
+                        <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-country/country-cs2.jpg" alt=""><h4><span class="title-container">A day with orphan carer Ousman</span></h4></a></div><p>Ousman, our Orphan Carer in Gambia, was once an orphan himself sponsored under the MH Orphan Sponsorship Scheme.</p></li>
+                        <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-country/country-cs3.jpg" alt=""><h4><span class="title-container">Our first orphan Abdoul Aziz</span></h4></a></div><p>Now a school teacher, read the story about Abdoul Aziz - the first child to be admitted into MH's Orphan Sponsorship Programme in Gambia</p></li>
+                        <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-country/country-cs1.jpg" alt=""><h4><span class="title-container">Ayesha's smoked fish business</span></h4></a></div><p>Ayesha is empowered to earn an income through the help and advice MH gave in setting up her smoked fish business.</p></li>
+                        <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-country/country-cs2.jpg" alt=""><h4><span class="title-container">A day with orphan carer Ousman</span></h4></a></div><p>Ousman, our Orphan Carer in Gambia, was once an orphan himself sponsored under the MH Orphan Sponsorship Scheme.</p></li>
+                        <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-country/country-cs3.jpg" alt=""><h4><span class="title-container">Our first orphan Abdoul Aziz</span></h4></a></div><p>Now a school teacher, read the story about Abdoul Aziz - the first child to be admitted into MH's Orphan Sponsorship Programme in Gambia</p></li>
+                        <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-country/country-cs1.jpg" alt=""><h4><span class="title-container">Ayesha's smoked fish business</span></h4></a></div><p>Ayesha is empowered to earn an income through the help and advice MH gave in setting up her smoked fish business.</p></li>
+                        <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-country/country-cs2.jpg" alt=""><h4><span class="title-container">A day with orphan carer Ousman</span></h4></a></div><p>Ousman, our Orphan Carer in Gambia, was once an orphan himself sponsored under the MH Orphan Sponsorship Scheme.</p></li>
+                        <li><div class="cs-img"><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-country/country-cs3.jpg" alt=""><h4><span class="title-container">Our first orphan Abdoul Aziz</span></h4></a></div><p>Now a school teacher, read the story about Abdoul Aziz - the first child to be admitted into MH's Orphan Sponsorship Programme in Gambia</p></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev"><img src="./css/images/arrow_colour.png" alt="&lsaquo;" /></a>
+                <a href="#" class="jcarousel-control-next"><img src="./css/images/arrow_colour.png" alt="&rsaquo;" /></a>
+            </div>
+            -->
         </div>
     </section>
     <section>
         <div id="slider">
-            <h2>In Pictures</h2>
+            <div class="mobile-header">
+                <h2>In Pictures</h2>
+                <img class="expand-arrow hidden-sm hidden-md hidden-lg expandarrowrotate" src="./css/images/arrow_hollow.png" alt="" />
+            </div>
+            <div class="content">
             
-            <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 960px; height: 480px; background: #191919; overflow: hidden; display: block; margin: auto;">
+            
+                <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 960px; height: 480px; background: #191919; overflow: hidden; display: block; margin: auto;">
 
-                <!-- Loading Screen -->
-                <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                    <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
-                        background-color: transparent; top: 0px; left: 0px;width: 100%;height:100%;">
-                    </div>
-                    <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
-                        top: 0px; left: 0px;width: 100%;height:100%;">
-                    </div>
-                </div>
-
-                <!-- Slides Container -->
-                <div u="slides" style="cursor: move; position: absolute; left: 240px; top: 0px; width: 720px; height: 480px; overflow: hidden;">
-                    <div>
-                        <img u="image" src="./css/images-content/01.jpg" />
-                        <img u="thumb" src="./css/images-content/thumb-01.jpg" />
-                    </div>
-                    <div>
-                        <img u="image" src="./css/images-content/02.jpg" />
-                        <img u="thumb" src="./css/images-content/thumb-02.jpg" />
-                    </div>
-                    <div>
-                        <img u="image" src="./css/images-content/03.jpg" />
-                        <img u="thumb" src="./css/images-content/thumb-03.jpg" />
-                    </div>
-                    <div>
-                        <img u="image" src="./css/images-content/04.jpg" />
-                        <img u="thumb" src="./css/images-content/thumb-04.jpg" />
-                    </div>
-                    <div>
-                        <img u="image" src="./css/images-content/05.jpg" />
-                        <img u="thumb" src="./css/images-content/thumb-05.jpg" />
-                    </div>
-                    <div>
-                        <img u="image" src="./css/images-content/06.jpg" />
-                        <img u="thumb" src="./css/images-content/thumb-06.jpg" />
-                    </div>
-                    <div>
-                        <img u="image" src="./css/images-content/07.jpg" />
-                        <img u="thumb" src="./css/images-content/thumb-07.jpg" />
-                    </div>
-                    <div>
-                        <img u="image" src="./css/images-content/08.jpg" />
-                        <img u="thumb" src="./css/images-content/thumb-08.jpg" />
-                    </div>
-                    <div>
-                        <img u="image" src="./css/images-content/09.jpg" />
-                        <img u="thumb" src="./css/images-content/thumb-09.jpg" />
-                    </div>
-                    <div>
-                        <img u="image" src="./css/images-content/10.jpg" />
-                        <img u="thumb" src="./css/images-content/thumb-10.jpg" />
+                    <!-- Loading Screen -->
+                    <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                        <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                            background-color: transparent; top: 0px; left: 0px;width: 100%;height:100%;">
+                        </div>
+                        <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                            top: 0px; left: 0px;width: 100%;height:100%;">
+                        </div>
                     </div>
 
-                    <div>
-                        <img u="image" src="./css/images-content/11.jpg" />
-                        <img u="thumb" src="./css/images-content/thumb-11.jpg" />
+                    <!-- Slides Container -->
+                    <div u="slides" style="cursor: move; position: absolute; left: 240px; top: 0px; width: 720px; height: 480px; overflow: hidden;">
+                        <div>
+                            <img u="image" src="./css/images-content/01.jpg" />
+                            <img u="thumb" src="./css/images-content/thumb-01.jpg" />
+                        </div>
+                        <div>
+                            <img u="image" src="./css/images-content/02.jpg" />
+                            <img u="thumb" src="./css/images-content/thumb-02.jpg" />
+                        </div>
+                        <div>
+                            <img u="image" src="./css/images-content/03.jpg" />
+                            <img u="thumb" src="./css/images-content/thumb-03.jpg" />
+                        </div>
+                        <div>
+                            <img u="image" src="./css/images-content/04.jpg" />
+                            <img u="thumb" src="./css/images-content/thumb-04.jpg" />
+                        </div>
+                        <div>
+                            <img u="image" src="./css/images-content/05.jpg" />
+                            <img u="thumb" src="./css/images-content/thumb-05.jpg" />
+                        </div>
+                        <div>
+                            <img u="image" src="./css/images-content/06.jpg" />
+                            <img u="thumb" src="./css/images-content/thumb-06.jpg" />
+                        </div>
+                        <div>
+                            <img u="image" src="./css/images-content/07.jpg" />
+                            <img u="thumb" src="./css/images-content/thumb-07.jpg" />
+                        </div>
+                        <div>
+                            <img u="image" src="./css/images-content/08.jpg" />
+                            <img u="thumb" src="./css/images-content/thumb-08.jpg" />
+                        </div>
+                        <div>
+                            <img u="image" src="./css/images-content/09.jpg" />
+                            <img u="thumb" src="./css/images-content/thumb-09.jpg" />
+                        </div>
+                        <div>
+                            <img u="image" src="./css/images-content/10.jpg" />
+                            <img u="thumb" src="./css/images-content/thumb-10.jpg" />
+                        </div>
+
+                        <div>
+                            <img u="image" src="./css/images-content/11.jpg" />
+                            <img u="thumb" src="./css/images-content/thumb-11.jpg" />
+                        </div>
+                        <div>
+                            <img u="image" src="./css/images-content/12.jpg" />
+                            <img u="thumb" src="./css/images-content/thumb-12.jpg" />
+                        </div>
+                        <div>
+                            <img u="image" src="./css/images-content/13.jpg" />
+                            <img u="thumb" src="./css/images-content/thumb-13.jpg" />
+                        </div>
+                        <div>
+                            <img u="image" src="./css/images-content/14.jpg" />
+                            <img u="thumb" src="./css/images-content/thumb-14.jpg" />
+                        </div>
                     </div>
-                    <div>
-                        <img u="image" src="./css/images-content/12.jpg" />
-                        <img u="thumb" src="./css/images-content/thumb-12.jpg" />
-                    </div>
-                    <div>
-                        <img u="image" src="./css/images-content/13.jpg" />
-                        <img u="thumb" src="./css/images-content/thumb-13.jpg" />
-                    </div>
-                    <div>
-                        <img u="image" src="./css/images-content/14.jpg" />
-                        <img u="thumb" src="./css/images-content/thumb-14.jpg" />
-                    </div>
-                </div>
 
 
-                <!-- Arrow Left -->
-                <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 158px; left: 248px;">
-                </span>
-                <!-- Arrow Right -->
-                <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 158px; right: 8px">
-                </span>
+                    <!-- Arrow Left -->
+                    <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 158px; left: 248px;">
+                    </span>
+                    <!-- Arrow Right -->
+                    <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 158px; right: 8px">
+                    </span>
 
-                <!-- Thumbnail Navigator Skin 02 Begin -->
-                <div u="thumbnavigator" class="jssort02" style="position: absolute; width: 240px; height: 480px; left:0px; bottom: 0px;">
+                    <!-- Thumbnail Navigator Skin 02 Begin -->
+                    <div u="thumbnavigator" class="jssort02" style="position: absolute; width: 240px; height: 480px; left:0px; bottom: 0px;">
 
 
-                    <div u="slides" style="cursor: move;">
-                        <div u="prototype" class="p" style="position: absolute; width: 99px; height: 66px; top: 0; left: 0;">
-                            <div class=w><thumbnailtemplate style=" width: 100%; height: 100%; border: none;position:absolute; top: 0; left: 0;"></thumbnailtemplate></div>
-                            <div class=c>
+                        <div u="slides" style="cursor: move;">
+                            <div u="prototype" class="p" style="position: absolute; width: 99px; height: 66px; top: 0; left: 0;">
+                                <div class=w><thumbnailtemplate style=" width: 100%; height: 100%; border: none;position:absolute; top: 0; left: 0;"></thumbnailtemplate></div>
+                                <div class=c>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Thumbnail Navigator Skin End -->
+                    <a style="display: none" href="http://www.jssor.com">content slider</a>
                 </div>
-                <!-- Thumbnail Navigator Skin End -->
-                <a style="display: none" href="http://www.jssor.com">content slider</a>
             </div>
         </div>
         

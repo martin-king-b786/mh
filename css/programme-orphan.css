@@ -193,22 +193,6 @@ div#page-progress li {
                         font-size: 16px;
                         line-height: 26px;
                     }
-                    #approaches .approach .content .fulltext {
-                        display: none;
-                    }
-                    
-                    #approaches .approach .content a.button {
-                        background: #ffffff;
-                        color: #5c5d4d ;
-                        border: 1px #5c5d4d solid;
-                        width: 160px;
-                        display: block;
-                        margin: 20px auto;
-                    }
-                    
-                        #approaches .approach .content a.button img {
-                            background: #5c5d4d;
-                        }
                     
             img.arrow {
                 position: absolute;
