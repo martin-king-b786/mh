@@ -9,6 +9,7 @@ $(document).ready(function(){
         $(this).parent().toggleClass('highlight');
     });
     $('.currency').click(function(){
+        $('.currency').removeClass('highlight');
         $(this).toggleClass('highlight');
     });
     $('span.drop-down').click(function(){

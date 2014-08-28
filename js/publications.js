@@ -186,36 +186,82 @@ function pubLayout() {
 $(document).ready(pubLayout);
 $(window).resize(pubLayout);
 $(document).ready(function() {
-    $('.year-node').mouseenter(function(){
-        $(this).addClass('bright');
-        $(this).parent().addClass('bright');
-        $(this).parent().children().children().addClass('bright');
-    });
-    
-    $('.year').mouseleave(function(){
-        $('*').removeClass('bright');
-    });
-    
-    $('.node-publication').mouseenter(function(){
-        $(this).addClass('bright');
-        $(this).parent().children('.node').addClass('bright');
-        $(this).parent().parent().addClass('bright');
-        $(this).parent().parent().children('.year-node').children().addClass('bright');
-    });
-    
-    $('.node-publication').mouseleave(function(){
-        $('*').removeClass('bright');
-    });
-    
-    $('.node').mouseenter(function(){
-        $(this).parent().children().addClass('bright');
-        $(this).parent().parent().addClass('bright');
-        $(this).parent().parent().children('.year-node').children().addClass('bright');
-    });
-    
-    $('.node').mouseleave(function(){
-        $('*').removeClass('bright');
-    });
+    if($browserWidth < 767) {
+        $('.year-node').click(function(){
+            $(this).toggleClass('bright');
+            $(this).parent().toggleClass('bright');
+            $(this).parent().children().children().toggleClass('bright');
+        });
+
+        $('.node-publication').click(function(){
+            $(this).toggleClass('bright');
+            $(this).parent().children('.node').toggleClass('bright');
+            if($(this).hasClass('bright')){
+                $(this).parent().parent().addClass('bright');
+                $(this).parent().parent().children('.year-node').children().addClass('bright');
+            }
+            else {
+                if($(this).parent().parent().children('li').children('.node-publication').hasClass('bright')){
+                    
+                }
+                else {
+                $(this).parent().parent().removeClass('bright');
+                $(this).parent().parent().children('.year-node').children().removeClass('bright');
+                }
+            }
+            
+        });
+
+        $('.node').click(function(){
+            $(this).parent().children().toggleClass('bright');
+            if($(this).hasClass('bright')){
+                $(this).parent().parent().addClass('bright');
+                $(this).parent().parent().children('.year-node').children().addClass('bright');
+            }
+            else {
+                if($(this).parent().parent().children('li').children('.node-publication').hasClass('bright')){
+                    
+                }
+                else {
+                $(this).parent().parent().removeClass('bright');
+                $(this).parent().parent().children('.year-node').children().removeClass('bright');
+                }
+            }
+        });
+        
+    }
+    else {
+        $('.year-node').mouseenter(function(){
+            $(this).addClass('bright');
+            $(this).parent().addClass('bright');
+            $(this).parent().children().children().addClass('bright');
+        });
+
+        $('.year').mouseleave(function(){
+            $('*').removeClass('bright');
+        });
+
+        $('.node-publication').mouseenter(function(){
+            $(this).addClass('bright');
+            $(this).parent().children('.node').addClass('bright');
+            $(this).parent().parent().addClass('bright');
+            $(this).parent().parent().children('.year-node').children().addClass('bright');
+        });
+
+        $('.node-publication').mouseleave(function(){
+            $('*').removeClass('bright');
+        });
+
+        $('.node').mouseenter(function(){
+            $(this).parent().children().addClass('bright');
+            $(this).parent().parent().addClass('bright');
+            $(this).parent().parent().children('.year-node').children().addClass('bright');
+        });
+
+        $('.node').mouseleave(function(){
+            $('*').removeClass('bright');
+        });
+    }
 });
 /*
     function infScroll() {

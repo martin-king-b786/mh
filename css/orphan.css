@@ -390,6 +390,7 @@ a.button {
             #orphan #search-bar>span img.down-arrow {
                 float: right;
                 transform: rotate(90deg);
+                width: 40px;
             }
             
         #orphan #search-bar form {

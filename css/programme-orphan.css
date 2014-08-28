@@ -332,6 +332,10 @@ div#page-progress li {
                 padding: 0;
             }
             
+            #programme section {
+                padding: 0;
+            }
+            
             .img-container {
                 margin-bottom: 100px;
             }
@@ -394,8 +398,10 @@ div#page-progress li {
                 color: #ffffff;
                 background: #85407f;
                 text-align: left;
-                padding: 20px;
-                margin-bottom: 25px;
+                padding: 0;
+                margin-bottom: 0;
+                float: left;
+                width: 80%;
             }
 
             

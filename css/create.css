@@ -35,6 +35,10 @@ div#container {
             padding: 0;
         }
         
+            .cause-container {
+                padding: 0;
+            }
+            
             #create form div label {
                 display: block;
                 font-weight: bold;

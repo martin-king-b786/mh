@@ -83,8 +83,16 @@ div#container {
                                 margin: auto;
                                 display: block;
                             }
+                            #nf-container #search-area input {
+                                width: 70%;
+                                min-width: 200px;
+                                display: block;
+                                margin: 0 auto 20px;
+                            }
                             #nf-container #search-area a.button {
-                                width: 100%;
+                                width: 200px;
+                                display: block;
+                                margin: auto;
                             }
                             #nf-image {
                                 width: 100%;
@@ -105,4 +113,4 @@ div#container {
                                 width: 80px;
                             }
                             
-                        }
+                        }                        

@@ -333,14 +333,21 @@ tr.total td.tright span.orange {
             border-radius: 3px;
             text-transform: uppercase;
         }
-	div#cprocess {
-		display: none;
-	}
-
-	div#cprocess hr {
-		width: 10%;
-		margin: 0 15px;
-	}
+	span.cnum {
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    
+    div#cprocess hr {
+        width: 9%;
+        margin: 0 10px;
+    }
+    
+    div#cprocess img {
+        width: 30px;
+    }
         
 }
 

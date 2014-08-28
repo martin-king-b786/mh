@@ -311,19 +311,23 @@ section#header nav#nav ul li a {
 	display: inline-block;
 	font-family: 'Alternate Gothic', sans-serif;
 	font-size: 18px;
-	line-height: 38px;
+	line-height: 24px;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 0;
 	color: #fff;
 	border-radius: 3px;
+        padding: 10px 20px;
 }
 
 section#header nav#nav ul li a.navarr {
 	background: url('images/nav-arrow.png') no-repeat center right 10px;
-	padding: 0 25px 0 10px;
+        
 }
 
+ul.col2.subnav {
+    width: 380px;
+}
 section#header nav#nav ul li a:hover, section#header nav#nav ul li a.sel {
 	background: #fff;
 	color: #5c5d4d;
@@ -360,12 +364,16 @@ section#header nav#nav ul li ul.col2, section#header nav#nav ul li div#navappeal
 	-webkit-column-count: 2;
 }
 
+section#header nav#nav ul#navright li a {
+    padding: 6px 6px;
+}
 section#header nav#nav ul li:hover ul, section#header nav#nav ul li:hover div {
 //	display: block;
 }
 
 section#header nav#nav ul li div#navappcon {
 	padding: 0;
+        width: 380px;
 }
 
 section#header nav#nav ul li div#navappcon ul, section#header nav#nav ul li div#navappcon div {
@@ -425,6 +433,7 @@ section#header nav#nav ul li ul li a {
 	color: #5c5d4d;
 	width: 100%;
         padding: 10px;
+        line-height: 24px;
 }
 
 section#header nav#nav ul li ul li a:hover {
@@ -709,6 +718,10 @@ section#header nav#nav ul li ul#mobilenav li ul li a {
 	color: #fff;
 }
 
+section#header nav#nav ul li ul#mobilenav li ul li ul li a, section#header nav#nav ul li ul#mobilenav li ul li ul {
+    background: #41d8ff;
+    border-color: #00c0f2;
+}
 section#header nav#nav ul li ul#mobilenav li ul li a:hover {
 	background: #5c5d4d;
 	color: #00c0f2;
@@ -932,12 +945,13 @@ div#page-progress {
         margin: auto;
         margin-bottom: 20px;
         display: block;
-        height: 40px;
+        min-height: 40px;
     }
     
     #subpage-menu>ul {
         display: block;
         margin: auto;
+        overflow: hidden;
     }
     
         #subpage-menu>ul>li {
@@ -1012,7 +1026,7 @@ section#header a#donate {
 	background: #fff url('images/nav-arrow-brown.png') no-repeat center right 20px !important;
 	width: auto;
 	font-size: 22px !important;
-	padding: 0 45px 0 25px !important;
+	padding: 7px 45px 7px 25px !important;
 	color: #5c5d4d !important;
 	border-bottom: #ccc 3px solid;
 }

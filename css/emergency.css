@@ -24,9 +24,68 @@ div#container {
                 position: relative;
                 padding: 0 7.5px;
         }	
+                .emergency-image-overlay {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    display: none;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0,0,0,0.65);
+                    z-index: 1;
+                }
+                
+                .emergency-image-overlay .buttons {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin: auto;
+                        height: 40px;
+                        max-width: 325px;
+                    }
+                        .buttons a.button.readmore{
+                            display: inline-block;
+                            font-family: 'Alternate Gothic', sans-serif;
+                            font-size: 22px;
+                            line-height: 37px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            padding: 0 20px;
+                            background: #ffffff;
+                            border: none;
+                            border-bottom: #b2b2b2 3px solid;
+                            border-radius: 3px;
+                            color: #c53334;
+                            margin: 0;
+                            float: right;
+                        } 
+                        
+                            .buttons a.button.readmore img {
+                                background: #c53334;
+                            }
+                            
+                        .buttons a.button.video{
+                            display: inline-block;
+                            font-family: 'Alternate Gothic', sans-serif;
+                            font-size: 22px;
+                            line-height: 37px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            padding: 0 20px;
+                            background: #ffffff;
+                            border: none;
+                            border-bottom: #b2b2b2 3px solid;
+                            border-radius: 3px;
+                            color: #c53334;
+                            margin: 0;
+                            float: left;
+                        } 
                 
                 .emergency-section.featured .image-container  {
                         overflow: hidden;
+                        position: relative;
                 }
                         .emergency-section.featured .img-container img  {
                                 width: 100%;
@@ -77,19 +136,26 @@ div#container {
                 float: left;
                 width: 100%;
                 text-transform: uppercase;
-                padding: 35px 40px;
+                padding: 0 7.5px;
                 position: relative;
                 overflow: hidden;
                 color: #ffffff;
                 margin-bottom: 20px;
         }
-                #emergency-response img {
-                        position: absolute;
-                        z-index: -1;
-                        top: 0;
-                        right: 0;
+        
+        #emergency-response .content-container {
+            padding: 35px 40px;
+            position: absolute;
+            top: 0;
+        }
+        
+            #emergency-response .image-container {
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+            }
+                #emergency-response .image-container > img {
                         width: 100%;
-                        padding: 0 7.5px;
                 }
 
                 #emergency-response .content {
@@ -207,9 +273,9 @@ div#container {
                 overflow: auto;
                 z-index: 1;
             }
-                .emergency-section .emergency-lightbox {
+                .emergency-lightbox {
                     background: #ffffff;
-                    width: 50%;
+                    width: 75%;
                     float: none;
                     overflow: hidden;
                     margin: 100px auto;
@@ -217,7 +283,7 @@ div#container {
                     height: auto;
                     position: relative;
                 }
-                    .emergency-section .close-lightbox {
+                    .close-lightbox {
                         position: absolute;
                         top: 0;
                         right: 0;
@@ -228,7 +294,7 @@ div#container {
                         margin: 10px;
                     }
                     
-                    .emergency-section .emergency-wide-image {
+                    .emergency-wide-image {
                         width: 100%;
                         position: relative;
                         padding-bottom: 56.245%;
@@ -265,7 +331,7 @@ div#container {
                     font-size: 14px;
                 }
                 
-                .emergency-section  .emergency-lightbox a.button.readmore {
+                .emergency-lightbox a.button.readmore {
                     background: #c53334;
                     color: #ffffff;
                     border-color: #9e292a;
@@ -287,9 +353,13 @@ div#container {
         
         @media screen and (max-width: 767px) {
             .emergency-section.featured .image-container {
-                position: static;
+                position: relative;
                 overflow: hidden;
             }
+            
+                .image-container > img {
+                    width: 100%;
+                }
             .emergency-section.featured .content-container {
                 overflow: hidden;
             }
@@ -375,9 +445,31 @@ div#container {
                     
             .emergency-section.featured .content p {
                 margin-top: 10px;
+                text-align: center;
+            }
+            #emergency-response .content-container {
+                position: static;
+                padding: 0;
+                text-align: center;
+            }
+            
+            .emergency-section .emergency-lightbox {
+                width: 100%;
             }
         }
         
         @media screen and (max-width: 480px) {
+            .emergency-image-overlay .buttons {
+                height: 110px;
+            }
+            
+                .buttons a.button.readmore, .buttons a.button.video {
+                    float: none;
+                    display: block;
+                    margin: 10px auto;
+                    width: 160px;
+                }
+                
             
         }
+        

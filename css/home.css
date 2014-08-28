@@ -12,6 +12,7 @@ pink - e55d5f
 
 --- */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -310,6 +311,13 @@ aside#sticky p#copyright-sticky {
 	margin-bottom: 0;
 }
 
+body > section {
+    opacity: 0.5;
+}
+
+body > section:first-of-type {
+    opacity: 1;
+}
 
 section#featured {
 	width: 737px;
@@ -746,9 +754,15 @@ section#f-blog .title-wrapper {
         display: none;
     }
 @media screen and (max-width: 767px) {
+    
     body {
         overflow-y: auto;
     }
+    
+    body > section {
+        opacity: 1;
+    }
+
     aside#sticky {
         width: 100%;
         height: auto;
@@ -762,6 +776,7 @@ section#f-blog .title-wrapper {
             display: inline-block;
             float: left;
             width: 40%;
+            min-width: 225px;
         }
         
         aside#sticky div#social-sticky {
@@ -917,7 +932,6 @@ section#f-blog .title-wrapper {
                 font-size: 35px;
                 height: 60px;
                 border-radius: 5px;
-                font-family: 'Myriad Pro', sans-serif;
                 font-weight: bold;
             }
             span.currency {
@@ -1241,6 +1255,28 @@ section.work a {
 }
 
 @media screen and (max-width: 480px) {
+    body > section:first-of-type {
+        margin-top: 100px;
+    }
+
+    aside#sticky #mobile-logo {
+        min-width: initial;
+        width: 100%;
+    }
+    
+    aside#sticky nav#nav img {
+        float: none; 
+        display: block;
+        margin: 10px auto;
+    }
+    
+    aside#sticky nav#nav ul {
+        float: none;
+        right: 0px;
+        left: 0;
+        top: 176px;
+        margin: auto;
+    }
     .work a span {
         font-size: 14px;
     }
@@ -1312,5 +1348,20 @@ section.work a {
     section#f-blog .outer {
         width: 100%;
     }
+    
+    
+    section#donate p.cur, section#donate label, section#donate p {
+        text-align: center;
+        width: 100%;
+    }
+    
+        span.currency, section#donate label span {
+            width: 35px;
+            height: 35px;
+            font-size: 30px;
+            padding: 2px 7px;
+            display: block;
+            margin: 10px auto;
+        }
 }
 

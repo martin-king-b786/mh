@@ -190,7 +190,7 @@ input[type="checkbox"] + label span {
                     }
                     
                     #main-content #donations div.donation .donation-amount {
-                        font-size: 70px;
+                        font-size: 60px;
                         color: #419faf;
                         font-weight: bold;
                         max-width: 50%;
@@ -611,6 +611,7 @@ input[type="checkbox"] + label span {
                         background: #f89d54;
                         border-radius: 5px;
                         margin: 10px;
+                        z-index: 1;
                     }
                     
                     .lightbox-content input {
@@ -655,6 +656,7 @@ input[type="checkbox"] + label span {
 
                     .lightbox-content input {
                             border: 1px #999 solid;
+                            margin-bottom: 10px;
                     }
 
                     .lightbox-content .tag .sub-label {
@@ -749,6 +751,7 @@ input[type="checkbox"] + label span {
                             
                             #main-content #donations div.donation .donation-content .donate-message {
                                 font-weight: normal;
+                                font-size: 15px;
                             }
                             
                             .lightbox-content {

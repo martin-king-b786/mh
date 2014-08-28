@@ -420,9 +420,20 @@
                 padding: 5px 75px;
             }
             
+            .jcarousel-control-prev {
+                left: 0;
+            }
+            
+            .jcarousel-control-next {
+                right: 0;
+            }
+            
         }
     
         @media screen and (max-width: 480px) {
+            .img-container .overlay .text h1 {
+                font-size: 50px;
+            }
             .jcarousel li h4 span.title-container {
                 width: 100%;
                 float: left;

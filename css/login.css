@@ -130,6 +130,6 @@ div#container {
 
 @media screen and (max-width: 480px) {
     #login #itn-logo img {
-        width: 100%;
+        width: 80%;
     }
 }

@@ -6,7 +6,7 @@ section.checkout {
 h1 {
 	display: inline-block;
 	background: #f89d54;
-	margin: 25px 25px 50px 25px;
+	margin-bottom: 50px;
 	padding: 0 40px;
 	font-size: 100px;
 	line-height: 110px;
@@ -209,7 +209,7 @@ h3 {
     h1 {
         width: 100%;
         text-align: center;
-        font-size: 85px;
+        letter-spacing: -1px;
     }
     
     h3 {
@@ -266,6 +266,20 @@ h3 {
             }
 }
 @media screen and (max-width: 480px) {
+    span.cnum {
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    
+    div#cprocess hr {
+        margin: 0 10px;
+    }
+    
+    div#cprocess img {
+        width: 30px;
+    }
     
     #giftaid .input-row-last label label {
         max-width: 70%;

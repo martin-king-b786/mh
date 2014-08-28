@@ -54,3 +54,4 @@ function infographicResizing() {
 
 $(window).load(infographicResizing);
 $(window).resize(infographicResizing);
+
