@@ -205,7 +205,10 @@ canvas {
                                         width:1em;
                                         height:1em;
                                 }
-                                
+                                @media screen and (max-width: 767px) {
+                                    .wwd-section .content {
+                                        margin-bottom: 0;
+                                }
                                 @media screen and (max-width: 480px) {
                                     #wwd-content h2 {
                                         font-size: 80px;

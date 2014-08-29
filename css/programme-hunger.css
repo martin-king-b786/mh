@@ -159,7 +159,7 @@ div#page-progress li {
                         .jcarousel li h4 span.title-container {
                             width: 87.5%;
                             float: left;
-                            padding-left: 12.5%;
+                            padding-left: 15%;
                             padding-top: 5px;
                         }
                         
@@ -288,12 +288,12 @@ div#page-progress li {
             .mobile-info .info-section img.info-arrow {
                 position: absolute;
                 width: 30%;
-                right: -40%;
+                right: -35%;
                 bottom: -50%;
             }
             .mobile-info .info-section:nth-of-type(2n) img.info-arrow {
                 right: 0;
-                left: -35%;
+                left: -30%;
             }
             
             

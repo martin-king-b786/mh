@@ -262,6 +262,16 @@ div#container {
                         overflow-y: visible;
                         overflow-x: visible;
                     }
+                    
+                        .node-publication a.button {
+                            font-size: 16px;
+                            padding: 0 10px;
+                        }
+                        
+                        .node-publication a.button img {
+                            padding: 2px;
+                        }
+                        
                     .node-publication div.arrow-pointer {
                         top: 10px;
                     }

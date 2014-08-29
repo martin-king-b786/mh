@@ -89,6 +89,7 @@ h3 {
             margin-bottom: 10px;
             width: 100%;
             font-size: 12px;
+            margin-left: 10px;
         }
 
             input, select {
@@ -109,6 +110,10 @@ h3 {
                 color: #ffffff;
                 border-color: #3e3f33;
                 font-size: 20px;
+            }
+            
+            .input-row .input label {
+                line-height: 16px;
             }
     #giftaid {
         padding-bottom: 20px;
@@ -225,6 +230,7 @@ h3 {
             margin-bottom: 10px;
             width: 100%;
             font-size: 18px;
+            margin-left: 0;
         }
         
         .input-row > label {

@@ -4,7 +4,7 @@ $(document).ready(function(){
         $(this).parent().parent().parent().fadeOut();
     });
     
-    if($browserWidth < 767) {
+    
         $continents = [];
         $('#worldmap > a').each(function(){
             $aData = $(this).attr('data-content');
@@ -24,7 +24,7 @@ $(document).ready(function(){
         });
         
         $.each($continents,function(index,value){
-            $('#mobile').append("<div class='continent' id='"+value+"'><h2>"+value+"<img src='./css/images/arrow_hollow.png'/></h2><ul></ul></div>");
+            $('#mobile').append("<div class='continent' id='"+value+"'><h2><span>"+value+"</span><img src='./css/images/arrow_hollow.png'/></h2><ul></ul></div>");
         });
         
         $('#worldmap > a').each(function(){
@@ -43,7 +43,7 @@ $(document).ready(function(){
                 }
             });
         });
-    }
+    
     
     $(document).on('click','.continent',function(){
         $(this).children('ul').slideToggle();

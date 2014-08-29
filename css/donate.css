@@ -186,6 +186,12 @@ div#container {
                     #donate .location-dropdown span {
                         line-height: 35px;
                     }
+                    
+                    #donate .location-dropdown > span {
+                        width: 100%;
+                        float: left;
+                    }
+                    
                     #donate .location-dropdown img {
                         float: right;
                         margin: 15px -15px 0 0;
@@ -198,6 +204,7 @@ div#container {
                         width: 100%;
                         padding: 0;
                         left: 0;
+                        top: 35px;
                         overflow-y: auto;
                         max-height: 350px;
                         z-index: 1;

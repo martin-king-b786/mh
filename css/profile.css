@@ -695,7 +695,7 @@ input[type="checkbox"] + label span {
                     }
                     
                     @media screen and (max-width:  767px) {
-                        
+                            
                             body {
                             
                             }
@@ -763,6 +763,9 @@ input[type="checkbox"] + label span {
                                 width: 100%;
                             }
                             
+                            .lightbox-content input, .lightbox-content button.submit-button {
+                                margin-bottom: 10px;
+                            }
                     }
                     
                     @media screen and (max-width:  480px) {

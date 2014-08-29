@@ -3,7 +3,7 @@ $(document).ready(function(){
     $trno = $('th').length;
     
     
-    if($browserWidth < 767) {
+    
         $('.table-container').each(function(){
             $title = $(this).children('.title-container').html();
             $title = "<div class='title-container col-xs-12'>"+$title+"</div>";
@@ -34,6 +34,6 @@ $(document).ready(function(){
             $('.row:last').addClass('last');
             $('.mobile-display').append($total);
         });
-    }
+    
 });
 

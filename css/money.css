@@ -29,7 +29,7 @@ section#header nav#nav ul li ul#mobilenav.exp li > ul > li > ul > li.exp a {
         width: 100%;
     }
     
-    .container {
+    .container, section:not(.related) .content p {
         padding: 0 25%;
         text-align: center;
         width: 100%;
@@ -92,7 +92,7 @@ section#header nav#nav ul li ul#mobilenav.exp li > ul > li > ul > li.exp a {
                 color: #ffffff;
             }
             
-    .container {
+    .container, section:not(.related) .content p {
         padding: 0;
     }
     

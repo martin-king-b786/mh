@@ -205,5 +205,10 @@
             $('.section-next').click(nextSection);
             $('.section-prev').click(prevSection);
             $(window).scroll(scrollSection);
+            
+            $('p.cur a').click(function(){
+                $('p.cur a span').removeClass('sel');
+                $(this).children().addClass('sel');
+            });
         });
         

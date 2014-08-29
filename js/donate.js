@@ -1,11 +1,12 @@
 $(document).ready(function(){
-    $('.location-dropdown').click(function(){
-        $(this).children('ul').slideDown();
+    $('.location-dropdown > span').click(function(){
+        $(this).parent().children('ul').slideToggle();
     });
     $('.location-dropdown').mouseleave(function(){
         $(this).children('ul').slideUp();
     });
-    $('.location-dropdown input').click(function(){
+    $('.location-dropdown input').click(function(e){
+        e.stopPropagation();
         $(this).parent().toggleClass('highlight');
     });
     $('.currency').click(function(){
@@ -18,7 +19,6 @@ $(document).ready(function(){
     
     $('.checkboxes span').click(function(){
         $(this).parent('label').parent().parent().children('.other-option').children('input.other-amount').attr('disabled','disabled');
-        console.log('asdasd');
     });
     
     $('.other-option span.other').click(function(){

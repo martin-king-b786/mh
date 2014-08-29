@@ -731,30 +731,30 @@ section#f-blog .title-wrapper {
     #mobile-next-slide {
         position: absolute;
         bottom: 0;
-        left: 0;
-        right: 0;
+        right: 25px;
         margin: auto;
-        width: 50px;
     }
     
     #mobile-previous-slide {
-        display: none;
         position: absolute;
         top: 0;
-        left: 0;
-        right: 0;
+        right: 25px;
         margin: auto;
-        width: 50px;
     }
-    
+        #mobile-previous-slide img, #mobile-next-slide img {
+            width: 100%;
+        }
     div#mobile-bottom {
         display: none;
     }
     #mobile-next-slide, #mobile-previous-slide {
         display: none;
+        width: 25px;
     }
 @media screen and (max-width: 767px) {
-    
+    #mobile-next-slide, #mobile-previous-slide {
+        display: block;
+    }
     body {
         overflow-y: auto;
     }

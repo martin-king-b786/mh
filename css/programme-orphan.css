@@ -448,11 +448,11 @@ div#page-progress li {
             .infographic .ig-section h3 {
                 font-size: 50px;
             }
-            .infographic .ig-section .info-img-container img {
+            .infographic .ig-section .info-img-container img, .infographic#ig2 .ig-section .info-img-container img {
                 width: 100%;
             }
             .img-container .overlay img {
-                width: 50%;
+                width: 20%;
                 display: block;
                 margin: auto;
                 float: none;
