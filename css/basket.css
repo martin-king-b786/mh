@@ -349,6 +349,13 @@ tr.total td.tright span.orange {
         width: 30px;
     }
         
+    option, option:hover, option:focus {
+        background: white;
+        color: #5c5d4d;
+    }
+
+    
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -359,12 +366,13 @@ tr.total td.tright span.orange {
     tr.final td:last-of-type {
         float: none;
     }
+    
     tr.final a.button {
-        position: static;
-        background: #f89d54;
-        float: left;
-        border-bottom: #c67e43 3px solid;
-        width: 100%;
+        text-align: center;
+        float: none;
+        width: 190px;
+        display: block;
+        margin: auto;
     }
     
     tr.total td.tright span.orange {

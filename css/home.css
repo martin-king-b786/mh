@@ -984,6 +984,7 @@ section#f-blog .title-wrapper {
                 }
                 .jcarousel ul {
                     width: 100%!important;
+                    overflow: hidden;
                 }
 
                     .jcarousel ul li {

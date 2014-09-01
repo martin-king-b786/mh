@@ -251,7 +251,9 @@ div#container {
                 
         
         @media screen and (max-width: 1000px) {
-            
+            .campaign-section .campaign-lightbox {
+                width: 70%;
+            }
         }
         
         @media screen and (max-width: 767px) {
@@ -293,11 +295,21 @@ div#container {
             }
             
             .campaign-section .campaign-lightbox {
-                width: 90%;
+                width: 100%;
             }
         }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
+    .campaign-section .campaign-image-overlay .buttons {
+        height: 90px;
+    }
+    
+    .campaign-section .buttons a.button.readmore, .campaign-section .buttons a.button.video{
+        width: 175px;
+        margin: 0 auto 10px;
+        float: none;
+        display: block;
+    }
 	.campaign-section .content {
 		height: auto;
 	}

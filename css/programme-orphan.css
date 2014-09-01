@@ -441,10 +441,13 @@ div#page-progress li {
                 display: none;
                 bottom: -5%;
             }
-                        
+                
         }
         
         @media screen and (max-width: 480px) {
+            #approaches {
+                width: 100%;
+            }
             .infographic .ig-section h3 {
                 font-size: 50px;
             }

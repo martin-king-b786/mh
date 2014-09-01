@@ -248,6 +248,11 @@ div#page-progress li {
                         #programme section img.expand-arrow {
                             display: none;
                         }
+                        @media screen and (max-width: 1000px) {
+                            #effects .effect {
+                                border-right: 0;
+                            }
+                        }
 @media screen and (max-width: 767px) {
     
     #programme {

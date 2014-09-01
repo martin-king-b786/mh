@@ -55,10 +55,10 @@ div#container {
             
                 #login section#login-section label {
                     margin-top: 10px;
-			font-family: 'Alternate Gothic', sans-serif;
-			font-size: 18px;
-			text-transform: uppercase;
-			color: #5c5d4d;
+                    font-family: 'Alternate Gothic', sans-serif;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: #5c5d4d;
                 }
                 
                 #login section#login-section input {
@@ -115,9 +115,13 @@ div#container {
 	#login section#register-section h2 {
 		margin-bottom: 0px;
 	}
+        #login section#login-section label {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    
     #login section#login-section label {
         padding: 0;
         margin-bottom: 10px;

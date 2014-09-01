@@ -7,7 +7,9 @@ $(function() {
 $('body').ready(function() {
     $browserWidth = $(window).width();
     if($browserWidth < 1080) {
-        
+        $('#mobilenav li ul').each(function(){
+            $(this).parent().children('a').addClass('has-sub');
+        });
         $('.navarr').parent().click(function(e) {
                 e.preventDefault();
 		$(this).find('.subnav').slideToggle('fast');
@@ -28,6 +30,9 @@ $('body').ready(function() {
                 $('#mobilenav li').removeClass('exp');
                 $('#mobilenav ul').removeClass('exp');
 	});
+        $('.subnav').click(function(e){
+            e.stopPropagation();
+        });
         /*$('body').not('#limnav').click(function(){
             $('#limnav ul').hide();
             console.log('asdasdsa');
@@ -35,7 +40,6 @@ $('body').ready(function() {
         $('#mobilenav li ').click(function(e){
             e.stopPropagation();
             if($(this).hasClass('exp')) {
-                console.log('sdfsdf');
                 $(this).parent().children('li').removeClass('exp');
                 $(this).parent().children('li').children('ul').removeClass('exp');
             }
@@ -79,7 +83,7 @@ function submenuWidth () {
     });
     $ulWidth = $ulWidth + 2;
     if($ulWidth > $browserWidth) {
-        
+        $('#subpage-menu>ul').height(80);
     }
     else {
         $('#subpage-menu>ul').width($ulWidth);
@@ -160,10 +164,11 @@ $(document).ready(function(){
             
         });
     }
-    
-    $(window).scroll(pageProgScroll);
-    $(window).scroll(pageProgTrigger);
-    $('#page-progress').hide();
+    if($('#programme').length){
+        $(window).scroll(pageProgScroll);
+        $(window).scroll(pageProgTrigger);
+        $('#page-progress').hide();
+    }
 });
 
 function donateSection() {
@@ -252,4 +257,17 @@ $(document).on('click', '.content-rm a.button', readMoreClick);
 
 $(document).ready(contentReadMore);
 $(window).resize(contentReadMore);
+
+function mobileMenuOffset() {
+    $browserWidth = $(window).width();
+    if($browserWidth < 1080) {
+        $headerHeight = $('#header').height();
+        $('#mobilenav,#basketdetail,#searchdetail').css({
+            top : $headerHeight
+        });
+    }
+}
+
+$(document).ready(mobileMenuOffset);
+$(window).resize(mobileMenuOffset);
 

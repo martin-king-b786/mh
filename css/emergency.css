@@ -342,6 +342,7 @@ div#container {
                 font-size: 50px;
                 line-height: 35px;
                 margin-bottom: 15px;
+                margin-top: 0;
             }
             
             #emergency-response .content p {

@@ -19,7 +19,6 @@ function jcarouselResize() {
             }
         }
         else if($browserWidth < 1000) {
-            console.log($carouselWidth);
             $(this).css({
                 width : ($carouselWidth - 50) / 2,
                 'margin-left' : '0',

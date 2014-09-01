@@ -114,4 +114,7 @@
         #partners .container .partners .partner h2 {
             font-size: 30px;
         }
+        #partners .container .partners .partner .content {  
+            text-align: center;
+        }
 }

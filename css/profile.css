@@ -33,7 +33,6 @@ input[type="checkbox"] + label span {
                 border-radius: 50%;
                 width: 100%;
                 margin-bottom: 20px;
-                max-width: 200px;
             }
 
             #sidebar-left div {
@@ -68,17 +67,17 @@ input[type="checkbox"] + label span {
         }
 
             #main-content h1 {
-                color: #419faf;
+                color: #f89d54;
                 font-size: 50px;
                 margin-bottom: 20px;
                 line-height: 50px;
-                margin-top: 65px;
             }
 
             #main-content p#page-intro {
                 color: #666666;
                 font-size: 25px;
-                margin-bottom: 70px;
+                line-height: 25px;
+                margin-bottom: 35px;
                 margin-top: 0;
             }
 
@@ -485,11 +484,7 @@ input[type="checkbox"] + label span {
 
                     #sidebar-left div p {
                             color: #666;
-                    }
-
-                    #main-content h1 {
-                            color: #f89d54;
-                    }
+                    }                    
 
                     #main-content div#page-intro p {
                             color: #666;
@@ -593,6 +588,7 @@ input[type="checkbox"] + label span {
                     
                     .lightbox-content .tag {
                         width: 100%;
+                        text-align: left;
                     }
                     
                     .lightbox-content .tag .sub-label {
@@ -613,10 +609,16 @@ input[type="checkbox"] + label span {
                         margin: 10px;
                         z-index: 1;
                     }
-                    
+                    .lightbox-content .name {
+                        margin-bottom: 10px;
+                        padding: 0 0 0 5px;
+                    }
+                        .lightbox-content .name:first-of-type {
+                            padding: 0 5px 0 0;
+                        }
+                        
                     .lightbox-content input {
-                        width: 35%;
-                        margin-right: 10px;
+                        width: 100%;
                         padding: 10px 20px;
                         border-radius: 3px;
                         border: 1px #999999 solid;
@@ -629,6 +631,7 @@ input[type="checkbox"] + label span {
                     
                     .lightbox-content .label.anon {
                         margin-top: 10px;
+                        padding-left: 0;
                     }
                     
                     .lightbox-content .tag.message {
@@ -652,11 +655,6 @@ input[type="checkbox"] + label span {
                     
                     .lightbox-content .label {
                             color: #000;
-                    }
-
-                    .lightbox-content input {
-                            border: 1px #999 solid;
-                            margin-bottom: 10px;
                     }
 
                     .lightbox-content .tag .sub-label {
@@ -693,7 +691,11 @@ input[type="checkbox"] + label span {
                     .ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {
                             background: transparent;
                     }
-                    
+                    @media screen and (max-width: 1000px) {
+                        .lightbox-content {
+                            width: 70%;
+                        }
+                    }
                     @media screen and (max-width:  767px) {
                             
                             body {
@@ -763,7 +765,7 @@ input[type="checkbox"] + label span {
                                 width: 100%;
                             }
                             
-                            .lightbox-content input, .lightbox-content button.submit-button {
+                            .lightbox-content button.submit-button {
                                 margin-bottom: 10px;
                             }
                     }
@@ -782,6 +784,11 @@ input[type="checkbox"] + label span {
                             width: 100%;
                             margin-right: 0;
                             margin-bottom: 5%;
+                        }
+                        
+                        .lightbox-content .name {
+                            width: 100%;
+                            padding: 0;
                         }
                     }
 

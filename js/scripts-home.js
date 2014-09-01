@@ -1,12 +1,3 @@
-	
-
-//	$(function(){
-//		$("body").mousewheel(function(event, delta) {
-//			this.scrollLeft -= (delta * 30);
-//			event.preventDefault();
-//		});   
-//	});
-
     $(document).ready(function(){
         
         $browserWidth = $(window).width();
@@ -33,7 +24,6 @@
 
                 $('.banner-text').not('#banner-text-' + data).hide();
                 $('#banner-text-' + data).fadeTo('slow', 1);
-                console.log($mobileSlideNo);
                 if( $mobileSlideNo === $maxBanners) {
                     $('#mobile-next-slide').hide();
                     $('#mobile-previous-slide').show();
@@ -103,7 +93,6 @@
                     if($browserWidth+$scrollCurrent < $sectionWidth+$positionSection.left) {
                         $('body>section').removeClass('scroll');
                         $(this+':first').parent().addClass('scroll').addClass('tagged');
-                        console.log($browserWidth+' bwidth '+$scrollCurrent+' scrollcurr '+$sectionWidth+' swidth '+$positionSection.left+' positionsect ');
                     }
                     
                 });
@@ -191,7 +180,6 @@
             }
             
             function scrollSection() {
-                console.log($sectionScroll);
                 if($browserWidth > 767) {
                     if($sectionScroll === false) {
                         $('body > section').css({
@@ -210,5 +198,7 @@
                 $('p.cur a span').removeClass('sel');
                 $(this).children().addClass('sel');
             });
+            
+            
         });
         

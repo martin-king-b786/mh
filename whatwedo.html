@@ -36,12 +36,13 @@
 	<script type="text/javascript" src="./js/scripts-main.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.matchHeight-min.js"></script>
-        
+        <script type="text/javascript" src="./js/Chart.js"></script>
         <script type="text/javascript" src="./js/whatwedo.js"></script>
         
         <script type="text/javascript" src="./js/jquery.jcarousel.min.js"></script>
 	<script type="text/javascript" src="./js/jcarousel.responsive.js"></script>
         
+
 	<link rel="stylesheet" type="text/css" media="all" href="./css/whatwedo.css" />
 
 	<!--<script>
@@ -54,6 +55,13 @@
 		ga('require', 'displayfeatures');
 		ga('send', 'pageview');
 	</script>-->
+        <script>
+            $browserWidth = $(window).width();
+            
+            function iconLeave() {
+                $("canvas").hide();
+            }
+        </script>
 </head>
 
     <body>
