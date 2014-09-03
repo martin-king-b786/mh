@@ -32,6 +32,13 @@
 	<script type="text/javascript" src="./js/jcarousel.responsive.js"></script>
         <script type="text/javascript" src="./js/jquery.matchHeight-min.js"></script>
         <script type="text/javascript" src="./js/scripts-main.js"></script>
+        <script>
+            $.noConflict();
+            // Code that uses other library's $ can follow here.
+        </script>
+        <script type="text/javascript" src="./js/jquery-1.3.2.js">
+        </script>
+        <script type="text/javascript" src="./js/jquery.infinite-carousel.js"></script>
 	<!--<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -42,382 +49,392 @@
 		ga('require', 'displayfeatures');
 		ga('send', 'pageview');
 	</script>-->
+        <script type="text/javascript">
+                $(document).ready(function(){
+                    $('#viewport').carousel('#simplePrevious', '#simpleNext');  
+                    $browserWidth = $(window).width();
+                    if($browserWidth < 767) {
+                        $('#viewport > ul > li').eq(4).remove();
+                        $('#viewport > ul > li').eq(3).remove();
+                    }
+                    
+                });
+        </script>
 </head>
 
-<body>
-    <div class="section-prev"><img src="./css/images/arrow_hollow.png"/></div> 
-    <div class="section-next"><img src="./css/images/arrow_hollow.png"/></div> 
-    
-<!-- // Sticky navigation on the left -->
+    <body>
 
-<aside id="sticky">
-	<a href="./"><img src="./css/images-home/logo.png" alt="Muslim Hands" id="logo" /></a>
-        <a href="./"><img src="./css/images-home/logo_mobile_head.png" alt="Muslim Hands" id="mobile-logo" /></a>
-        
-	<nav id="nav">
-            <img src="./css/images-home/nav_mobile.png"/>
-		<ul>
-			<li><a class="sel" href="./">Home</a></li>
-			<li><a class="" href="./donate">Donate</a></li>
-			<li><a class="" href="./appeals">Appeals</a></li>
-			<li><a class="" href="./our-work">Our Work</a></li>
-			<li><a class="" href="./get-involved">Get Involved</a></li>
-			<li><a class="" href="./about-us">About Us</a></li>
-		</ul>
-	</nav>
+    <!-- // Sticky navigation on the left -->
 
-	<div id="social-sticky">
-		<a href="#">Facebook</a>
-		<a href="#">Twitter</a>
-		<a href="#">Google+</a>
-		<a href="#">LinkedIn</a>
-		<p id="copyright-sticky">Copyright &copy; 2014 Muslim Hands.<br />All rights reserved.</p>
-	</div>
-</aside>
+        <aside id="sticky">
+            <a href="./"><img src="./css/images-home/logo.png" alt="Muslim Hands" id="logo" /></a>
+            <a href="./"><img src="./css/images-home/logo_mobile_head.png" alt="Muslim Hands" id="mobile-logo" /></a>
 
-<section id="section-1">
-    <section id="featured">
-        <div id="featured-container">
-            <div id="banner-text-1" class="banner-text">
-                    <h2>Join hands to help out innocents.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem diam, adipiscing nec auctor quis, fermentum vel magna. Maecenas id ipsum ut tellus vulputate condimentum consectetur ac ipsum. Ut elementum id ipsum eget feugiat. Aenean vel elementum arcu.</p>
+            <nav id="nav">
+                <img src="./css/images-home/nav_mobile.png"/>
+                    <ul>
+                        <li><a class="sel" href="./">Home</a></li>
+                        <li><a class="" href="./donate">Donate</a></li>
+                        <li><a class="" href="./appeals">Appeals</a></li>
+                        <li><a class="" href="./our-work">Our Work</a></li>
+                        <li><a class="" href="./get-involved">Get Involved</a></li>
+                        <li><a class="" href="./about-us">About Us</a></li>
+                    </ul>
+            </nav>
 
-                    <a class="button readmore brown" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
+            <div id="social-sticky">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Google+</a>
+                <a href="#">LinkedIn</a>
+                <p id="copyright-sticky">Copyright &copy; 2014 Muslim Hands.<br />All rights reserved.</p>
             </div>
-
-            <div id="banner-text-2" class="banner-text hide col-xs-6">
-                    <h2>Second title</h2>
-                    <p>Second body of text</p>
-
-                    <a class="button readmore brown" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
-            </div>
-
-            <div id="banner-text-3" class="banner-text hide col-xs-6">
-                    <h2>Third title</h2>
-                    <p>Third body of text</p>
-
-                    <a class="button readmore brown" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
-            </div>
-
-            <div id="banner-text-4" class="banner-text hide col-xs-6">
-                    <h2>Fourth title</h2>
-                    <p>Fourth body of text</p>
-
-                    <a class="button readmore brown" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
-            </div>
-
-            <div id="banner-slider">
-                <div class="jcarousel-wrapper">
-                        <div class="jcarousel">
-                                <ul>
-                                        <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-home/banner1_t.png" alt=""></a></li>
-                                        <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-home/banner2_t.png" alt=""></a></li>
-                                        <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-home/banner3_t.png" alt=""></a></li>
-                                        <li><a href="#" class="bannerswap" data-banner="4"><img src="./css/images-home/banner4_t.png" alt=""></a></li>
-                                        <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-home/banner1_t.png" alt=""></a></li>
-                                        <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-home/banner2_t.png" alt=""></a></li>
-                                        <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-home/banner3_t.png" alt=""></a></li>
-                                        <li><a href="#" class="bannerswap" data-banner="4"><img src="./css/images-home/banner4_t.png" alt=""></a></li>
-                                </ul>
-                        </div>
-
-                        <a href="#" class="jcarousel-control-prev"><img src="./css/images-home/arrow_home_slider_left.png" alt="&lsaquo;" /></a>
-                        <a href="#" class="jcarousel-control-next"><img src="./css/images-home/arrow_home_slider.png" alt="&rsaquo;" /></a>
-                </div>
-            </div>
-            <div id="slider-mobile">
-                <a id="mobile-previous-slide"><img src="./css/images-home/arrows_up.png"/></a>
-                <a id="mobile-next-slide"><img src="./css/images-home/arrows_down.png"/></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="donate-work">
-
-            <section id="m-work" class="work">
-            <div class="workpad">
-                    <h2>Our Work</h2>
-
-                    <a data-mh="fwm" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_education.png" alt="Education" /><br />
-                            <span>Education</span>
-                    </a>
-                    <a data-mh="fwm" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_emergencies.png" alt="Emergencies" /><br />
-                            <span>Emergencies</span>
-                    </a>
-                    <a data-mh="fwm" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_environment.png" alt="Environment" /><br />
-                            <span>Environment</span>
-                    </a>
-                    <a data-mh="fwm" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_health.png" alt="Health" /><br />
-                            <span>Health</span>
-                    </a>
-                    <br /><br />
-                    <a data-mh="fwm" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_hunger.png" alt="Hunger" /><br />
-                            <span>Hunger</span>
-                    </a>
-                    <a data-mh="fwm" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_livelihoods.png" alt="Livelihoods" /><br />
-                            <span>Livelihoods</span>
-                    </a>
-                    <a data-mh="fwm" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_orphans.png" alt="Orphans" /><br />
-                            <span>Orphans</span>
-                    </a>
-                    <a data-mh="fwm" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_water.png" alt="Water" /><br />
-                            <span>Water</span>
-                    </a>
-            </div>
-            </section>
-
-            <section id="donate">
-            <div id="donatepad">
-                    <h2>Donate</h2>
-                    <p>I would like to donate to the<br />
-                    <b>CAR Crisis Appeal</b></p>
-
-                    <form>
-                            <input type="radio" id="sadaqah" name="type" value="Sadaqah/Lillah" /><label for="sadaqah"><span></span>Sadaqah/Lillah</label><br />
-                            <input type="radio" id="zakat" name="type" value="Zakat" /><label for="zakat"><span></span>Zakat</label>
-
-                            <p class="cur">
-                                    Currency
-                                    <a href="#"><span class="currency sel">&pound;</span></a>
-                                    <a href="#"><span class="currency">$</span></a>
-                                    <a href="#"><span class="currency">&euro;</span></a>
-                            </p>
-
-                            <p class="pamount"><span>&pound;</span><input type="number" class="amount" /></p>
-
-                            <p><input type="submit" value="Donate" class="button donatebutton" /></p>
-                    </form>
-            </div>
-            </section>
-
-            <section id="f-work" class="work">
-            <div class="workpad">
-                    <h2>Our Work</h2>
-
-                    <a data-mh="fwi" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_education.png" alt="Education" /><br />
-                            <span>Education</span>
-                    </a>
-                    <a data-mh="fwi" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_emergencies.png" alt="Emergencies" /><br />
-                            <span>Emergencies</span>
-                    </a>
-                    <a data-mh="fwi" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_environment.png" alt="Environment" /><br />
-                            <span>Environment</span>
-                    </a>
-                    <a data-mh="fwi" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_health.png" alt="Health" /><br />
-                            <span>Health</span>
-                    </a>
-                    <a data-mh="fwi" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_hunger.png" alt="Hunger" /><br />
-                            <span>Hunger</span>
-                    </a>
-                    <a data-mh="fwi" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_livelihoods.png" alt="Livelihoods" /><br />
-                            <span>Livelihoods</span>
-                    </a>
-                    <a data-mh="fwi" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_orphans.png" alt="Orphans" /><br />
-                            <span>Orphans</span>
-                    </a>
-                    <a data-mh="fwi" class="col-xs-3" href="./our-work/">
-                            <img src="./css/images-home/work_water.png" alt="Water" /><br />
-                            <span>Water</span>
-                    </a>
-            </div>
-            </section>
-    </section>
-</section>
-
-<section id="section-2">
-    <section id="f-action-blog">
-            <section id="f-action">
-                <div class="title-wrapper">
-                    <h3>Muslim Hands in action</h3>
-                    <a href="#" id="f-action-prev" class="jcarousel-control-prev"><img src="./css/images-home/arrow_clear_left.png" alt="&lsaquo;" /></a>
-                    <a href="#" id="f-action-next" class="jcarousel-control-next"><img src="./css/images-home/arrow_clear.png" alt="&rsaquo;" /></a>
-                </div>
-            <div class="jcarousel-wrapper">
-                    <div class="jcarousel">
-                            <ul>
-                                    <li>
-                                            <div class="slider-img-cont">
-                                                <img class="matchheight" src="./css/images-home/food4kids.png" alt="" class="actionimage" />
-
-                                                
-                                            
-                                            </div>
-                                            <div class="actionpad matchheight">
-                                                    <h2>Food 4 Kids</h2>
-                                                    <h4>Provide nutritional meals to poor children</h4>
-
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem diam, adipiscing nec auctor quis, fermentum vel magna. Maecenas id ipsum ut tellus vulputate condimentum consectetur ac ipsum. Ut elementum id ipsum eget feugiat. Aenean vel elementum arcu. Duis volutpat nunc sem, quis ultricies lorem dapibus et. Maecenas vel tristique odio. Quisque porttitor erat vel turpis euismod imperdiet eget sed metus. Sed id lacus aliquam, tristique elit ut, mattis elit. Aenean eget luctus augue. Aliquam erat volutpat. Ut blandit nec dolor eu blandit. Integer ut nisi rhoncus, viverra est et, sagittis leo. Pellentesque fringilla bibendum felis vitae interdum. Mauris venenatis sem mi, eu pharetra urna feugiat vitae. Sed malesuada dignissim nulla hendrerit pellentesque. Proin ultrices porta metus.</p>
-
-                                            <a class="button readmore teal" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
-                                            </div>
-                                    </li>
-                                    <li>
-                                        <div class="slider-img-cont ">
-                                            <img src="./css/images-home/food4kids.png" alt="" class="actionimage" />
-
+            <div class="close-arrow"><img src="./css/images-home/arrow_home_slider.png" alt="<"></div>
+            <a id="mobile-previous-slide"><img src="./css/images-home/arrows_up.png"/></a>
+            <a id="mobile-next-slide"><img src="./css/images-home/arrows_down.png"/></a>
+        </aside>
+    <div id="vp-container">
+            <div class="slider-overlay"></div>
+            
+            <div id="viewport">
+                
+                <ul>
+                    
+                    <li>
+                        <section id="section-2">
+                            <section id="f-action-blog">
+                                <section id="f-action">
+                                    <div class="title-wrapper">
+                                        <h3>Muslim Hands in action</h3>
+                                        <a href="#" id="f-action-prev" class="jcarousel-control-prev"><img src="./css/images-home/arrow_clear_left.png" alt="&lsaquo;" /></a>
+                                        <a href="#" id="f-action-next" class="jcarousel-control-next"><img src="./css/images-home/arrow_clear.png" alt="&rsaquo;" /></a>
+                                    </div>
+                                    <div class="jcarousel-wrapper">
+                                        <div class="jcarousel">
+                                            <ul>
+                                                <li>
+                                                    <div class="slider-img-cont">
+                                                        <img class="matchheight" src="./css/images-home/food4kids.png" alt="" class="actionimage" />
+                                                    </div>
+                                                    <div class="actionpad matchheight">
+                                                        <h2>Food 4 Kids</h2>
+                                                        <h4>Provide nutritional meals to poor children</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem diam, adipiscing nec auctor quis, fermentum vel magna. Maecenas id ipsum ut tellus vulputate condimentum consectetur ac ipsum. Ut elementum id ipsum eget feugiat. Aenean vel elementum arcu. Duis volutpat nunc sem, quis ultricies lorem dapibus et. Maecenas vel tristique odio. Quisque porttitor erat vel turpis euismod imperdiet eget sed metus. Sed id lacus aliquam, tristique elit ut, mattis elit. Aenean eget luctus augue. Aliquam erat volutpat. Ut blandit nec dolor eu blandit. Integer ut nisi rhoncus, viverra est et, sagittis leo. Pellentesque fringilla bibendum felis vitae interdum. Mauris venenatis sem mi, eu pharetra urna feugiat vitae. Sed malesuada dignissim nulla hendrerit pellentesque. Proin ultrices porta metus.</p>
+                                                        <a class="button readmore teal" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="slider-img-cont ">
+                                                        <img src="./css/images-home/food4kids.png" alt="" class="actionimage" />
+                                                    </div>
+                                                    <div class="actionpad matchheight">
+                                                        <h2>Second Action</h2>
+                                                        <h4>This is how it's done</h4>
+                                                        <p>And the remaining text is loaded right here.</p>
+                                                        <a class="button readmore teal" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                            <div class="actionpad matchheight">
-                                                    <h2>Second Action</h2>
-                                                    <h4>This is how it's done</h4>
-
-                                                    <p>And the remaining text is loaded right here.</p>
-
-                                            <a class="button readmore teal" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
-                                            </div>
-                                    </li>
-                            </ul>
-                    </div>
-
-                    
-            </div>
-            </section>
-
-            <section id="f-blog">
-                <div class="title-wrapper">
-                    <h3>From our blog</h3>
-                    <a href="#" id="f-blog-prev" class="jcarousel-control-prev"><img src="./css/images-home/arrow_clear_left.png" alt="&lsaquo;" /></a>
-                    <a href="#" id="f-blog-next" class="jcarousel-control-next"><img src="./css/images-home/arrow_clear.png" alt="&rsaquo;" /></a>
-                </div>
-            <div class="jcarousel-wrapper">
-                    <div class="jcarousel">
-                        
-                            <ul>
-                                
-                                    <li>
-                                        
-
-                                            <div class="blogpad" style="position: relative;">
-                                                    <div class="inner"><img src="./css/images-home/blog1.png" alt="" class="blogimage" /></div>
-                                                    <div class="outer">
-                                                        <h2 class="blogh1">Muslim Hands:</h2>
-                                                        <h2>Charity of the year</h2>
-
-                                                        <p class="blogtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem diam, adipiscing nec auctor quis, fermentum vel magna. Maecenas id ipsum ut tellus vulputate condimentum consectetur ac ipsum. Ut elementum id ipsum eget feugiat. Aenean vel elementum arcu. Duis volutpat nunc sem, quis.</p>
-
-                                                        <a class="button readmore pink" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
+                                    </div>
+                                </section>
+                                <section id="f-blog">
+                                    <div class="title-wrapper">
+                                        <h3>From our blog</h3>
+                                        <a href="#" id="f-blog-prev" class="jcarousel-control-prev"><img src="./css/images-home/arrow_clear_left.png" alt="&lsaquo;" /></a>
+                                        <a href="#" id="f-blog-next" class="jcarousel-control-next"><img src="./css/images-home/arrow_clear.png" alt="&rsaquo;" /></a>
+                                    </div>
+                                    <div class="jcarousel-wrapper">
+                                        <div class="jcarousel">
+                                            <ul>
+                                                <li>
+                                                    <div class="blogpad" style="position: relative;">
+                                                        <div class="inner">
+                                                            <img src="./css/images-home/blog1.png" alt="" class="blogimage" />
+                                                        </div>
+                                                        <div class="outer">
+                                                            <h2 class="blogh1">Muslim Hands:</h2>
+                                                            <h2>Charity of the year</h2>
+                                                            <p class="blogtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem diam, adipiscing nec auctor quis, fermentum vel magna. Maecenas id ipsum ut tellus vulputate condimentum consectetur ac ipsum. Ut elementum id ipsum eget feugiat. Aenean vel elementum arcu. Duis volutpat nunc sem, quis.</p>
+                                                            <a class="button readmore pink" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
+                                                        </div>
                                                     </div>
-                                            </div>
-                                    </li>
-                                    <li>
-
-                                            <div class="blogpad" style="position: relative;">
-                                                    <div class="pipe">&nbsp;</div>
-                                                    <div class="inner"><img src="./css/images-home/blog1.png" alt="" class="blogimage" /></div>
-                                                    <div class="outer">
-                                                        <h2 class="blogh1">Muslim Hands:</h2>
-                                                        <h2>Another great post</h2>
-
-                                                        <p class="blogtext">Here's another great article from our past events.</p>
-
-                                                        <a class="button readmore pink" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
-                                            
+                                                </li>
+                                                <li>
+                                                    <div class="blogpad" style="position: relative;">
+                                                        <div class="pipe">
+                                                            &nbsp;
+                                                        </div>
+                                                        <div class="inner">
+                                                            <img src="./css/images-home/blog1.png" alt="" class="blogimage" />
+                                                        </div>
+                                                        <div class="outer">
+                                                            <h2 class="blogh1">Muslim Hands:</h2>
+                                                            <h2>Another great post</h2>
+                                                            <p class="blogtext">Here's another great article from our past events.</p>
+                                                            <a class="button readmore pink" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
+                                                        </div>
                                                     </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </section>
+                    </li>
+                    <li>
+                        <section id="section-3">
+                            <section id="events">
+                                <h3>Events</h3>
+                                <a class="col-xs-12" href="#"><img src="./css/images-home/event1.png" alt="" /></a>
+                                <a class="col-xs-6" href="#"><img src="./css/images-home/event2_t.png" alt="" class="faded" /></a>
+                                <a class="col-xs-6" href="#"><img src="./css/images-home/event3_t.png" alt="" class="faded" /></a>
+                            </section>
+                        </section>
+                    </li>
+                    <li>
+                        <section id="section-1">
+                            <section id="featured">
+                                <div id="featured-container">
+                                    <div id="banner-text-1" class="banner-text">
+                                        <h2>Join hands to help out innocents.</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem diam, adipiscing nec auctor quis, fermentum vel magna. Maecenas id ipsum ut tellus vulputate condimentum consectetur ac ipsum. Ut elementum id ipsum eget feugiat. Aenean vel elementum arcu.</p>
+                                        <a class="button readmore brown" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
+                                    </div>
+
+                                    <div id="banner-text-2" class="banner-text hide col-xs-6">
+                                        <h2>Second title</h2>
+                                        <p>Second body of text</p>
+                                        <a class="button readmore brown" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
+                                    </div>
+
+                                    <div id="banner-text-3" class="banner-text hide col-xs-6">
+                                        <h2>Third title</h2>
+                                        <p>Third body of text</p>
+                                        <a class="button readmore brown" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
+                                    </div>
+
+                                    <div id="banner-text-4" class="banner-text hide col-xs-6">
+                                        <h2>Fourth title</h2>
+                                        <p>Fourth body of text</p>
+                                        <a class="button readmore brown" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
+                                    </div>
+
+                                    <div id="banner-slider">
+                                        <div class="jcarousel-wrapper">
+                                            <div class="jcarousel">
+                                                <ul>
+                                                    <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-home/banner1_t.png" alt=""></a></li>
+                                                    <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-home/banner2_t.png" alt=""></a></li>
+                                                    <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-home/banner3_t.png" alt=""></a></li>
+                                                    <li><a href="#" class="bannerswap" data-banner="4"><img src="./css/images-home/banner4_t.png" alt=""></a></li>
+                                                    <li><a href="#" class="bannerswap" data-banner="1"><img src="./css/images-home/banner1_t.png" alt=""></a></li>
+                                                    <li><a href="#" class="bannerswap" data-banner="2"><img src="./css/images-home/banner2_t.png" alt=""></a></li>
+                                                    <li><a href="#" class="bannerswap" data-banner="3"><img src="./css/images-home/banner3_t.png" alt=""></a></li>
+                                                    <li><a href="#" class="bannerswap" data-banner="4"><img src="./css/images-home/banner4_t.png" alt=""></a></li>
+                                                </ul>
                                             </div>
-                                    </li>
-                            </ul>
-                    </div>
+                                            <a href="#" class="jcarousel-control-prev"><img src="./css/images-home/arrow_home_slider_left.png" alt="&lsaquo;" /></a>
+                                            <a href="#" class="jcarousel-control-next"><img src="./css/images-home/arrow_home_slider.png" alt="&rsaquo;" /></a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </section>
 
-                    
+                            <section id="donate-work">
+                                <section id="m-work" class="work">
+                                    <div class="workpad">
+                                        <h2>Our Work</h2>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <div class="img-container">
+                                                <img src="./css/images-home/work_education.png" alt="Education" /><br />
+                                            </div>
+                                            <span>Education</span>
+                                        </a>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <div class="img-container">
+                                                <img src="./css/images-home/work_emergencies.png" alt="Emergencies" /><br />
+                                            </div>
+                                            <span>Emergencies</span>
+                                        </a>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <div class="img-container">
+                                                <img src="./css/images-home/work_environment.png" alt="Environment" /><br />
+                                            </div>
+                                            <span>Environment</span>
+                                        </a>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <div class="img-container">
+                                                <img src="./css/images-home/work_health.png" alt="Health" /><br />
+                                            </div>
+                                            <span>Health</span>
+                                        </a>
+                                        <br /><br />
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <div class="img-container">
+                                                <img src="./css/images-home/work_hunger.png" alt="Hunger" /><br />
+                                            </div>
+                                            <span>Hunger</span>
+                                        </a>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <div class="img-container">
+                                                <img src="./css/images-home/work_livelihoods.png" alt="Livelihoods" /><br />
+                                            </div>
+                                            <span>Livelihoods</span>
+                                        </a>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <div class="img-container">
+                                                <img src="./css/images-home/work_orphans.png" alt="Orphans" /><br />
+                                            </div>
+                                            <span>Orphans</span>
+                                        </a>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <div class="img-container">
+                                                <img src="./css/images-home/work_water.png" alt="Water" /><br />
+                                            </div>
+                                            <span>Water</span>
+                                        </a>
+                                    </div>
+                                </section>
+
+                                <section id="donate">
+                                    <div id="donatepad">
+                                        <h2>Donate</h2>
+                                        <p>I would like to donate to the<br />
+                                        <b>CAR Crisis Appeal</b></p>
+
+                                        <form>
+                                            <input type="radio" id="sadaqah" name="type" value="Sadaqah/Lillah" /><label for="sadaqah"><span></span>Sadaqah/Lillah</label><br />
+                                            <input type="radio" id="zakat" name="type" value="Zakat" /><label for="zakat"><span></span>Zakat</label>
+                                            <p class="cur">
+                                                    Currency
+                                                    <a href="#"><span class="currency sel">&pound;</span></a>
+                                                    <a href="#"><span class="currency">$</span></a>
+                                                    <a href="#"><span class="currency">&euro;</span></a>
+                                            </p>
+                                            <p class="pamount"><span>&pound;</span><input type="number" class="amount" /></p>
+                                            <p><input type="submit" value="Donate" class="button donatebutton" /></p>
+                                        </form>
+                                    </div>
+                                </section>
+
+                                <section id="f-work" class="work">
+                                    <div class="workpad">
+                                        <h2>Our Work</h2>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <img src="./css/images-home/work_education.png" alt="Education" /><br />
+                                            <span>Education</span>
+                                        </a>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <img src="./css/images-home/work_emergencies.png" alt="Emergencies" /><br />
+                                            <span>Emergencies</span>
+                                        </a>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <img src="./css/images-home/work_environment.png" alt="Environment" /><br />
+                                            <span>Environment</span>
+                                        </a>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <img src="./css/images-home/work_health.png" alt="Health" /><br />
+                                            <span>Health</span>
+                                        </a>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <img src="./css/images-home/work_hunger.png" alt="Hunger" /><br />
+                                            <span>Hunger</span>
+                                        </a>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <img src="./css/images-home/work_livelihoods.png" alt="Livelihoods" /><br />
+                                            <span>Livelihoods</span>
+                                        </a>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <img src="./css/images-home/work_orphans.png" alt="Orphans" /><br />
+                                            <span>Orphans</span>
+                                        </a>
+                                        <a class="col-xs-3" href="./our-work/">
+                                            <img src="./css/images-home/work_water.png" alt="Water" /><br />
+                                            <span>Water</span>
+                                        </a>
+                                    </div>
+                                </section>
+                            </section>
+                        </section>
+                    </li>
+                </ul>
             </div>
-
-
-
-
-
-            </section>
-
-    </section>
-</section>
-    
-<section id="section-3">
-    <section id="events">
-            <h3>Events</h3>
-            <a class="col-xs-12" href="#"><img src="./css/images-home/event1.png" alt="" /></a>
-            <a class="col-xs-6" href="#"><img src="./css/images-home/event2_t.png" alt="" class="faded" /></a>
-            <a class="col-xs-6" href="#"><img src="./css/images-home/event3_t.png" alt="" class="faded" /></a>
-    </section>
-
-    <section id="end">
-    <div class="endpad">
-            <ul class="col-xs-6 col-sm-12">
-                <div data-mh="fm" class="footer-menu">
-                    <li><span>Donate</span></li>
-                    <li><a href="#">Find out about zakat</a></li>
-                    <li><a href="#">Make a donation</a></li>
-                    <li><a href="#">Other ways to give</a></li>
-                    <li><a href="#">Sponsor an orphan</a></li>
-                </div>
-            </ul>
-            <ul class="col-xs-6 col-sm-12">
-                <div data-mh="fm" class="footer-menu">
-                    <li><span>Our Work</span></li>
-                    <li><a href="#">Campaigns</a></li>
-                    <li><a href="#">Emergencies</a></li>
-                    <li><a href="#">What we do</a></li>
-                    <li><a href="#">Where we work</a></li>
-                </div>
-            </ul>
-            <ul class="col-xs-6 col-sm-12">
-                <div data-mh="fm" class="footer-menu">
-                    <li><span>Get Involved</span></li>
-                    <li><a href="#">Become a volunteer</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Recent publications</a></li>
-                    <li><a href="#">Upcoming events</a></li>
-                </div>
-            </ul>
-            <ul class="col-xs-6 col-sm-12">
-                <div data-mh="fm" class="footer-menu">
-                    <li><span>About Us</span></li>
-                    <li><a href="#">Our history</a></li>
-                    <li><a href="#">Our partners</a></li>
-                    <li><a href="#">How your money is spent</a></li>
-                    <li><a href="#">Job vacancies</a></li>
-                </div>
-            </ul>
-            <ul class="col-xs-6 col-sm-12">
-                <div data-mh="fm" class="footer-menu">
-                    <li><span>MH Worldwide</span></li>
-                    <li><a href="#">France</a></li>
-                    <li><a href="#">South Africa</a></li>
-                </div>
-            </ul>
-            <div data-mh="fm" class="footer-menu social-menu">
-                <p><b>Social Links</b></p>
-                <p class="social-end">
-                        <a href="#"><img src="./css/images-home/s_fb.png" alt="Facebook" /></a>
-                        <a href="#"><img src="./css/images-home/s_tw.png" alt="Twitter" /></a>
-                        <a href="#"><img src="./css/images-home/s_gp.png" alt="Google+" /></a>
-                        <a href="#"><img src="./css/images-home/s_in.png" alt="LinkedIn" /></a>
-                </p>
-            </div>
-    </div>
-        <div id="mobile-bottom">
-            <div id="mob-log-con">
-                <img class="mobile-logo" src="./css/images-home/logo_mobile.png"/>
-            </div>
-            <div class="copyright">
-                Copyright © 2014 Muslim Hands.<br/>
-                <b>All rights reserved.</b>
-            </div>
+            <div class="slider-overlay"></div>
+            <a id="simplePrevious"><img src="./css/images-home/arrow_home_slider_left.png" alt="<"></a>
+            <a id="simpleNext"><img src="./css/images-home/arrow_home_slider.png" alt=">"></a>
         </div>
-    </section>
-</section>
+        
+        <aside id="footer-sidebar">
+            <section id="end">
+                <div class="endpad">
+                    <ul class="col-xs-6 col-sm-12">
+                        <div data-mh="fm" class="footer-menu">
+                            <li><span>Donate</span></li>
+                            <li><a href="#">Find out about zakat</a></li>
+                            <li><a href="#">Make a donation</a></li>
+                            <li><a href="#">Other ways to give</a></li>
+                            <li><a href="#">Sponsor an orphan</a></li>
+                        </div>
+                    </ul>
+                    <ul class="col-xs-6 col-sm-12">
+                        <div data-mh="fm" class="footer-menu">
+                            <li><span>Our Work</span></li>
+                            <li><a href="#">Campaigns</a></li>
+                            <li><a href="#">Emergencies</a></li>
+                            <li><a href="#">What we do</a></li>
+                            <li><a href="#">Where we work</a></li>
+                        </div>
+                    </ul>
+                    <ul class="col-xs-6 col-sm-12">
+                        <div data-mh="fm" class="footer-menu">
+                            <li><span>Get Involved</span></li>
+                            <li><a href="#">Become a volunteer</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Recent publications</a></li>
+                            <li><a href="#">Upcoming events</a></li>
+                        </div>
+                    </ul>
+                    <ul class="col-xs-6 col-sm-12">
+                        <div data-mh="fm" class="footer-menu">
+                            <li><span>About Us</span></li>
+                            <li><a href="#">Our history</a></li>
+                            <li><a href="#">Our partners</a></li>
+                            <li><a href="#">How your money is spent</a></li>
+                            <li><a href="#">Job vacancies</a></li>
+                        </div>
+                    </ul>
+                    <ul class="col-xs-6 col-sm-12">
+                        <div data-mh="fm" class="footer-menu">
+                            <li><span>MH Worldwide</span></li>
+                            <li><a href="#">France</a></li>
+                            <li><a href="#">South Africa</a></li>
+                        </div>
+                    </ul>
+                    <div data-mh="fm" class="footer-menu social-menu">
+                        <p><b>Social Links</b></p>
+                        <p class="social-end">
+                            <a href="#"><img src="./css/images-home/s_fb.png" alt="Facebook" /></a>
+                            <a href="#"><img src="./css/images-home/s_tw.png" alt="Twitter" /></a>
+                            <a href="#"><img src="./css/images-home/s_gp.png" alt="Google+" /></a>
+                            <a href="#"><img src="./css/images-home/s_in.png" alt="LinkedIn" /></a>
+                        </p>
+                    </div>
+                </div>
+                <div id="mobile-bottom">
+                    <div id="mob-log-con">
+                        <img class="mobile-logo" src="./css/images-home/logo.png"/>
+                    </div>
+                    <div class="copyright">
+                        Copyright © 2014 Muslim Hands.<br/>
+                        <b>All rights reserved.</b>
+                    </div>
+                </div>
+            </section>
+            <div class="close-arrow"><img src="./css/images-home/arrow_home_slider.png" alt="<"></div>
+        </aside>
 
-</body>
+    </body>
 </html>
