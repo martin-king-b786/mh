@@ -1,6 +1,8 @@
 $browserWidth = $(window).width();
 $(function() {
+    if($('.matchheight').length) {
 	$('.matchheight').matchHeight();
+    }
 });
 
 

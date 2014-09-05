@@ -3,35 +3,34 @@
  * @extends jquery
  */
 
-
-jQuery.fn.carousel = function(previous, next, options){
-	var sliderList = jQuery(this).children()[0];
+$j.fn.carousel = function(previous, next, options){
+	var sliderList = $j(this).children()[0];
 	
 	if (sliderList) {
-		var increment = jQuery(sliderList).children().outerWidth("true"),
-		elmnts = jQuery(sliderList).children(),
+		var increment = $j(sliderList).children().outerWidth("true"),
+		elmnts = $j(sliderList).children(),
 		numElmts = elmnts.length,
 		sizeFirstElmnt = increment,
-		shownInViewport = Math.round(jQuery(this).width() / sizeFirstElmnt),
+		shownInViewport = Math.round($j(this).width() / sizeFirstElmnt),
 		firstElementOnViewPort = 1,
 		isAnimating = false;
 		
 		for (i = 0; i < shownInViewport; i++) {
-			jQuery(sliderList).css('width',(numElmts+shownInViewport)*increment + increment + "px");
-			jQuery(sliderList).append(jQuery(elmnts[i]).clone());
+			$j(sliderList).css('width',(numElmts+shownInViewport)*increment + increment + "px");
+			$j(sliderList).append($j(elmnts[i]).clone());
 		}
 		
-		jQuery(previous).click(function(event){
+		$j(previous).click(function(event){
 			if (!isAnimating) {
 				if (firstElementOnViewPort == 1) {
-					jQuery(sliderList).css('left', "-" + numElmts * sizeFirstElmnt + "px");
+					$j(sliderList).css('left', "-" + numElmts * sizeFirstElmnt + "px");
 					firstElementOnViewPort = numElmts;
 				}
 				else {
 					firstElementOnViewPort--;
 				}
 				
-				jQuery(sliderList).animate({
+				$j(sliderList).animate({
 					left: "+=" + increment,
 					y: 0,
 					queue: true
@@ -41,16 +40,16 @@ jQuery.fn.carousel = function(previous, next, options){
 			
 		});
 		
-		jQuery(next).click(function(event){
+		$j(next).click(function(event){
 			if (!isAnimating) {
 				if (firstElementOnViewPort > numElmts) {
 					firstElementOnViewPort = 2;
-					jQuery(sliderList).css('left', "0px");
+					$j(sliderList).css('left', "0px");
 				}
 				else {
 					firstElementOnViewPort++;
 				}
-				jQuery(sliderList).animate({
+				$j(sliderList).animate({
 					left: "-=" + increment,
 					y: 0,
 					queue: true
@@ -61,6 +60,6 @@ jQuery.fn.carousel = function(previous, next, options){
 	}
         for (i = 0; i < shownInViewport; i++) {
             j = numElmts - i - 1;
-            jQuery(sliderList).prepend(jQuery(elmnts[j]).clone());
+            $j(sliderList).prepend($j(elmnts[j]).clone());
         }
 };

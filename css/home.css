@@ -223,12 +223,15 @@ button.readmore.brown {
 	display: none;
 }
 
+html, body, #vp-container, #viewport, #viewport > ul, #viewport > ul > li, #viewport > ul > li > section {
+    height: 100%;
+}
 /* =Sticky
 ----------------------------------------------- */
 
 aside#sticky {
     width: 220px;
-    height: 758px;
+    height: 100%;
     max-height: 758px;
     background: #fff;
     text-align: center;
@@ -322,13 +325,15 @@ aside#footer-sidebar {
     float: left;
     width: 175px;
     position: relative;
+    height: 100%;
 }
 section#featured {
 	width: 550px;
-	height: 758px;
+	height: 100%;
 	background: url(images-home/banner1.png);
         float: left;
         background-position: right!important;
+        background-repeat: no-repeat!important;
 }
 
 section#featured div.banner-text {
@@ -389,13 +394,13 @@ section#featured div#banner-slider a#next {
 
 section#donate-work {
 	width: 250px;
-	height: 758px;
+	height: 100%;
         float: left;
 }
 
 section#donate {
 	width: 100%;
-	height: 492px;
+	height: 65%;
 	position: relative;
 	top: 0;
 	left: 0;
@@ -404,16 +409,20 @@ section#donate {
 }
 
 section#donate div#donatepad {
-	width: 282px;
-	padding: 37px 27px;
+	width: 250px;
+	padding: 10% 27px;
+        height: 100%;
+        position: relative;
+
 }
 
 section#donate p {
 	line-height: 22px;
+        margin-bottom: 0;
 }
 
 section#donate p.cur {
-	margin-top: 50px;
+	margin-top: 5%;
 }
 
 span.currency {
@@ -436,10 +445,11 @@ span.currency:hover, span.currency.sel {
 	background: #fff;
 }
 
-p.pamount {
+section#donate p.pamount {
 	display: inline-block;
 	height: 50px;
-	margin: 10px 0 25px 0;
+	margin: 10px 0 0;
+        margin-bottom: 5%;
 	padding: 0 0 0 20px;
 	background: #fff;
 	border-radius: 5px;
@@ -471,7 +481,7 @@ section#f-work {}
 
 section.work {
 	width: 100%;
-	height: 266px;
+	height: 35%;
 	position: relative;
 	bottom: 0;
 	left: 0;
@@ -480,6 +490,7 @@ section.work {
 
 section.work div.workpad {
 	padding: 23px 16px 0 16px;
+        overflow: hidden;
 }
 
 section.work h2 {
@@ -517,13 +528,15 @@ section.work img {
 
 section#f-action-blog {
 	width: 800px;
-        height: 758px;
+        height: 100%;
 }
 
-
+section#f-action-blog .jcarousel-wrapper, section#f-action-blog .jcarousel, section#f-action-blog .jcarousel ul {
+    height: 100%;
+}
 section#f-action {
 	width: 100%;
-	height: 492px;
+	height: 65%;
 	position: relative;
 	background: #067b82;
 }
@@ -540,18 +553,20 @@ section#f-action div.actionpad {
 	padding: 93px 23px 23px;
         float: left;
         width: 50%;
+        height: 100%;
 }
 
 section#f-blog {
 	width: 100%;
-	height: 266px;
+	height: 35%;
 	position: relative;
 	background: #e55d5f;
 }
 
 section#f-blog div.blogpad {
 	width: 800px;
-	padding: 63px 23px 0 23px;
+	padding: 55px 23px 20px 24px;
+        height: 100%;
 }
 
 section#f-blog h2.blogh1 {
@@ -568,14 +583,23 @@ section#f-blog h3 {
 
 section#f-blog p.blogtext {
 	text-align: justify;
-	width: 518px;
+	width: 100%;
 }
-
+.outer {
+    width: 75%;
+    height: 100%;
+    overflow: auto;
+}
 section#f-blog .inner{
     float: right;
-    width: 152px;
-    height: 173px;
+    width: 25%;
+    height: 100%;
     clear: right;
+}
+
+.inner img {
+    float: right;
+    max-height: 100%;
 }
 section#f-blog .pipe{
     width: 0px; 
@@ -585,11 +609,12 @@ section#f-blog .pipe{
 
 #f-action-blog .jcarousel li {
     width: 800px!important;
+    height: 100%;
 }
 
 section#events {
 	width: 800px;
-	height: 758px;
+	height: 100%;
 	background: #696;
 	line-height: 0;
 }
@@ -604,24 +629,16 @@ section#events img {
 	vertical-align: middle;
 }
 
-section#events img.faded {
-	opacity: 0.3;
-	transition: all 0.3s linear;
-}
-
-section#events img.faded:hover {
-	opacity: 1;
-}
-
 section#end {
 	width: 200px;
-	height: 758px;
+	height: 100%;
 	background: #ffffff;
-        color: #5c5d4d
+        color: #5c5d4d;
 }
 
 section#end div.endpad {
-	padding: 44px 25px 0;
+	padding: 10% 25px 0;
+        height: 100%;
 }
 
 section#end a, section#end li span {
@@ -635,7 +652,7 @@ section#end li span {
 }
 
 section#end ul {
-	margin-bottom: 20px;
+	margin-bottom: 5%;
         padding: 0;
 }
 
@@ -649,6 +666,32 @@ aside#sticky #mobile-logo, aside#sticky nav#nav img {
 
 section#events a {
     padding: 0;
+}
+
+    section#events a.col-xs-12 {
+        height: 65%;
+    }
+    section#events a.col-xs-6 {
+        height: 35%;
+    }
+    
+    section#events a img {
+        height: auto;
+        max-width: 100%;
+    }
+.event-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #696;
+    opacity: 0.7;
+    transition: all 0.3s linear;
+}
+
+.event-overlay:hover {
+    opacity: 0;
 }
 .title-wrapper {
     background: #ffffff;
@@ -692,18 +735,29 @@ section#f-blog .title-wrapper {
         right: -412px!important;
     }
 
+    #donatepad form {
+        margin-top: 5%;
+    }
+    
+    #donatepad p.submit {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 10px;
+    }
 
     .slider-img-cont {
         float: left;
         width: 50%;
+        height: 100%;
     }
     
         .slider-img-cont img {
-            width: 100%;
+            width: auto;
+            max-height: 100%;
         }
     
     section#f-action div.actionpad p {
-        max-height: 250px;
+        max-height: 50%;
         overflow-y: auto;
     }
 .endpad > ul > div.footer-menu {
@@ -716,8 +770,6 @@ section#f-blog .title-wrapper {
     height: 100%;
     overflow: hidden;
     min-height: 250px;
-    margin-top: 20px;
-    padding-bottom: 75px;
 }
 
     #mobile-next-slide {
@@ -765,7 +817,7 @@ section#f-blog .title-wrapper {
     left: 0;
     background: white;
     opacity: 0.9;
-    height: 758px;
+    height: 100%;
     z-index: 1;
 }
 
@@ -778,7 +830,6 @@ section#f-blog .title-wrapper {
 	width: 800px;
         overflow: visible;
         position: relative;
-        height: 50px;
         margin-left: 50px;
 }
 #viewport ul{
@@ -788,7 +839,6 @@ section#f-blog .title-wrapper {
 }
 #viewport > ul > li{
 	width: 800px;
-        height: 758px;
         float: left;
         list-style: none;
         margin: 0;
@@ -803,6 +853,7 @@ overflow: hidden;
 border: 1px #ccc solid;
 border-top: 0;
 border-bottom: 0;
+max-height: 758px;
 }
 /* Cosmetic */
 #simplePrevious, #simpleNext{
@@ -886,6 +937,11 @@ a#simpleNext img, a#simplePrevious img  {
     }
     
 @media screen and (max-width: 767px) {
+    #end li {
+line-height: 16px;
+margin: 10px 0;
+}
+
     aside#footer-sidebar .close-arrow, aside#sticky .close-arrow {
         display: none;
     }
@@ -932,7 +988,13 @@ a#simpleNext img, a#simplePrevious img  {
         
         div#vp-container {
             width: 100%;
+            max-height: none;
         }
+        
+        html, body, #vp-container, #viewport, #viewport > ul, #viewport > ul > li, #viewport > ul > li > section {
+            height: auto;
+        }
+        
         div#slider-mobile {
             position: absolute;
             width: 100%;
@@ -1221,7 +1283,7 @@ a#simpleNext img, a#simplePrevious img  {
                         .title-wrapper {
                             background: #ffffff;
                             position: absolute;
-                            width: 37.5%;
+                            width: 50%;
                             z-index: 1;
                         }
                         section#f-action .title-wrapper {
@@ -1308,7 +1370,7 @@ a#simpleNext img, a#simplePrevious img  {
                             section#f-action-blog div p {
                                 max-height: 210px;
                                 overflow-y: auto;
-                                font-size: 24px;
+                                font-size: 18px;
                                 line-height: 30px;
                             }
                             
@@ -1442,6 +1504,9 @@ section.work a {
         
         a#simpleNext, a#simplePrevious {
             display: none;
+        }
+        #donatepad p.submit {
+            position: static;
         }
 }
 

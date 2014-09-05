@@ -24,20 +24,22 @@
 	<link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16" />
 	<link rel="icon" href="./favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-
+        <script type="text/javascript" src="./js/jquery-1.3.2.js"></script>
+        <script type="text/javascript">
+            var $j = jQuery.noConflict(true);
+        </script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            //var $ = $.noConflict(true);
+        </script>
         <script type="text/javascript" src="./js/bootstrap.min.js"></script>
         <script type="text/javascript" src="./js/scripts-home.js"></script>
 	<script type="text/javascript" src="./js/jquery.jcarousel.min.js"></script>
 	<script type="text/javascript" src="./js/jcarousel.responsive.js"></script>
         <script type="text/javascript" src="./js/jquery.matchHeight-min.js"></script>
         <script type="text/javascript" src="./js/scripts-main.js"></script>
-        <script>
-            $.noConflict();
-            // Code that uses other library's $ can follow here.
-        </script>
-        <script type="text/javascript" src="./js/jquery-1.3.2.js">
-        </script>
+        
+        
         <script type="text/javascript" src="./js/jquery.infinite-carousel.js"></script>
 	<!--<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -50,8 +52,8 @@
 		ga('send', 'pageview');
 	</script>-->
         <script type="text/javascript">
-                $(document).ready(function(){
-                    $('#viewport').carousel('#simplePrevious', '#simpleNext');  
+                $j(document).ready(function(){
+                    $j('#viewport').carousel('#simplePrevious', '#simpleNext');  
                     $browserWidth = $(window).width();
                     if($browserWidth < 767) {
                         $('#viewport > ul > li').eq(4).remove();
@@ -59,6 +61,7 @@
                     }
                     
                 });
+                
         </script>
 </head>
 
@@ -114,12 +117,12 @@
                                             <ul>
                                                 <li>
                                                     <div class="slider-img-cont">
-                                                        <img class="matchheight" src="./css/images-home/food4kids.png" alt="" class="actionimage" />
+                                                        <img class="" src="./css/images-home/food4kids.png" alt="" class="actionimage" />
                                                     </div>
-                                                    <div class="actionpad matchheight">
+                                                    <div class="actionpad ">
                                                         <h2>Food 4 Kids</h2>
                                                         <h4>Provide nutritional meals to poor children</h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem diam, adipiscing nec auctor quis, fermentum vel magna. Maecenas id ipsum ut tellus vulputate condimentum consectetur ac ipsum. Ut elementum id ipsum eget feugiat. Aenean vel elementum arcu. Duis volutpat nunc sem, quis ultricies lorem dapibus et. Maecenas vel tristique odio. Quisque porttitor erat vel turpis euismod imperdiet eget sed metus. Sed id lacus aliquam, tristique elit ut, mattis elit. Aenean eget luctus augue. Aliquam erat volutpat. Ut blandit nec dolor eu blandit. Integer ut nisi rhoncus, viverra est et, sagittis leo. Pellentesque fringilla bibendum felis vitae interdum. Mauris venenatis sem mi, eu pharetra urna feugiat vitae. Sed malesuada dignissim nulla hendrerit pellentesque. Proin ultrices porta metus.</p>
+                                                        <p>AUt elementum id ipsum eget feugiat. Aenean vel elementum arcu. Duis volutpat nunc sem, quis ultricies lorem dapibus et. Maecenas vel tristique odio. Quisque porttitor erat vel turpis euismod imperdiet eget sed metus. Sed id lacus aliquam, tristique elit ut, mattis elit. Aenean eget luctus augue. Aliquam erat volutpat. Ut blandit nec dolor eu blandit. Integer ut nisi rhoncus, viverra est et, sagittis leo. Pellentesque fringilla bibendum felis vitae interdum. Mauris venenatis sem mi, eu pharetra urna feugiat vitae. Sed malesuada dignissim nulla hendrerit pellentesque. Proin ultrices porta metus.</p>
                                                         <a class="button readmore teal" href="#"><img src="./css/images-home/arrow_colour.png" alt="" />Read more</a>
                                                     </div>
                                                 </li>
@@ -127,7 +130,7 @@
                                                     <div class="slider-img-cont ">
                                                         <img src="./css/images-home/food4kids.png" alt="" class="actionimage" />
                                                     </div>
-                                                    <div class="actionpad matchheight">
+                                                    <div class="actionpad">
                                                         <h2>Second Action</h2>
                                                         <h4>This is how it's done</h4>
                                                         <p>And the remaining text is loaded right here.</p>
@@ -187,9 +190,17 @@
                         <section id="section-3">
                             <section id="events">
                                 <h3>Events</h3>
-                                <a class="col-xs-12" href="#"><img src="./css/images-home/event1.png" alt="" /></a>
-                                <a class="col-xs-6" href="#"><img src="./css/images-home/event2_t.png" alt="" class="faded" /></a>
-                                <a class="col-xs-6" href="#"><img src="./css/images-home/event3_t.png" alt="" class="faded" /></a>
+                                <a class="col-xs-12" href="#">
+                                    <img src="./css/images-home/event1.png" alt="" />
+                                </a>
+                                <a class="col-xs-6" href="#">
+                                    <div class="event-overlay"></div>
+                                    <img src="./css/images-home/event2_t.png" alt="" class="faded" />
+                                </a>
+                                <a class="col-xs-6" href="#">
+                                    <div class="event-overlay"></div>
+                                    <img src="./css/images-home/event3_t.png" alt="" class="faded" />
+                                </a>
                             </section>
                         </section>
                     </li>
@@ -315,7 +326,7 @@
                                                     <a href="#"><span class="currency">&euro;</span></a>
                                             </p>
                                             <p class="pamount"><span>&pound;</span><input type="number" class="amount" /></p>
-                                            <p><input type="submit" value="Donate" class="button donatebutton" /></p>
+                                            <p class="submit"><input type="submit" value="Donate" class="button donatebutton" /></p>
                                         </form>
                                     </div>
                                 </section>
@@ -413,15 +424,7 @@
                             <li><a href="#">South Africa</a></li>
                         </div>
                     </ul>
-                    <div data-mh="fm" class="footer-menu social-menu">
-                        <p><b>Social Links</b></p>
-                        <p class="social-end">
-                            <a href="#"><img src="./css/images-home/s_fb.png" alt="Facebook" /></a>
-                            <a href="#"><img src="./css/images-home/s_tw.png" alt="Twitter" /></a>
-                            <a href="#"><img src="./css/images-home/s_gp.png" alt="Google+" /></a>
-                            <a href="#"><img src="./css/images-home/s_in.png" alt="LinkedIn" /></a>
-                        </p>
-                    </div>
+                    
                 </div>
                 <div id="mobile-bottom">
                     <div id="mob-log-con">
